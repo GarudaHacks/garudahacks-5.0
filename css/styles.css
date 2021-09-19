@@ -1,16 +1,13 @@
 :root {
-    --garuda-red: #ff595e;
-    --baby-blue: #d1edff;
-    --sky-blue: #a9d8fa;
-    --dark-blue: #87a9c5;
-    --grey: #dfdfdf;
-    --grey-1: #f2f5f5;
-    --grey-2: #acadad;
-    --pastel-yelow: #faf0ca;
-    --text-dark: #233143;
-    --text-primary: #838fa0;
-    --text-secondary: #ffffff;
-    --text-tertiary: #f4d35e;
+    --kunyit-yellow: #F5DF4D;
+    --aspal-grey: #939597;
+    --laut-blue: #071729;
+    --langit-blue: #A8C8F0;
+    --awan-white: #FFF3DD;
+    --merdeka-red: #FF164E;
+    --champagne: #FBF1B2;
+    --light-grey: #F0F0F0;
+    --light-blue: #DDE9F8;
 }
 
 html {
@@ -22,6 +19,7 @@ body {
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
+    background-color: var(--kunyit-yellow);
 }
 
 nav {
@@ -210,7 +208,7 @@ footer a:hover {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 30px;
-    color: var(--text-dark);
+    color: var(--laut-blue);
 }
 
 .section-what .item-desc {
@@ -218,9 +216,33 @@ footer a:hover {
     font-size: 17px;
     line-height: 1.6;
 }
+.section-what .item-desc1 {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.section-what .item-desc2 {
+    max-width: 700px;
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
 
 .section-what .item-img img {
     max-width: 100%;
+    max-height: 300px;
+}
+
+.mountain-bg {
+    text-align: center;
+    margin-left: -250px;
+    margin-top: -150px;
+    padding: 0;
+    width: 150%;
 }
 
 .section-what .tools-container {
@@ -280,7 +302,7 @@ footer a:hover {
 .section-what .hiring-title {
     font-family: "Montserrat";
     color: var(--text-dark);
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 25px;
     font-weight: 400;
 }
