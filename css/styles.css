@@ -411,8 +411,7 @@ footer a:hover {
 }
 
 .section-bydp{
-    background-image: url("/img/buildyourdreamproject.svg");
-    background-size: cover;
+
     background-color: #F5DF4D;
 }
 
@@ -425,8 +424,8 @@ footer a:hover {
     letter-spacing: 0em;
     text-align: left;
 
-    padding-top: 5%;
-    padding-left: 3%;
+    padding-top: 8%;
+    padding-left: 1em;
     color: #071729;
 }
 
@@ -435,12 +434,12 @@ footer a:hover {
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
 
-    padding-top: 2%;
-    padding-left: 5.5%;
+    padding-top: 3%;
+    padding-left: 2.3em;
     color: #071729;
 
 }
@@ -457,7 +456,7 @@ footer a:hover {
 }
 
 .section-bydp .item {
-    margin-bottom: 50px;
+    margin-bottom: -2em;
     padding: 30px;
     height: 100%;
     color: #071729;
@@ -477,12 +476,29 @@ footer a:hover {
     margin-right: 25%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1283px) {
     .section-bydp .tools-container {
         justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-bydp .col-lg-5 {
+        display: none;
     }
 }
 
+@media (max-width: 613px) {
+    .section-bydp .item-title{
+        margin-top: 3.5em;
+    }
+}
+
+@media (max-width: 831px) {
+    .section-bydp .item-title{
+        margin-top: 3em;
+    }
+}
 .section-bydp .tool-box {
     border: solid 1px #071729;
     margin-top: 30px;
