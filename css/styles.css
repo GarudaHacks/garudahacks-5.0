@@ -10,6 +10,16 @@
     --light-blue: #DDE9F8;
 }
 
+@font-face {
+    font-family: PlusJakarta;
+    src: url(../font/PlusJakartaSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: PlusJakartaBold;
+    src: url(../font/PlusJakartaSans-Bold.ttf) format("truetype");
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -205,9 +215,10 @@ footer a:hover {
 }
 
 .section-what .item .item-title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 30px;
+    font-family: PlusJakartaBold;
+    font-variant-ligatures: no-historical-ligatures;
+    font-feature-settings: "ss01", "ss02", "ss03";
+    font-size: 40px;
     color: var(--laut-blue);
 }
 
@@ -227,7 +238,7 @@ footer a:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
     line-height: 1.6;
-    font-weight: 100;
+    font-weight: 600;
 }
 
 .expert .item-desc1 {
