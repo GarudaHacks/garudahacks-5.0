@@ -500,12 +500,12 @@ footer a:hover {
     }
 }
 .section-bydp .tool-box {
-    border: solid 1px #071729;
+    border: solid 3px #071729;
     margin-top: 30px;
-    min-height: 225px;
-    min-width: 250px;
-    max-height: 225px;
-    max-width: 250px;
+    min-height: 250px;
+    min-width: 275px;
+    max-height: 250px;
+    max-width: 275px;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
@@ -514,7 +514,6 @@ footer a:hover {
     background-color: #F5DF4D;
     margin-right: 5%;
 }
-
 .section-bydp .tool-box:hover {
     transform: scale(1.02);
     transition: 0.2s ease;
@@ -536,12 +535,14 @@ footer a:hover {
     font-weight: 400;
     font-size: 20px;
     color: var(--text-dark);
+    padding-top: 2em;
 }
 
 .section-bydp .tool-box .tool-desc {
     font-size: 17px;
     line-height: 1.6;
     color: #071729;
+    padding-top: 0.5em;
 }
 .section-track {
     color: var(--text-secondary);
