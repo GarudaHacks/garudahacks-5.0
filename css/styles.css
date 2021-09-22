@@ -22,7 +22,6 @@ body {
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
-    background: #F5DF4D;
 }
 
 nav {
@@ -191,8 +190,8 @@ footer a:hover {
 }
 
 .section-what {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section-what .subtitle {
@@ -680,3 +679,4 @@ footer .powered-img {
     display: inline-block;
     height: 30px;
 }
+
