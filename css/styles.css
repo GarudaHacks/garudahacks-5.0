@@ -533,13 +533,13 @@ footer a:hover {
 
 .section-bydp .tool-box .tool-name {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--text-dark);
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .section-bydp .tool-box .tool-desc {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.6;
     color: #071729;
     padding-top: 0.5em;
