@@ -727,3 +727,136 @@ footer .powered-img {
     height: 30px;
 }
 
+.section-bydp{
+
+    background-color: #F5DF4D;
+}
+
+.section-bydp .item .item-title{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding-top: 8%;
+    padding-left: 1em;
+    color: #071729;
+}
+
+.section-bydp .item-desc {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding-top: 3%;
+    padding-left: 2.3em;
+    color: #071729;
+
+}
+
+.section-bydp {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-bydp .subtitle {
+    display: block;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.section-bydp .item {
+    margin-bottom: -2em;
+    padding: 30px;
+    height: 100%;
+    color: #071729;
+}
+
+.section-bydp .item-img img {
+    max-width: 100%;
+}
+
+.section-bydp .tools-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-right: 30%;
+    margin-left: 5%;
+}
+
+@media (max-width: 1490px) {
+    .section-bydp .tools-container {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-bydp .col-lg-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 613px) {
+    .section-bydp .item-title{
+        margin-top: 3.5em;
+    }
+}
+
+@media (max-width: 831px) {
+    .section-bydp .item-title{
+        margin-top: 3em;
+    }
+}
+.section-bydp .tool-box {
+    border: solid 3px #071729;
+    margin-top: 30px;
+    min-height: 250px;
+    min-width: 275px;
+    max-height: 250px;
+    max-width: 275px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.2s ease;
+
+    background-color: #F5DF4D;
+    margin-right: 5%;
+}
+.section-bydp .tool-box:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+.section-bydp .tool-box .tool-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.section-bydp .tool-box .tool-logo img {
+    max-width: 100%;
+    max-height: 100px;
+    height: auto;
+    width: auto;
+}
+
+.section-bydp .tool-box .tool-name {
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--text-dark);
+    padding-top: 1.5em;
+}
+
+.section-bydp .tool-box .tool-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #071729;
+    padding-top: 0.5em;
+}
