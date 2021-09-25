@@ -1,16 +1,23 @@
 :root {
-    --garuda-red: #ff595e;
-    --baby-blue: #d1edff;
-    --sky-blue: #a9d8fa;
-    --dark-blue: #87a9c5;
-    --grey: #dfdfdf;
-    --grey-1: #f2f5f5;
-    --grey-2: #acadad;
-    --pastel-yelow: #faf0ca;
-    --text-dark: #233143;
-    --text-primary: #838fa0;
-    --text-secondary: #ffffff;
-    --text-tertiary: #f4d35e;
+    --kunyit-yellow: #F5DF4D;
+    --aspal-grey: #939597;
+    --laut-blue: #071729;
+    --langit-blue: #A8C8F0;
+    --awan-white: #FFF3DD;
+    --merdeka-red: #FF164E;
+    --champagne: #FBF1B2;
+    --light-grey: #F0F0F0;
+    --light-blue: #DDE9F8;
+}
+
+@font-face {
+    font-family: PlusJakarta;
+    src: url(../font/PlusJakartaSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: PlusJakartaBold;
+    src: url(../font/PlusJakartaSans-Bold.ttf) format("truetype");
 }
 
 html {
@@ -22,6 +29,7 @@ body {
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
+    background-color: var(--kunyit-yellow);
 }
 
 nav {
@@ -190,8 +198,8 @@ footer a:hover {
 }
 
 .section-what {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section-what .subtitle {
@@ -207,10 +215,11 @@ footer a:hover {
 }
 
 .section-what .item .item-title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 30px;
-    color: var(--text-dark);
+    font-family: PlusJakartaBold;
+    font-variant-ligatures: no-historical-ligatures;
+    font-feature-settings: "ss01", "ss02", "ss03";
+    font-size: 40px;
+    color: var(--laut-blue);
 }
 
 .section-what .item-desc {
@@ -221,6 +230,47 @@ footer a:hover {
 
 .section-what .item-img img {
     max-width: 100%;
+}
+
+.expert .item {
+    padding: 30px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.expert .item-desc1 {
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.expert .item-desc2 {
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+.expert .item-img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.expert .item-img img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.mountain-bg {
+    text-align: center;
+    margin-top: -200px;
+    width: 100vw;
+}
+
+@media (min-width: 1200px) {
+    .expert .item-desc1 {
+        width: 550px;
+    }
 }
 
 .section-what .tools-container {
@@ -280,7 +330,7 @@ footer a:hover {
 .section-what .hiring-title {
     font-family: "Montserrat";
     color: var(--text-dark);
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 25px;
     font-weight: 400;
 }
@@ -320,17 +370,18 @@ footer a:hover {
 }
 
 .section-what .judges-title {
-    font-family: "Montserrat";
-    color: var(--text-dark);
-    font-size: 20px;
-    margin-top: 25px;
-    font-weight: 400;
+    font-family: PlusJakartaBold;
+    font-variant-ligatures: no-historical-ligatures;
+    font-feature-settings: "ss01", "ss02", "ss03";
+    font-size: 48px;
+    color: var(--laut-blue);
 }
 
 .section-what .judges-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 @media (max-width: 767px) {
@@ -341,14 +392,14 @@ footer a:hover {
 
 .section-what .judge-box {
     text-align: center;
-    border: solid 1px #f3f3f3;
+    border: solid 3px #110000;
     margin-top: 30px;
     min-height: 225px;
     min-width: 250px;
     max-height: 260px;
     max-width: 250px;
     padding: 32px;
-    border-radius: 8px;
+    border-radius: 13px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
     transition: 0.2s ease;
 }
@@ -371,7 +422,8 @@ footer a:hover {
 }
 
 .section-what .judge-box .judge-name {
-    font-weight: 400;
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 20px;
     color: var(--text-dark);
 }
@@ -379,34 +431,43 @@ footer a:hover {
 .section-what .judge-box .judge-desc {
     font-size: 17px;
     line-height: 1.6;
+    color: #071729;
+    font-family: Montserrat;
+    font-weight: 500;
 }
 
 .section-what .judge-many {
     margin-top: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
-    font-weight: 400;
-    font-size: 25px;
+    color: #071729;
 }
-
-.section-what .mlh-coc {
+ 
+.section-what .mlh-coc {  
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #071729;
 }
 
 .section-what .mlh-coc-text-container {
-    max-width: 600px;
+    max-width: 773px;
 }
 
 .section-what .btn-coc {
+    font-family: PlusJakartaBold;
     margin-top: 15px;
-    font-family: "Montserrat", sans-serif;
+    color: #FFFCF3;
     font-weight: 600;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
-        0 16px 24px 0 rgba(0, 0, 0, 0.06);
-    border: solid 1px var(--grey);
-    background-color: white;
+    background: #071729;
+    border-radius: 4px;
     padding: 15px 25px;
 }
 
@@ -800,3 +861,4 @@ footer .powered-img {
     display: inline-block;
     height: 30px;
 }
+
