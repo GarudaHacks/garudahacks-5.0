@@ -370,13 +370,11 @@ footer a:hover {
 }
 
 .section-what .judges-title {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
+    font-family: PlusJakartaBold;
+    font-variant-ligatures: no-historical-ligatures;
+    font-feature-settings: "ss01", "ss02", "ss03";
     font-size: 48px;
-    line-height: 60px;
-    font-feature-settings: 'ss01' on;
-    color: #071729;
+    color: var(--laut-blue);
 }
 
 .section-what .judges-container {
@@ -449,11 +447,10 @@ footer a:hover {
     color: #071729;
 }
  
-.section-what .mlh-coc {
+.section-what .mlh-coc {  
     display: flex;
     justify-content: center;
-    font-family: Montserrat;
-    font-style: normal;
+    font-family: PlusJakartaBold;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
@@ -465,12 +462,11 @@ footer a:hover {
 }
 
 .section-what .btn-coc {
+    font-family: PlusJakartaBold;
     margin-top: 15px;
-    font-family: "Plus Jakarta Sans";
     color: #FFFCF3;
     font-weight: 600;
     background: #071729;
-    font-feature-settings: 'ss01' on;
     border-radius: 4px;
     padding: 15px 25px;
 }
