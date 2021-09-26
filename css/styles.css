@@ -29,7 +29,6 @@ body {
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
-    background-color: var(--kunyit-yellow);
 }
 
 nav {
@@ -197,10 +196,6 @@ footer a:hover {
     }
 }
 
-.section-what {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 .section-what .subtitle {
     display: block;
@@ -230,6 +225,10 @@ footer a:hover {
 
 .section-what .item-img img {
     max-width: 100%;
+}
+
+.expert {
+    background-color: var(--kunyit-yellow);
 }
 
 .expert .item {
