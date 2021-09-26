@@ -510,7 +510,7 @@ footer a:hover {
 }
 .section-track {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 140px;
     background-color: #071729;
 }
 
@@ -545,7 +545,7 @@ footer a:hover {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     max-width: 375px;
     background-color: #ffffff;
     border-radius: 5px;
