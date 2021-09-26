@@ -742,7 +742,12 @@ footer a:hover {
     padding-top: 30px;
     padding-bottom: 120px;
     background-color: #FFFCF3;
-    color: var(--text-dark);
+    color: #071729;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .section-sponsor-full h1 {
@@ -802,12 +807,12 @@ footer a:hover {
 footer {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color:  #E5E5E5;;
-    color: #0d3b66;
+    background-color: #071729;
+    color: #FFFCF3;
 }
 
 footer h1 {
-    color: #0d3b66;
+    color: #FFFCF3;
 }
 
 footer img {
