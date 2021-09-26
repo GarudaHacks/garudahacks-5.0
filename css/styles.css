@@ -533,12 +533,28 @@ footer a:hover {
 
 .section-prize {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
+    background-color: #F5DF4D;
+}
+
+.section-prize h1{
+    color: #071729;
+    font-family: PlusJakartaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    font-feature-settings: 'ss02' on;
 }
 
 .section-prize .subtitle {
-    display: block;
-    max-width: 700px;
+    color: #071729;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -547,13 +563,13 @@ footer a:hover {
 }
 
 .section-prize .item {
-    border: solid 1px #f3f3f3;
+    border: 4.19415px solid #071729;
     padding: 32px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 18.1747px;
     transition: 0.2s ease;
     height: 100%;
-    max-width: 375px;
+    max-width: 320px;
+    height: 300px;
 }
 
 .section-prize .item:hover {
@@ -565,18 +581,27 @@ footer a:hover {
     color: var(--text-dark);
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .section-prize .item .item-body {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .section-prize .prize-many {
     margin-top: 40px;
     text-align: center;
-    font-weight: 400;
-    font-size: 25px;
+    color: #071729;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .section-faq {
@@ -629,8 +654,6 @@ footer a:hover {
 .section-faq .card {
     margin-bottom: 25px;
     border-radius: 5px !important;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.04),
-        0 16px 24px 0 rgba(0, 0, 0, 0.04), 0 24px 32px 0 rgba(0, 0, 0, 0.04);
     border: solid 1px #e5e5e5;
     background-color: #ffffff;
     color: var(--text-primary);
