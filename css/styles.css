@@ -733,7 +733,6 @@ footer .powered-img {
 }
 
 .section-bydp .item .item-title{
-    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -744,6 +743,10 @@ footer .powered-img {
     padding-top: 8%;
     padding-left: 1em;
     color: #071729;
+
+    font-family: PlusJakartaBold;
+    font-variant-ligatures: no-historical-ligatures;
+    font-feature-settings: "ss01", "ss02", "ss03";
 }
 
 .section-bydp .item-desc {
@@ -788,11 +791,35 @@ footer .powered-img {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    margin-right: 30%;
+    margin-right: 25%;
     margin-left: 5%;
+    margin-bottom: 15%;
 }
 
-@media (max-width: 1490px) {
+@media (max-width: 1865px) {
+    .section-bydp .tools-container {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 1610px) {
+    .section-bydp .tools-container {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1477px) {
+    .section-bydp .tools-container {
+        justify-content: left;
+        margin-right: 10%;
+    }
+
+    .section-bydp .col-lg-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 1460px) {
     .section-bydp .tools-container {
         justify-content: center;
         margin-left: 0;
@@ -812,9 +839,16 @@ footer .powered-img {
 
 @media (max-width: 831px) {
     .section-bydp .item-title{
-        margin-top: 3em;
+        margin-top: 4em;
     }
 }
+
+@media (max-width: 335px) {
+    .section-bydp .item-title {
+        margin-top: 5em;
+    }
+}
+
 .section-bydp .tool-box {
     border: solid 3px #071729;
     margin-top: 30px;
