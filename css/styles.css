@@ -793,10 +793,10 @@ footer .powered-img {
     flex-wrap: wrap;
     margin-right: 25%;
     margin-left: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 }
 
-@media (max-width: 1865px) {
+@media (max-width: 1870px) {
     .section-bydp .tools-container {
         margin-bottom: 10%;
     }
@@ -811,7 +811,7 @@ footer .powered-img {
 @media (max-width: 1477px) {
     .section-bydp .tools-container {
         justify-content: left;
-        margin-right: 10%;
+        margin-right: 8%;
     }
 
     .section-bydp .col-lg-5 {
@@ -850,7 +850,7 @@ footer .powered-img {
 }
 
 .section-bydp .tool-box {
-    border: solid 3px #071729;
+    border: solid 4px #071729;
     margin-top: 30px;
     min-height: 250px;
     min-width: 275px;
@@ -882,14 +882,15 @@ footer .powered-img {
 }
 
 .section-bydp .tool-box .tool-name {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 25px;
     color: var(--text-dark);
     padding-top: 1.5em;
 }
 
 .section-bydp .tool-box .tool-desc {
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.6;
     color: #071729;
     padding-top: 0.5em;
