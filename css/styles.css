@@ -197,6 +197,21 @@ footer a:hover {
     }
 }
 
+.section-what {
+    background-color: #071729;
+}
+
+.section-what .container h1 {
+    font-family: PlusJakartaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 71px;
+    font-feature-settings: 'ss01' on;
+    color: #F5DF4D;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
 
 .section-what .subtitle {
     display: block;
@@ -279,7 +294,11 @@ footer a:hover {
     }
 }
 
-.section-what .tools-container {
+.section-sponsors {
+    background-color: #FFFCF3;
+}
+
+.section-sponsors .tools-container {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
@@ -287,12 +306,12 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
-    .section-what .tools-container {
+    .section-sponsors .tools-container {
         justify-content: center;
     }
 }
 
-.section-what .tool-box {
+.section-sponsors .tool-box {
     border: solid 1px #f3f3f3;
     margin-top: 30px;
     min-height: 225px;
@@ -305,71 +324,80 @@ footer a:hover {
     transition: 0.2s ease;
 }
 
-.section-what .tool-box:hover {
+.section-sponsors .tool-box:hover {
     transform: scale(1.02);
     transition: 0.2s ease;
 }
 
-.section-what .tool-box .tool-logo {
+.section-sponsors .tool-box .tool-logo {
     width: 50px;
     height: 50px;
 }
 
-.section-what .tool-box .tool-logo img {
+.section-sponsors .tool-box .tool-logo img {
     max-width: 100%;
     max-height: 100px;
     height: auto;
     width: auto;
 }
 
-.section-what .tool-box .tool-name {
+.section-sponsors .tool-box .tool-name {
     font-weight: 400;
     font-size: 20px;
     color: var(--text-dark);
 }
 
-.section-what .tool-box .tool-desc {
+.section-sponsors .tool-box .tool-desc {
     font-size: 17px;
     line-height: 1.6;
 }
 
-.section-what .hiring-title {
-    font-family: "Montserrat";
-    color: var(--text-dark);
-    font-size: 30px;
-    margin-top: 25px;
-    font-weight: 400;
+.sponsor-title-black {
+    background-color: #071729;
 }
 
-.section-what .hiring-container {
-    margin: 10px 0;
+.hiring-title {
+    margin-top: 0px;
+    font-family: PlusJakartaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    font-feature-settings: 'ss01' on;
+    color: #F5DF4D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-sponsors .hiring-container {
+    margin: 0px 0;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
 }
 
-.section-what .hiring-container img {
+.section-sponsors .hiring-container img {
     max-height: 5rem;
     max-width: 150px;
     margin: 1rem 0.5rem;
 }
 
-.section-what .hiring-container-blibli {
-    margin: 10px 0;
+.section-sponsors .hiring-container-title-sponsor {
+    margin: 0px 0;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
 }
 
-.section-what .hiring-container-blibli img {
+.section-sponsors .hiring-container-title-sponsori img {
     max-width: 100%;
     margin: 1rem 0.5rem;
 }
 
 @media screen and (min-width: 540px) {
-    .section-what .hiring-container-blibli img {
+    .section-sponsors .hiring-container-title-sponsor img {
         max-width: 350px;
         margin: 1rem 0.5rem;
     }
@@ -385,6 +413,7 @@ footer a:hover {
     font-feature-settings: "ss01", "ss02", "ss03";
     font-size: 48px;
     color: var(--laut-blue);
+    margin-top: 30px;
 }
 
 .section-what .judges-container {
@@ -502,8 +531,14 @@ footer a:hover {
 
 .section-track .subtitle {
     display: block;
-    max-width: 700px;
+    max-width: 900px;
     margin-bottom: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;  
+    color: #F5DF4D;
 }
 
 .section-track .item {
@@ -529,15 +564,22 @@ footer a:hover {
 }
 
 .section-track .item .item-title {
-    color: var(--text-dark);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 40px;
+    font-family: PlusJakartaBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    font-feature-settings: 'ss01' on;
+    color: #071729;
 }
 
 .section-track .item {
-    color: grey;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 23px;  
+    color: #071729;
 }
 
 .section-prize {
