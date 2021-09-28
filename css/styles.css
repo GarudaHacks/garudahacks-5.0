@@ -845,7 +845,6 @@ footer .powered-img {
 }
 
 .section-bydp{
-
     background-color: #F5DF4D;
 }
 
@@ -864,6 +863,10 @@ footer .powered-img {
     font-family: PlusJakartaBold;
     font-variant-ligatures: no-historical-ligatures;
     font-feature-settings: "ss01", "ss02", "ss03";
+}
+
+.section-bydp .item .row .col-md-9 .item-title {
+    margin-top: 100px !important;
 }
 
 .section-bydp .item-desc {
@@ -913,28 +916,16 @@ footer .powered-img {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    margin-right: 25%;
-    margin-left: 5%;
+    margin-right: 0%;
+    margin-left: 2%;
     margin-bottom: 20%;
 }
 
 @media (max-width: 1870px) {
     .section-bydp .tools-container {
-        margin-bottom: 10%;
-    }
-}
-
-@media (max-width: 1610px) {
-    .section-bydp .tools-container {
-        margin-bottom: 0;
+        margin-left: 2%;
+        margin-right: 0%;
         justify-content: left;
-    }
-}
-
-@media (max-width: 1490px) {
-    .section-bydp .tools-container {
-        justify-content: left;
-        margin-right: 10%;
     }
 
     .section-bydp .col-lg-5 {
@@ -942,11 +933,27 @@ footer .powered-img {
     }
 }
 
-@media (max-width: 1096px) {
+@media (max-width: 1610px) {
     .section-bydp .tools-container {
-        margin-left: 0;
-        margin-right: 0;
-        justify-content: center;
+        margin-left: 2%;
+        margin-right: 0%;
+        justify-content: left;
+    }
+
+    .section-bydp .col-lg-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 1490px) {
+    .section-bydp .tools-container {
+        justify-content: left;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+
+    .section-bydp .col-lg-5 {
+        display: none;
     }
 }
 
@@ -955,10 +962,19 @@ footer .powered-img {
     .section-bydp .tools-container {
         margin-left: 2%;
         margin-right: 0;
+        justify-content: left;
     }
 
     .section-bydp .col-lg-5 {
         display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .section-bydp .tools-container {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
     }
 }
 
