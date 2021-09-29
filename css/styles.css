@@ -25,28 +25,24 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
     background-color: #F5DF4D;
 }
 
-nav {
-    background-color: #ffffff;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
-        0 10px 20px 0 rgba(0, 0, 0, 0.04);
-}
 
 nav li {
-    font-family: "Montserrat", sans-serif;
+    font-family: PlusJakartaBold, sans-serif;
     font-weight: 700;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+
 nav #languageSelectorMobile {
-    font-family: "Montserrat", sans-serif;
+    font-family: PlusJakartaBold, sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: var(--text-primary);
@@ -62,7 +58,28 @@ h6 {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
-
+.title {
+    font-family: PlusJakartaBold, sans-serif;
+}
+.sub-title {
+    font-size: 2em;
+    color: white;
+    font-feature-settings: 'ss02' on, 'ss01' on, 'ss03' on;
+}
+.btn-transparent{
+    font-family: PlusJakartaBold, sans-serif;
+    margin-top: 10px;
+    background-color: transparent;
+    border: solid 3px black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+}
+.hero-content{
+    margin-top: 100px;
+    font-size: 18px;
+}
 footer {
     font-family: Montserrat;
 }
@@ -91,13 +108,20 @@ footer a:hover {
 .x-bold {
     font-weight: 800;
 }
-
+.nav-links{
+    
+    color: white !important;
+}
 .section-hero {
     color: var(--text-secondary);
-    background-color: var(--garuda-red);
+    background-image: url('../img/hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 125px;
-    padding-bottom: 125px;
+    padding-bottom: 205px;
     line-height: 1.6;
+    font-weight: 400;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -125,8 +149,9 @@ footer a:hover {
 }
 
 .section-hero .registration-fineprint {
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 14px;
+    padding-bottom: 0px;
 }
 
 .section-hero .hero-img {
@@ -136,14 +161,14 @@ footer a:hover {
 }
 
 .section-hero .btn-register {
+
     margin-top: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-family: PlusJakartaBold, sans-serif;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
         0 16px 24px 0 rgba(0, 0, 0, 0.06);
     border: solid 1px var(--grey);
-    color: var(--text-dark);
-    background-color: white;
+    color: white;
+    background-color: #071729;;
     padding: 15px 25px;
 }
 
