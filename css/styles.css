@@ -32,6 +32,9 @@ body {
     background-color: #F5DF4D;
 }
 
+nav {
+    background-color: #071729;
+}
 
 nav li {
     font-family: PlusJakartaBold, sans-serif;
@@ -126,8 +129,30 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
     .section-hero {
-        padding-top: 175px;
+        padding-top: 185px;
     }
+}
+
+@media screen and (min-width: 1500px) {
+    .section-hero {
+        padding-top: 185px;
+    }
+
+    .section-hero .hero-content {
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    .section-hero {
+        padding-top: 185px;
+    }
+
+    .section-hero .hero-content {
+        padding-top: 150px;
+    }
+
 }
 
 .section-hero strong {
