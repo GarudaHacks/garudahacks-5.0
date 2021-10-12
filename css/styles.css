@@ -695,7 +695,6 @@ footer a:hover {
     transition: 0.2s ease;
     height: 100%;
     max-width: 320px;
-    height: 300px;
 }
 
 .section-prize .item:hover {
@@ -707,7 +706,7 @@ footer a:hover {
     color: var(--text-dark);
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .section-prize .item .item-body {
@@ -715,6 +714,7 @@ footer a:hover {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .section-prize .prize-many {
