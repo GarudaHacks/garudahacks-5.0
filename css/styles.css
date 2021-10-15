@@ -36,11 +36,12 @@ nav {
     background-color: #071729 !important;
 }
 
+
 nav li {
     font-family: PlusJakartaBold, sans-serif;
     font-weight: 700;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 nav #languageSelector {
