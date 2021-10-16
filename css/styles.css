@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: var(--text-primary);
     font-size: 18px;
@@ -33,23 +33,26 @@ body {
 }
 
 nav {
-    background-color: #ffffff;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
-        0 10px 20px 0 rgba(0, 0, 0, 0.04);
+    background-color: #071729 !important;
 }
 
+
 nav li {
-    font-family: "Montserrat", sans-serif;
+    font-family: PlusJakartaBold, sans-serif;
     font-weight: 700;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
+}
+
+nav #languageSelector {
+    color: white;
 }
 
 nav #languageSelectorMobile {
-    font-family: "Montserrat", sans-serif;
+    font-family: PlusJakartaBold, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: white;
 }
 
 h1,
@@ -62,7 +65,28 @@ h6 {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
 }
-
+.title {
+    font-family: PlusJakartaBold, sans-serif;
+}
+.sub-title {
+    font-size: 2em;
+    color: white;
+    font-feature-settings: 'ss02' on, 'ss01' on, 'ss03' on;
+}
+.btn{
+    font-family: PlusJakartaBold, sans-serif;
+    margin-top: 10px;
+    background-color: #F5DF4D;
+    border: solid 3px black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 270px;
+}
+.hero-content{
+    margin-top: 200px;
+    font-size: 22px;
+}
 footer {
     font-family: Montserrat;
 }
@@ -91,23 +115,54 @@ footer a:hover {
 .x-bold {
     font-weight: 800;
 }
-
+.nav-links{
+    
+    color: white !important;
+}
 .section-hero {
     color: var(--text-secondary);
-    background-color: var(--garuda-red);
+    background-image: url('../img/hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 125px;
-    padding-bottom: 125px;
+    padding-bottom: 205px;
     line-height: 1.6;
+    font-weight: 500;
+
+}
+@media screen and (min-width: 317px) {
+    .section-hero {
+        padding-top: 205px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .section-hero {
-        padding-top: 175px;
+        padding-top: 185px;
     }
+}
+
+@media screen and (min-width: 1500px) {
+    .section-hero {
+        padding-top: 185px;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    .section-hero {
+        padding-top: 185px;
+    }
+
+    .section-hero .hero-content {
+        padding-top: 50px;
+    }
+
 }
 
 .section-hero strong {
     font-weight: 700;
+    font-size: 22px;
 }
 
 .section-hero h1 {
@@ -125,8 +180,14 @@ footer a:hover {
 }
 
 .section-hero .registration-fineprint {
-    padding-top: 10px;
-    font-size: 14px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 0px;
+}
+
+.section-hero .btn {
+    font-size: 18px;
 }
 
 .section-hero .hero-img {
@@ -136,14 +197,14 @@ footer a:hover {
 }
 
 .section-hero .btn-register {
+    width: 310px;
     margin-top: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-family: PlusJakartaBold, sans-serif;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
         0 16px 24px 0 rgba(0, 0, 0, 0.06);
     border: solid 1px var(--grey);
-    color: var(--text-dark);
-    background-color: white;
+    color: white;
+    background-color: #071729;;
     padding: 15px 25px;
 }
 
@@ -248,6 +309,7 @@ footer a:hover {
 }
 
 .expert {
+    padding-top: 30px;
     background-color: var(--kunyit-yellow);
 }
 
@@ -258,6 +320,10 @@ footer a:hover {
     font-size: 17px;
     line-height: 1.6;
     font-weight: 600;
+}
+
+.expert .iten-title p{
+    font-size: 48px;
 }
 
 .expert .item-desc1 {
@@ -304,6 +370,7 @@ footer a:hover {
 
 .section-sponsors {
     background-color: #FFFCF3;
+    padding-bottom: 30px;
 }
 
 .section-sponsors .tools-container {
@@ -362,6 +429,7 @@ footer a:hover {
 
 .sponsor-title-black {
     background-color: #FFFCF3;
+    padding-top: 30px;
 }
 
 .hiring-title {
@@ -386,8 +454,8 @@ footer a:hover {
 }
 
 .section-sponsors .hiring-container img {
-    max-height: 5rem;
-    max-width: 150px;
+    max-height: 6rem;
+    max-width: 250px;
     margin: 1rem 0.5rem;
 }
 
@@ -515,6 +583,7 @@ footer a:hover {
     background: #071729;
     border-radius: 4px;
     padding: 15px 25px;
+    width: 420px;
 }
 .section-track {
     padding-bottom: 120px;
@@ -627,7 +696,6 @@ footer a:hover {
     transition: 0.2s ease;
     height: 100%;
     max-width: 320px;
-    height: 300px;
 }
 
 .section-prize .item:hover {
@@ -639,7 +707,7 @@ footer a:hover {
     color: var(--text-dark);
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .section-prize .item .item-body {
@@ -647,6 +715,7 @@ footer a:hover {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .section-prize .prize-many {
@@ -689,7 +758,6 @@ footer a:hover {
     line-height: 30px;
 }
 .section-faq p {
-    position: absolute;
     color: #071729;
     font-family: PlusJakartaBold;
     font-style: normal;
@@ -726,6 +794,11 @@ footer a:hover {
 .section-faq .card .collapsed .fa-chevron-up {
     transform: rotate(180deg);
     transition: transform 0.25s ease;
+}
+
+.card-body {
+    font-family: Montserrat;
+    font-weight: 500;
 }
 
 .section-faq .card-header {
@@ -812,7 +885,7 @@ footer a:hover {
 }
 
 footer {
-    padding-top: 120px;
+    padding-top: 0px;
     padding-bottom: 120px;
     background-color: #071729;
     color: #FFFCF3;
@@ -848,6 +921,7 @@ footer .powered-img {
     background-color: #F5DF4D;
 }
 
+
 .section-bydp .item .item-title{
     font-size: 48px;
     font-style: normal;
@@ -868,6 +942,32 @@ footer .powered-img {
 .section-bydp .item .row .col-md-9 .item-title {
     margin-top: 100px !important;
 }
+
+@media(max-width: 570px)
+{
+    .section-bydp .item .item-title {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        font-size: 48px;
+    }
+
+    .section-bydp .item .item-desc {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .section-bydp .item .row .col-xs-12 {
+        margin-top: 150px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+
 
 .section-bydp .item-desc {
     font-family: "Montserrat";
