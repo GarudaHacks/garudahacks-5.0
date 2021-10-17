@@ -644,7 +644,7 @@ footer a:hover {
     font-family: PlusJakartaBold;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 35px;
     line-height: 60px;
     font-feature-settings: 'ss01' on;
     color: #071729;
@@ -885,7 +885,7 @@ footer a:hover {
 }
 
 footer {
-    padding-top: 0px;
+    padding-top: 120px;
     padding-bottom: 120px;
     background-color: #071729;
     color: #FFFCF3;
