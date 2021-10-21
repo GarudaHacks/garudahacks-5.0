@@ -278,6 +278,29 @@ footer a:hover {
     padding-bottom: 40px;
 }
 
+.section-what .container p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F5DF4D;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.section-what .container h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F5DF4D;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+
 .section-what .subtitle {
     display: block;
     max-width: 700px;
@@ -370,7 +393,7 @@ footer a:hover {
 
 .section-sponsors {
     background-color: #FFFCF3;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .section-sponsors .tools-container {
@@ -819,8 +842,8 @@ footer a:hover {
 }
 
 .section-sponsor-full {
-    padding-top: 30px;
-    padding-bottom: 120px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     background-color: #FFFCF3;
     color: #071729;
     font-family: Montserrat;
@@ -885,7 +908,7 @@ footer a:hover {
 }
 
 footer {
-    padding-top: 120px;
+    padding-top: 0px;
     padding-bottom: 120px;
     background-color: #071729;
     color: #FFFCF3;
