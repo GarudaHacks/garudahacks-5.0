@@ -519,7 +519,6 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 @media (max-width: 767px) {
@@ -535,10 +534,12 @@ footer a:hover {
     min-height: 225px;
     min-width: 250px;
     max-height: 260px;
-    max-width: 250px;
+    max-width: 260px;
     padding: 32px;
     border-radius: 13px;
     transition: 0.2s ease;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .section-what .judge-box:hover {
