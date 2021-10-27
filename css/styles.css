@@ -34,6 +34,7 @@ body {
 
 nav {
     background-color: #071729 !important;
+    padding-right: 130px !important;
 }
 
 
@@ -197,15 +198,14 @@ footer a:hover {
 }
 
 .section-hero .btn-register {
-    width: 310px;
+    width: 500px;
     margin-top: 15px;
     font-family: PlusJakartaBold, sans-serif;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
-        0 16px 24px 0 rgba(0, 0, 0, 0.06);
     border: solid 1px var(--grey);
     color: white;
     background-color: #071729;;
     padding: 15px 25px;
+    font-size: 23px;
 }
 
 .section-sponsor {
@@ -276,6 +276,29 @@ footer a:hover {
     color: #F5DF4D;
     padding-top: 60px;
     padding-bottom: 40px;
+}
+
+.section-what .container p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F5DF4D;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.section-what .container h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F5DF4D;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 0px;
 }
 
 .section-what .subtitle {
@@ -370,7 +393,7 @@ footer a:hover {
 
 .section-sponsors {
     background-color: #FFFCF3;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .section-sponsors .tools-container {
@@ -496,7 +519,6 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 @media (max-width: 767px) {
@@ -512,10 +534,12 @@ footer a:hover {
     min-height: 225px;
     min-width: 250px;
     max-height: 260px;
-    max-width: 250px;
+    max-width: 260px;
     padding: 32px;
     border-radius: 13px;
     transition: 0.2s ease;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .section-what .judge-box:hover {
@@ -644,7 +668,7 @@ footer a:hover {
     font-family: PlusJakartaBold;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 35px;
     line-height: 60px;
     font-feature-settings: 'ss01' on;
     color: #071729;
@@ -819,8 +843,8 @@ footer a:hover {
 }
 
 .section-sponsor-full {
-    padding-top: 30px;
-    padding-bottom: 120px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     background-color: #FFFCF3;
     color: #071729;
     font-family: Montserrat;
