@@ -46,20 +46,3 @@ $(".prize-expand").click(function () {
     }
 });
 
-function updateLanguageSelector(language) {
-    if (language == "id") {
-        $("#languageSelector").html("🇮🇩 Bahasa Indonesia");
-        $("#languageSelectorMobile").html("🇮🇩 Bahasa Indonesia");
-    } else {
-        $("#languageSelector").html("🇬🇧 English");
-        $("#languageSelectorMobile").html("🇬🇧 English");
-    }
-}
-
-Weglot.on("languageChanged", function (newLang) {
-    updateLanguageSelector(newLang);
-});
-
-Weglot.on("initialized", function () {
-    updateLanguageSelector(Weglot.getCurrentLang());
-});
