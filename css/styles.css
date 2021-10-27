@@ -34,7 +34,13 @@ body {
 
 nav {
     background-color: #071729 !important;
-    padding-right: 130px !important;
+}
+
+@media (min-width: 990px) {
+    nav {
+        background-color: #071729 !important;
+        padding-right: 130px !important;
+    }
 }
 
 
@@ -319,6 +325,7 @@ footer a:hover {
     font-feature-settings: "ss01", "ss02", "ss03";
     font-size: 40px;
     color: var(--laut-blue);
+    line-height: 1;
 }
 
 .section-what .item-desc {
