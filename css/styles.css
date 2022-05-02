@@ -20,6 +20,39 @@
     src: url(../font/PlusJakartaSans-Bold.ttf) format("truetype");
 }
 
+/* coming soon page */
+.comingsoon {
+    background-color: #071729 !important;
+    height: 100vh;
+    align-items: center;
+}
+
+.csImg {
+    width: 20%;
+}
+
+.csText {
+    font-family: PlusJakartaBold, sans-serif;
+    font-size: 3em;
+    color: white;
+    font-feature-settings: 'ss02' on, 'ss01' on, 'ss03' on;
+}
+
+.csText2 {
+    font-family: PlusJakartaBold, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    font-feature-settings: 'ss02' on, 'ss01' on, 'ss03' on;
+}
+
+.csRow {
+    padding-top: 2em;
+}
+
+
+/* coming soon page */
+
+
 html {
     scroll-behavior: smooth;
 }
