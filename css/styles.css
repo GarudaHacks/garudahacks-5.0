@@ -120,6 +120,8 @@ footer a:hover {
 
 .section-hero .hero-img {
     display: block;
+    margin-top: -5vw;
+    margin-bottom: 2vw;
     max-width: 400px;
     width: 100%;
 }
@@ -235,6 +237,10 @@ footer a:hover {
 @media (max-width: 767px) {
     .section-what .tools-container {
         justify-content: center;
+    }
+
+    #dreamImg {
+        display: none;
     }
 }
 
@@ -516,7 +522,7 @@ footer a:hover {
 }
 
 .section-faq {
-    background-color: var(--grey-2);
+    background-color: var(--garuda-red);
     color: var(--text-secondary);
     padding-top: 120px;
     padding-bottom: 120px;
@@ -666,4 +672,10 @@ footer .powered-img {
     padding-left: 5px;
     display: inline-block;
     height: 30px;
+}
+
+#dreamImg {
+    padding-left: auto;
+    padding-right: auto;
+    object-fit: cover;
 }

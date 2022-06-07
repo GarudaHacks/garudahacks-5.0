@@ -251,7 +251,14 @@
         <section class="section-hero" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6 text-center text-lg-left">
+                    <div class="col-12 col-lg-12 mt-5">
+                        <img
+                            src="./img/hero.svg"
+                            class="mx-auto hero-img"
+                            alt="An illustration of a person programming"
+                        />
+                    </div>
+                    <div class="col-12 col-lg-12 text-center">
                         <h1>
                             Build the Future at Garuda Hacks.
                         </h1>
@@ -272,7 +279,7 @@
                         <p>
                             Mark your calendars!
                         </p> 
-                        <div class="row d-block d-lg-flex">
+                        <div class="row d-block">
                             <div class="col-auto">
                                 <a class="btn btn-register" href="https://airtable.com/shrAvQ5mDnbBySrnc"
                                     >REGISTER AS PARTICIPANT</a
@@ -291,17 +298,10 @@
                             Open to both Indonesian citizens and non-citizens.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-6 mt-5">
-                        <img
-                            src="./img/hero.svg"
-                            class="mx-auto hero-img"
-                            alt="An illustration of a person programming"
-                        />
-                    </div>
                 </div>
             </div>
         </section>
-        <section class="section-sponsor">
+        <!-- <section class="section-sponsor">
             <div class="container">
                 <p class="text-center sponsor-text">
                     Supported By
@@ -381,10 +381,10 @@
                     />
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section-what" id="activity">
             <div class="container">
-                <h1 class="mb-5 text-center text-md-left">
+                <h1 class="mb-5 text-center">
                     What's Happening at Garuda Hacks?
                 </h1>
                 <iframe
@@ -397,22 +397,24 @@
                     style="background: transparent; border: 1px solid #ccc;"
                 ></iframe>
                 <p>Note: Schedule is shown on your computer timezone</p>
+                <hr />
                 <div class="item">
-                    <p class="item-title">Build your dream project.</p>
+                    <h1 class="mb-5 text-center">Build your dream project.</h1>
                     <div class="row">
-                        <div class="item-desc col-12 col-md-auto">
+                        <div class="item-desc col-md-5 col-sm-6 col-lg-5">
                             Garuda Hacks challenges your creativity, innovation,
                             and skills by facilitating an immersive environment
-                            for innovators!<br /><br />
-
+                            for innovators!
+                        </div>
+                        <div class="item-img col-md-2 col-lg-2" id="dreamImg">
+                            <img src="./img/code.svg" />
+                        </div>
+                        <div class="item-desc col-md-5 col-sm-6 col-lg-5">
                             <strong
                                 >Participants will receive free access to
                                 various premium tools and softwares to help
                                 build their project.</strong
                             >
-                        </div>
-                        <div class="item-img col-12 col-md-auto pl-md-5 pt-5">
-                            <img src="./img/code.svg" />
                         </div>
                     </div>
             
@@ -510,43 +512,48 @@
                 </div>
                 <hr />
                 <div class="item">
-                    <p class="item-title">Learn from experts.</p>
+                    <h1 class="mb-5 text-center">Learn from experts.</h1>
                     <div class="row">
-                        <div class="item-desc col-12 col-md-auto">
-                            With professionals from the tech industry as our
+                        <div class="row">
+                            <div class="item-desc col-md-5 col-sm-6 col-lg-5">
+                                With professionals from the tech industry as our
                             guest-speakers, our workshops will open new channels
-                            and expand your knowledge.<br /><br />
-
-                            <strong
+                            and expand your knowledge.
+                            </div>
+                            <div class="item-img col-md-2 col-lg-2" id="dreamImg">
+                                <img src="./img/learn.svg" />
+                            </div>
+                            <div class="item-desc col-md-5 col-sm-6 col-lg-5">
+                                <strong
                                 >Participate in workshops covering topics such
                                 as software engineering, product design, to
                                 startups.</strong
                             >
-                        </div>
-                        <div class="item-img col-12 col-md-auto pl-md-5 pt-5">
-                            <img src="./img/learn.svg" />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <hr />
 
                 <div class="item">
-                    <p class="item-title">Win prizes and get recruited.</p>
+                    <h1 class="mb-5 text-center">Win prizes and get recruited.</h1>
                     <div class="row">
-                        <div class="item-desc col-12 col-md-auto">
+                        <div class="item-desc col-md-5 col-sm-6 col-lg-4">
                             Rise to the top and win various prizes like money, a
                             pitching session with Silicon Valley investors, a
-                            spot in a startup accelerator, and many more.<br /><br />
-
+                            spot in a startup accelerator, and many more.
+                        </div>
+                        <div class="item-img col-md-2 col-lg-4" id="dreamImg">
+                            <img src="./img/win.svg" />
+                        </div>
+                        <div class="item-desc col-md-5 col-sm-6 col-lg-4">
                             <strong
                                 >Winners will also stand a chance to receive a
                                 prioritized job application process to
                                 Indonesia's top technology companies.</strong
                             >
                         </div>
-                        <div class="item-img col-12 col-md-auto pl-md-5 pt-5">
-                            <img src="./img/win.svg" />
-                        </div>
+                        
                     </div>
 
                     <!-- 
@@ -565,7 +572,7 @@
                         <img src="./img/sponsor/kotakode.png" />
                     </div>
                     -->
-
+                    
                     <div class="judges-title">Judges</div>
                     <div class="judges-container">
                         <div class="judge-box">
@@ -1475,13 +1482,13 @@
                             <p class="bold">
                                 Virtual, August 2022
                             </p>
-                            <p>
+                            <!-- <p>
                                 <i>Powered by</i>
                                 <img
                                     class="powered-img"
                                     src="./img/sponsor/blibli-mono.png"
                                 />
-                            </p>
+                            </p> -->
 
                             <p>
                                 Follow our
