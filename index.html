@@ -1,146 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-167375737-1"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167375737-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            gtag("config", "UA-167375737-1");
-        </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta
-            name="description"
-            content="Garuda Hacks is a global 48-hour hackathon event where the world's greatest talents will compete to solve the world's most pressing challenges using technology. Held virtually, August 12-14 2022."
-        />
-        <meta
-            property="og:title"
-            content="Garuda Hacks | Indonesia's Premier Global Hackathon"
-        />
-        <meta
-            property="og:description"
-            content="Garuda Hacks is a global 36-hour virtual
+        gtag("config", "UA-167375737-1");
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="Garuda Hacks is a global 48-hour hackathon event where the world's greatest talents will compete to solve the world's most pressing challenges using technology. Held virtually, August 12-14 2022." />
+    <meta property="og:title" content="Garuda Hacks | Indonesia's Premier Global Hackathon" />
+    <meta property="og:description" content="Garuda Hacks is a global 36-hour virtual
             hackathon where the world's greatest talents will
             compete to solve the world's most pressing
-            challenges using technology."
-        />
-        <meta
-            property="og:image"
-            content="https://garudahacks.com/img/share-banner.png"
-        />
-        <meta property="og:url" content="https://garudahacks.com" />
-        <meta name="twitter:card" content="summary_large_image" />
+            challenges using technology." />
+    <meta property="og:image" content="https://garudahacks.com/img/share-banner.png" />
+    <meta property="og:url" content="https://garudahacks.com" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./img/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./img/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./img/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
 
-        <!-- Bootstrap CSS -->
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-        <script
-            src="https://kit.fontawesome.com/b2247133c9.js"
-            crossorigin="anonymous"
-        ></script>
+    <script src="https://kit.fontawesome.com/b2247133c9.js" crossorigin="anonymous"></script>
 
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" />
 
-        <title>Garuda Hacks | Indonesia's Premier Global Hackathon</title>
+    <title>Garuda Hacks | Indonesia's Premier Global Hackathon</title>
 
-        <link rel="alternate" hreflang="en" href="https://garudahacks.com" />
-        <link rel="alternate" hreflang="id" href="https://id.garudahacks.com" />
-        <script
-            type="text/javascript"
-            src="https://cdn.weglot.com/weglot.min.js"
-        ></script>
-        <script>
-            Weglot.initialize({
-                api_key: "wg_eb8051f11a504cc4d97f0c8c513b885a2",
-                hide_switcher: true,
-            });
-        </script>
-        <!-- Facebook Pixel Code -->
-        <script>
-            !(function (f, b, e, v, n, t, s) {
-                if (f.fbq) return;
-                n = f.fbq = function () {
-                    n.callMethod
-                        ? n.callMethod.apply(n, arguments)
-                        : n.queue.push(arguments);
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = "2.0";
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s);
-            })(
-                window,
-                document,
-                "script",
-                "https://connect.facebook.net/en_US/fbevents.js"
-            );
-            fbq("init", "582480949358417");
-            fbq("track", "PageView");
-        </script>
-        <noscript
-            ><img
-                height="1"
-                width="1"
-                style="display: none;"
-                src="https://www.facebook.com/tr?id=582480949358417&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
-    </head>
+    <link rel="alternate" hreflang="en" href="https://garudahacks.com" />
+    <link rel="alternate" hreflang="id" href="https://id.garudahacks.com" />
+    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+    <script>
+        Weglot.initialize({
+            api_key: "wg_eb8051f11a504cc4d97f0c8c513b885a2",
+            hide_switcher: true,
+        });
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(
+            window,
+            document,
+            "script",
+            "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "582480949358417");
+        fbq("track", "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display: none;"
+            src="https://www.facebook.com/tr?id=582480949358417&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
 
-    <body>
-        <!-- <a
+<body>
+    <!-- <a
             id="mlh-trust-badge"
             style="
                 display: block;
@@ -159,152 +110,109 @@
                 alt="Major League Hacking 2021 Hackathon Season"
                 style="width: 100%;"
         /></a> -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-           
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="dropdown d-lg-none d-xl-none mr-auto">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="languageSelectorMobile"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                </a>
-                <div
-                    class="dropdown-menu dropdown-menu-center"
-                    aria-labelledby="languageSelectorMobile"
-                >
-                    <a class="dropdown-item" target="_self" href="https://id.garudahacks.com">🇮🇩 Bahasa Indonesia</a>
-                    <a class="dropdown-item" target="_self" href="https://garudahacks.com">🇬🇧 English</a>
-                </div>
+
+        <div class="dropdown d-lg-none d-xl-none mr-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="languageSelectorMobile" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </a>
+            <div class="dropdown-menu dropdown-menu-center" aria-labelledby="languageSelectorMobile">
+                <a class="dropdown-item" target="_self" href="https://id.garudahacks.com">🇮🇩 Bahasa Indonesia</a>
+                <a class="dropdown-item" target="_self" href="https://garudahacks.com">🇬🇧 English</a>
             </div>
+        </div>
 
-            <a class="navbar-brand d-md-block" href="#"
-            ><img
-                style="height: 45px;"
-                src="./img/logo.png"
-                alt="Garuda Hacks Logo"
-        /></a>
+        <a class="navbar-brand d-md-block" href="#"><img style="height: 45px;" src="./img/logo.png"
+                alt="Garuda Hacks Logo" /></a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activity">Activity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#track">Track</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#prize">Prizes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sponsor">Sponsor</a>
-                    </li>
-                    <li
-                        class="nav-item dropdown d-none d-lg-block d-xl-block"
-                        style="margin-right: 100px;"
-                    >
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="languageSelector"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                        </a>
-                        <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="languageSelector"
-                        >
-                            <a class="dropdown-item" target="_self" href="https://id.garudahacks.com"
-                                >🇮🇩 Bahasa Indonesia</a
-                            >
-                            <a class="dropdown-item" target="_self" href="https://garudahacks.com"
-                                >🇬🇧 English</a
-                            >
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <section class="section-hero" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-12 mt-5">
-                        <img
-                            src="./img/hero.svg"
-                            class="mx-auto hero-img"
-                            alt="An illustration of a person programming"
-                        />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#activity">Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#track">Track</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prize">Prizes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sponsor">Sponsor</a>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-block d-xl-block" style="margin-right: 100px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageSelector">
+                        <a class="dropdown-item" target="_self" href="https://id.garudahacks.com">🇮🇩 Bahasa
+                            Indonesia</a>
+                        <a class="dropdown-item" target="_self" href="https://garudahacks.com">🇬🇧 English</a>
                     </div>
-                    <div class="col-12 col-lg-12 text-center">
-                        <h1>
-                            Build the Future at Garuda Hacks.
-                        </h1>
-                        <p>
-                            Garuda Hacks 3.0 is a global 48-hour virtual hackathon
-                            where the world's greatest talents compete to solve
-                            the world's most pressing challenges using technology.<br /><br />
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-                            Win various prizes, receive certificates, and get
-                            prioritized job applications at Indonesia's top
-                            technology companies.
-                        </p>
-                        <strong>
-                            Held virtually, August 12-14 2022
-                        </strong>
-                        <p>
-                            Mark your calendars!
-                        </p> 
-                        <div class="row d-block">
-                            <div class="col-auto">
-                                <a class="btn btn-register" href="https://airtable.com/shrAvQ5mDnbBySrnc"
-                                    >REGISTER AS PARTICIPANT</a
-                                >
-                                <a class="btn btn-register" href="https://airtable.com/shrfNKGMYfujUXoGX"
-                                    >REGISTER AS MENTOR</a
-                                >
-                            </div>
-                            
-                            <!-- <div class="col-auto">
+    <section class="section-hero" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 mt-5">
+                    <img src="./img/hero.svg" class="mx-auto hero-img" alt="An illustration of a person programming" />
+                </div>
+                <div class="col-12 col-lg-12 text-center">
+                    <h1>
+                        Build the Future at Garuda Hacks.
+                    </h1>
+                    <p>
+                        Garuda Hacks 3.0 is a global 48-hour virtual hackathon
+                        where the world's greatest talents compete to solve
+                        the world's most pressing challenges using technology.<br /><br />
+
+                        Win various prizes, receive certificates, and get
+                        prioritized job applications at Indonesia's top
+                        technology companies.
+                    </p>
+                    <strong>
+                        Held virtually, August 12-14 2022
+                    </strong>
+                    <p>
+                        Mark your calendars!
+                    </p>
+                    <div class="row d-block">
+                        <div class="col-auto">
+                            <a class="btn btn-register" href="https://airtable.com/shrAvQ5mDnbBySrnc">REGISTER AS
+                                PARTICIPANT</a>
+                            <a class="btn btn-register" href="https://airtable.com/shrfNKGMYfujUXoGX">REGISTER AS
+                                MENTOR</a>
+                        </div>
+
+                        <!-- <div class="col-auto">
                                 <a
                                     class="btn btn-register"
                                     href="https://garudahacks.com/livestream"
                                     >WATCH OUR LIVESTREAM</a
                                 >
                             </div> -->
-                        </div>
-                        <p class="registration-fineprint">
-                            Open to both Indonesian citizens and non-citizens.
-                        </p>
                     </div>
+                    <p class="registration-fineprint">
+                        Open to both Indonesian citizens and non-citizens.
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- <section class="section-sponsor">
+        </div>
+    </section>
+    <!-- <section class="section-sponsor">
             <div class="container">
                 <p class="text-center sponsor-text">
                     Supported By
@@ -385,76 +293,68 @@
                 </div>
             </div>
         </section> -->
-        <section class="section-what" id="activity">
-            <div class="container">
-                <h1 class="mb-5 text-center">
-                    What's Happening at Garuda Hacks?
-                </h1>
-                <iframe
-                    class="airtable-embed"
-                    src="https://airtable.com/embed/shryFDF9ezF6YjWss?backgroundColor=pink"
-                    frameborder="0"
-                    onmousewheel=""
-                    width="100%"
-                    height="533"
-                    style="background: transparent; border: 1px solid #ccc;"
-                ></iframe>
-                <p>Note: Schedule is shown on your computer timezone</p>
-                <hr />
-                <div class="item">
-                    <h1 class="mb-5 text-center">Build your dream project.</h1>
-                    <div class="row">
-                        <div class="item-desc col-md-5 col-sm-6 col-lg-5">
-                            Garuda Hacks challenges your creativity, innovation,
-                            and skills by facilitating an immersive environment
-                            for innovators!
+    <section class="section-what" id="activity">
+        <div class="container">
+            <h1 class="mb-5 text-center">
+                What's Happening at Garuda Hacks?
+            </h1>
+            <iframe class="airtable-embed" src="https://airtable.com/embed/shryFDF9ezF6YjWss?backgroundColor=pink"
+                frameborder="0" onmousewheel="" width="100%" height="533"
+                style="background: transparent; border: 1px solid #ccc;"></iframe>
+            <p>Note: Schedule is shown on your computer timezone</p>
+            <hr />
+            <div class="item">
+                <h1 class="mb-5 text-center">Build your dream project.</h1>
+                <div class="row">
+                    <div class="item-desc col-md-5 col-sm-6 col-lg-5">
+                        Garuda Hacks challenges your creativity, innovation,
+                        and skills by facilitating an immersive environment
+                        for innovators!
+                    </div>
+                    <div class="item-img col-md-2 col-lg-2" id="dreamImg">
+                        <img src="./img/code.svg" />
+                    </div>
+                    <div class="item-desc col-md-5 col-sm-6 col-lg-5">
+                        <strong>Participants will receive free access to
+                            various premium tools and softwares to help
+                            build their project.</strong>
+                    </div>
+                </div>
+
+                <div class="tools-container">
+                    <div class="tool-box">
+                        <div class="tool-name">
+                            Coming soon!
                         </div>
-                        <div class="item-img col-md-2 col-lg-2" id="dreamImg">
-                            <img src="./img/code.svg" />
-                        </div>
-                        <div class="item-desc col-md-5 col-sm-6 col-lg-5">
-                            <strong
-                                >Participants will receive free access to
-                                various premium tools and softwares to help
-                                build their project.</strong
-                            >
+                        <div class="tool-desc">
+                            Further details to be announced!
                         </div>
                     </div>
-            
-                    <div class="tools-container">
-                        <div class="tool-box">
-                            <div class="tool-name">
-                                Coming soon!
-                            </div>
-                            <div class="tool-desc">
-                                Further details to be announced!
-                            </div>
+                    <div class="tool-box">
+                        <div class="tool-name">
+                            Coming soon!
                         </div>
-                        <div class="tool-box">
-                            <div class="tool-name">
-                                Coming soon!
-                            </div>
-                            <div class="tool-desc">
-                                Further details to be announced!
-                            </div>
+                        <div class="tool-desc">
+                            Further details to be announced!
                         </div>
-                        <div class="tool-box">
-                            <div class="tool-name">
-                                Coming soon!
-                            </div>
-                            <div class="tool-desc">
-                                Further details to be announced!
-                            </div>
+                    </div>
+                    <div class="tool-box">
+                        <div class="tool-name">
+                            Coming soon!
                         </div>
-                        <div class="tool-box">
-                            <div class="tool-name">
-                                Coming soon!
-                            </div>
-                            <div class="tool-desc">
-                                Further details to be announced!
-                            </div>
+                        <div class="tool-desc">
+                            Further details to be announced!
                         </div>
-                        <!--
+                    </div>
+                    <div class="tool-box">
+                        <div class="tool-name">
+                            Coming soon!
+                        </div>
+                        <div class="tool-desc">
+                            Further details to be announced!
+                        </div>
+                    </div>
+                    <!--
                         <div class="tool-box">
                             <div class="tool-logo">
                                 <img src="./img/sponsor/xyz.png" />
@@ -511,55 +411,51 @@
                             </div>
                         </div>
                         -->
-                    </div>
                 </div>
-                <hr />
-                <div class="item">
-                    <h1 class="mb-5 text-center">Learn from experts.</h1>
+            </div>
+            <hr />
+            <div class="item">
+                <h1 class="mb-5 text-center">Learn from experts.</h1>
+                <div class="row">
                     <div class="row">
-                        <div class="row">
-                            <div class="item-desc col-md-5 col-sm-6 col-lg-5">
-                                With professionals from the tech industry as our
+                        <div class="item-desc col-md-5 col-sm-6 col-lg-5">
+                            With professionals from the tech industry as our
                             guest-speakers, our workshops will open new channels
                             and expand your knowledge.
-                            </div>
-                            <div class="item-img col-md-2 col-lg-2" id="dreamImg">
-                                <img src="./img/learn.svg" />
-                            </div>
-                            <div class="item-desc col-md-5 col-sm-6 col-lg-5">
-                                <strong
-                                >Participate in workshops covering topics such
+                        </div>
+                        <div class="item-img col-md-2 col-lg-2" id="dreamImg">
+                            <img src="./img/learn.svg" />
+                        </div>
+                        <div class="item-desc col-md-5 col-sm-6 col-lg-5">
+                            <strong>Participate in workshops covering topics such
                                 as software engineering, product design, to
-                                startups.</strong
-                            >
-                            </div>
+                                startups.</strong>
                         </div>
                     </div>
                 </div>
-                <hr />
+            </div>
+            <hr />
 
-                <div class="item">
-                    <h1 class="mb-5 text-center">Win prizes and get recruited.</h1>
-                    <div class="row">
-                        <div class="item-desc col-md-5 col-sm-6 col-lg-4">
-                            Rise to the top and win various prizes like money, a
-                            pitching session with Silicon Valley investors, a
-                            spot in a startup accelerator, and many more.
-                        </div>
-                        <div class="item-img col-md-2 col-lg-4" id="dreamImg">
-                            <img src="./img/win.svg" />
-                        </div>
-                        <div class="item-desc col-md-5 col-sm-6 col-lg-4">
-                            <strong
-                                >Winners will also stand a chance to receive a
-                                prioritized job application process to
-                                Indonesia's top technology companies.</strong
-                            >
-                        </div>
-                        
+            <div class="item">
+                <h1 class="mb-5 text-center">Win prizes and get recruited.</h1>
+                <div class="row">
+                    <div class="item-desc col-md-5 col-sm-6 col-lg-4">
+                        Rise to the top and win various prizes like money, a
+                        pitching session with Silicon Valley investors, a
+                        spot in a startup accelerator, and many more.
+                    </div>
+                    <div class="item-img col-md-2 col-lg-4" id="dreamImg">
+                        <img src="./img/win.svg" />
+                    </div>
+                    <div class="item-desc col-md-5 col-sm-6 col-lg-4">
+                        <strong>Winners will also stand a chance to receive a
+                            prioritized job application process to
+                            Indonesia's top technology companies.</strong>
                     </div>
 
-                    <!-- 
+                </div>
+
+                <!-- 
                     <div class="hiring-title">Hiring Partners</div>
                     <div class="hiring-container-blibli">
                         <a href="https://careers.blibli.com/"
@@ -575,560 +471,506 @@
                         <img src="./img/sponsor/kotakode.png" />
                     </div>
                     -->
-                    
-                    <div class="judges-title">Judges</div>
-                    <div class="judges-container">
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
-                            </div>
-                            <div class="judge-name">
-                                Judge Name
-                            </div>
-                            <div class="judge-desc">
-                                Judge Desc
-                            </div>
+
+                <div class="judges-title">Judges</div>
+                <div class="judges-container">
+                    <div class="judge-box">
+                        <div class="judge-pic">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
                         </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
-                            </div>
-                            <div class="judge-name">
-                                Judge Name
-                            </div>
-                            <div class="judge-desc">
-                                Judge Desc
-                            </div>
+                        <div class="judge-name">
+                            Judge Name
                         </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
-                            </div>
-                            <div class="judge-name">
-                                Judge Name
-                            </div>
-                            <div class="judge-desc">
-                                Judge Desc
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
-                            </div>
-                            <div class="judge-name">
-                                Judge Name
-                            </div>
-                            <div class="judge-desc">
-                                Judge Desc
-                            </div>
+                        <div class="judge-desc">
+                            Judge Desc
                         </div>
                     </div>
-                    <div class="judge-many">
-                        ... and many more
+                    <div class="judge-box">
+                        <div class="judge-pic">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
+                        </div>
+                        <div class="judge-name">
+                            Judge Name
+                        </div>
+                        <div class="judge-desc">
+                            Judge Desc
+                        </div>
                     </div>
-                </div>
-                <div class="mlh-coc mt-5">
-                    <div class="mlh-coc-text-container">
-                        At Garuda Hacks, we believe in creating an inclusive,
-                        accessible, and conducive creative space. All Garuda
-                        Hacks participants are expected to abide to Major League
-                        Hacking (MLH) Code of Conduct to help create a positive
-                        hackathon experience.
+                    <div class="judge-box">
+                        <div class="judge-pic">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
+                        </div>
+                        <div class="judge-name">
+                            Judge Name
+                        </div>
+                        <div class="judge-desc">
+                            Judge Desc
+                        </div>
+                    </div>
+                    <div class="judge-box">
+                        <div class="judge-pic">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
+                        </div>
+                        <div class="judge-name">
+                            Judge Name
+                        </div>
+                        <div class="judge-desc">
+                            Judge Desc
+                        </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <a
-                        class="btn btn-coc mx-auto"
-                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                        >Major League Hacking Code of Conduct</a
-                    >
+                <div class="judge-many">
+                    ... and many more
                 </div>
             </div>
-        </section>
-        <section class="section-track" id="track">
-            <div class="container">
-                <h1 class="text-center">
-                    Choose Your Project Track!
-                </h1>
-                <p class="mx-auto text-center subtitle">
-                    At Garuda Hacks, we strive to solve Indonesia's most
-                    pressing issues.<br />
-                    This year, Garuda Hacks will focus on tackling...
+            <div class="mlh-coc mt-5">
+                <div class="mlh-coc-text-container">
+                    At Garuda Hacks, we believe in creating an inclusive,
+                    accessible, and conducive creative space. All Garuda
+                    Hacks participants are expected to abide to Major League
+                    Hacking (MLH) Code of Conduct to help create a positive
+                    hackathon experience.
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <a class="btn btn-coc mx-auto" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League
+                    Hacking Code of Conduct</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-track" id="track">
+        <div class="container">
+            <h1 class="text-center">
+                Choose Your Project Track!
+            </h1>
+            <!-- <p class="mx-auto text-center subtitle">
+                At Garuda Hacks, we strive to solve Indonesia's most
+                pressing issues.<br />
+                This year, Garuda Hacks will focus on tackling...
+            </p> -->
+            <p class="text-center">Welcome to Garuda Hacks 3.0, we can’t wait to see what you will
+                create!</p>
+            <div class="text-center"><a class="btn" id="forewordBtn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Read more:</a></div>
+            
+            <div class="collapse" id="collapseExample">
+                <p class="font-italic text-center">When we brainstormed this year’s tracks, a theme keeps coming back to us:
+                    inequality. The COVID-19 pandemic and the ensuing economic downturn have further amplified the
+                    asymmetric opportunities and solutions available for your everyday Indonesian. We believe that that has
+                    to change. Our tracks and guiding questions have always been broad because we believe that there are so
+                    many ways to tackle the issues we raised this year. Don’t create a grandiose and vague plan to answer
+                    all the guiding questions. Instead, we encourage you to dig deep, and ask your team, “what specific
+                    issue within these tracks do I want to see resolved, and why?”. Build your hack around that, even if it
+                    only impacts a few people. We hope that the ideas of the entire hacking class would be actualized and
+                    collectively improve the lives of millions of Indonesians.<br /><br />
+                    Cheers,
+                    The Garuda Hacks 3.0 Team
                 </p>
-                <div class="row items-container">
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <div class="item">
-                            <div class="item-header"></div>
-                            <div class="item-body">
-                                <p class="item-title">Health</p>
-                                <p class="item-desc">
-                                </p>
-                                <p><strong>Track focus:</strong></p>
-                                <ul>
-                                    <li>Educate people on healthy living practices to prevent costly medical interventions in the future?</li>
-                                    <li>Provide health accessibility to ensure people get proper health regardless of location or socioeconomic status?
-                                    </li>
-                                    <li>Raise awareness, create conversations, and effective interventions on mental health?
-                                    </li>
-                                </ul>
-                            </div>
+            </div>
+            <div class="row items-container">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="item">
+                        <div class="item-header"></div>
+                        <div class="item-body">
+                            <p class="item-title">Health</p>
+                            <p class="item-desc">While Indonesia is making strides to improving its healthcare system,
+                                the infrastructure providing quality care is fragmented. Specifically, a lack of
+                                well-trained physicians often impacts those who need urgent care the most. Whether your
+                                approach is preventive or curative interventions, what you create can save and improve
+                                lives, allowing people to better themselves and others.
+                            </p>
+                            <p><strong>Track focus:</strong></p>
+                            <ul>
+                                <li>Educate people on healthy living practices to prevent costly medical interventions
+                                    in the future?</li>
+                                <li>Provide health accessibility to ensure people get proper health regardless of
+                                    location or socioeconomic status?
+                                </li>
+                                <li>Raise awareness, create conversations, and effective interventions on mental health?
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <div class="item">
-                            <div class="item-header"></div>
-                            <div class="item-body">
-                                <p class="item-title">Social Good</p>
-                                <p class="item-desc">
-                                </p>
-                                <p><strong>Track focus:</strong></p>
-                                <ul>
-                                    <li>
-                                        Create fair and humane opportunities for all?
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="item">
+                        <div class="item-header"></div>
+                        <div class="item-body">
+                            <p class="item-title">Social Good</p>
+                            <p class="item-desc">Social justice for all, is the fifth and final principle of Pancasila,
+                                the foundation of Indonesia’s philosophy as a state. While significant progress has been
+                                made to close the gap, it is clear that there are significant systemic challenges for
+                                certain groups within Indonesian society. We believe that your solutions can create
+                                opportunities for Indonesians, regardless of creed, ethnicity, or gender, to survive and
+                                thrive.
+                            </p>
+                            <p><strong>Track focus:</strong></p>
+                            <ul>
+                                <li>
+                                    Create fair and humane opportunities for all?
 
-                                    </li>
-                                    <li>Educate people on systemic bias within society and help make progress on current efforts to improve equality?
-                                    </li>
-                                    <li>Create solutions for a society where all Indonesians regardless of social class, ethnicity, or gender, can thrive together?</li>
-                                </ul>
-                            </div>
+                                </li>
+                                <li>Educate people on systemic bias within society and help make progress on current
+                                    efforts to improve equality?
+                                </li>
+                                <li>Create solutions for a society where all Indonesians regardless of social class,
+                                    ethnicity, or gender, can thrive together?</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <div class="item">
-                            <div class="item-header"></div>
-                            <div class="item-body">
-                                <p class="item-title">
-                                    Rural Development
-                                </p>
-                                <p class="item-desc">
-                                </p>
-                                <p><strong>Track focus:</strong></p>
-                                <ul>
-                                    <li>
-                                        Integrate Indonesians living in small cities in rural areas into the digital economy?
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="item">
+                        <div class="item-header"></div>
+                        <div class="item-body">
+                            <p id="ruralDev">
+                                Rural Development
+                            </p>
+                            <p class="item-desc">Home to 270 million people and 17,000 islands, Indonesia has seen rapid
+                                economic growth in the past 50 years. While some affluent regions have flourished,
+                                others have not developed as quickly. The government’s increased efforts to improve
+                                internet connectivity grants millions of Indonesians access to reliable internet for the
+                                first time, and there are many unexplored opportunities.
 
-                                    </li>
-                                    <li>Showcase the creativity and diversity of Indonesia’s culture and put them on the world stage?</li>
-                                    <li>
-                                        Raise awareness and accelerate development, both at home and abroad, to developing parts of Indonesia?
+                            </p>
+                            <p><strong>Track focus:</strong></p>
+                            <ul>
+                                <li>
+                                    Integrate Indonesians living in small cities in rural areas into the digital
+                                    economy?
 
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                                <li>Showcase the creativity and diversity of Indonesia’s culture and put them on the
+                                    world stage?</li>
+                                <li>
+                                    Raise awareness and accelerate development, both at home and abroad, to developing
+                                    parts of Indonesia?
+
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <section class="section-prize" id="prize">
-            <div class="container">
-                <h1 class="text-center">
-                    Prizes
-                </h1>
-                <p class="mx-auto text-center subtitle">
-                    No hackathon event is complete without the prizes to
-                    recognize your hard work!<br /><br />
-                    Stand a chance to win cash, a pitching session with Silicon
-                    Valley investors, an invitation from startup accelerator
-                    programs, and many more.
-                </p>
-                <div class="row items-container">
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">Coming Soon!</p>
-                            <p class="item-body">
-                                Team cash prize: Coming Soon!
-                            </p>
-                        </div>
+    <section class="section-prize" id="prize">
+        <div class="container">
+            <h1 class="text-center">
+                Prizes
+            </h1>
+            <p class="mx-auto text-center subtitle">
+                No hackathon event is complete without the prizes to
+                recognize your hard work!<br /><br />
+                Stand a chance to win cash, a pitching session with Silicon
+                Valley investors, an invitation from startup accelerator
+                programs, and many more.
+            </p>
+            <div class="row items-container">
+                <div class="col-lg-4 col-12">
+                    <div class="item mx-auto">
+                        <p class="item-title">Coming Soon!</p>
+                        <p class="item-body">
+                            Team cash prize: Coming Soon!
+                        </p>
                     </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Coming Soon!
-                            </p>
-                            <p class="item-body">
-                                Team cash prize: Coming Soon!
-                            </p>
-                        </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="item mx-auto">
+                        <p class="item-title">
+                            Coming Soon!
+                        </p>
+                        <p class="item-body">
+                            Team cash prize: Coming Soon!
+                        </p>
                     </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Coming Soon!
-                            </p>
-                            <p class="item-body">
-                                Team cash prize: Coming Soon!
-                            </p>
-                        </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="item mx-auto">
+                        <p class="item-title">
+                            Coming Soon!
+                        </p>
+                        <p class="item-body">
+                            Team cash prize: Coming Soon!
+                        </p>
                     </div>
+                </div>
                 <div class="prize-many">
                     ... and many more to be announced
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="section-faq" id="faq">
-            <div class="container">
-                <h1 class="text-center">
-                    Frequently Asked Questions
-                </h1>
-                <p class="mx-auto text-center subtitle">
-                    We know you have a lot of questions, so check below for some
-                    of the most common questions we’ve received. <br /><br />For
-                    further questions, you may also contact us at
-                    <a href="mailto:team@garudahacks.com"
-                        >team@garudahacks.com</a
-                    >
-                </p>
+    <section class="section-faq" id="faq">
+        <div class="container">
+            <h1 class="text-center">
+                Frequently Asked Questions
+            </h1>
+            <p class="mx-auto text-center subtitle">
+                We know you have a lot of questions, so check below for some
+                of the most common questions we’ve received. <br /><br />For
+                further questions, you may also contact us at
+                <a href="mailto:team@garudahacks.com">team@garudahacks.com</a>
+            </p>
 
-                <div class="accordion" id="accordionFAQ">
-                    <div class="row magic-container">
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingOne"
-                                    data-toggle="collapse"
-                                    data-target="#collapseOne"
-                                    aria-expanded="true"
-                                    aria-controls="collapseOne"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                What is a Hackathon?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
+            <div class="accordion" id="accordionFAQ">
+                <div class="row magic-container">
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingOne" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            What is a Hackathon?
+                                        </p>
                                     </div>
-                                </div>
-
-                                <div
-                                    id="collapseOne"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        A hackathon is a programming competition
-                                        in which competitors use technology to
-                                        build innovative projects within 48
-                                        hours. There will be opportunities to
-                                        win cool prizes, learn from our key-note
-                                        speakers, and network with our sponsors.
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingTwo"
-                                    data-toggle="collapse"
-                                    data-target="#collapseTwo"
-                                    aria-expanded="true"
-                                    aria-controls="collapseTwo"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Where will it be hosted?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div
-                                    id="collapseTwo"
-                                    class="collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Garuda Hacks 3.0 will be hosted on August 12-14
-                                        2022, completely virtually. All
-                                        you need is to create a Discord account to
-                                        communicate with our Garuda Hacks
-                                        community.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingThree"
-                                    data-toggle="collapse"
-                                    data-target="#collapseThree"
-                                    aria-expanded="true"
-                                    aria-controls="collapseThree"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Who can participate?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseThree"
-                                    class="collapse"
-                                    aria-labelledby="headingThree"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Everyone can participate! We encourage
-                                        anyone who is interested in learning
-                                        more about Hackathons, programming, and
-                                        the tech industry to join Garuda Hacks!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingSeven"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSeven"
-                                    aria-expanded="true"
-                                    aria-controls="collapseSeven"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Do I have to know how to code to
-                                                join?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseSeven"
-                                    class="collapse"
-                                    aria-labelledby="headingSeven"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Nope! You can learn along the way or
-                                        team up with experienced programmers.
-                                        Skills such as designing, business
-                                        planning, and etc are all going to
-                                        impact the projects in various ways!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingEight"
-                                    data-toggle="collapse"
-                                    data-target="#collapseEight"
-                                    aria-expanded="true"
-                                    aria-controls="collapseEight"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Are there any rules?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseEight"
-                                    class="collapse"
-                                    aria-labelledby="headingEight"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Attendees must abide by the
-                                        <a
-                                            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                                            >Major League Hacking (MLH) Code of
-                                            Conduct</a
-                                        >. We want to respect each other and
-                                        keep Garuda Hacks a safe environment for
-                                        all participants.
-                                    </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    A hackathon is a programming competition
+                                    in which competitors use technology to
+                                    build innovative projects within 48
+                                    hours. There will be opportunities to
+                                    win cool prizes, learn from our key-note
+                                    speakers, and network with our sponsors.
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingOne"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFour"
-                                    aria-expanded="true"
-                                    aria-controls="collapseFour"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                How do I apply? What if I don’t
-                                                have a team?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            Where will it be hosted?
+                                        </p>
                                     </div>
-                                </div>
-
-                                <div
-                                    id="collapseFour"
-                                    class="collapse"
-                                    aria-labelledby="headingFour"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        You can apply as an individual or as a
-                                        team (up to 4 participants max). If in
-                                        any case, you are looking for team
-                                        members, you can form teams with other
-                                        participating hackers at the beginning
-                                        of our event. Don’t worry, we will help
-                                        you pair up with other hackers!
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingFive"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFive"
-                                    aria-expanded="true"
-                                    aria-controls="collapseFive"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                How much will Garuda Hacks cost
-                                                me?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div
-                                    id="collapseFive"
-                                    class="collapse"
-                                    aria-labelledby="headingFive"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Nothing at all!
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    Garuda Hacks 3.0 will be hosted on August 12-14
+                                    2022, completely virtually. All
+                                    you need is to create a Discord account to
+                                    communicate with our Garuda Hacks
+                                    community.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            Who can participate?
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingSix"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSix"
-                                    aria-expanded="true"
-                                    aria-controls="collapseSix"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                How do we submit our projects?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div
-                                    id="collapseSix"
-                                    class="collapse"
-                                    aria-labelledby="headingSix"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        You must submit your project’s video
-                                        demonstration through Devpost.
-                                        Additionally, it is optional for you to
-                                        submit your project’s live website too.
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    Everyone can participate! We encourage
+                                    anyone who is interested in learning
+                                    more about Hackathons, programming, and
+                                    the tech industry to join Garuda Hacks!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingSeven" data-toggle="collapse"
+                                data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            Do I have to know how to code to
+                                            join?
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingNine"
-                                    data-toggle="collapse"
-                                    data-target="#collapseNine"
-                                    aria-expanded="true"
-                                    aria-controls="collapseNine"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                What can I make?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
+
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    Nope! You can learn along the way or
+                                    team up with experienced programmers.
+                                    Skills such as designing, business
+                                    planning, and etc are all going to
+                                    impact the projects in various ways!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingEight" data-toggle="collapse"
+                                data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            Are there any rules?
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div
-                                    id="collapseNine"
-                                    class="collapse"
-                                    aria-labelledby="headingNine"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        We welcome all software and hardware
-                                        hacks that align with our tracks.
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    Attendees must abide by the
+                                    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking
+                                        (MLH) Code of
+                                        Conduct</a>. We want to respect each other and
+                                    keep Garuda Hacks a safe environment for
+                                    all participants.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingOne" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            How do I apply? What if I don’t
+                                            have a team?
+                                        </p>
                                     </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    You can apply as an individual or as a
+                                    team (up to 4 participants max). If in
+                                    any case, you are looking for team
+                                    members, you can form teams with other
+                                    participating hackers at the beginning
+                                    of our event. Don’t worry, we will help
+                                    you pair up with other hackers!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingFive" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            How much will Garuda Hacks cost
+                                            me?
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    Nothing at all!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingSix" data-toggle="collapse"
+                                data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            How do we submit our projects?
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    You must submit your project’s video
+                                    demonstration through Devpost.
+                                    Additionally, it is optional for you to
+                                    submit your project’s live website too.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingNine" data-toggle="collapse"
+                                data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            What can I make?
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mr-auto">
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    We welcome all software and hardware
+                                    hacks that align with our tracks.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section-sponsor-full" id="sponsor">
-            <div class="container">
-                <!-- <div class="partner-category">
+    <section class="section-sponsor-full" id="sponsor">
+        <div class="container">
+            <!-- <div class="partner-category">
                     <h1 class="text-center">League Partner</h1>
                     <div class="items-container league-partner">
                         <img src="./img/sponsor/mlh.png" alt="MLH Logo" />
                     </div>
                 </div> -->
 
-                <!--
+            <!--
                 <div class="partner-category">
                     <h1 class="text-center">
                         Public Sector Partner
@@ -1142,7 +984,7 @@
                 </div>
             -->
 
-                <!--
+            <!--
                 <div class="partner-category">
                     <h1 class="text-center">
                         Sponsor
@@ -1239,9 +1081,9 @@
                     
                 </div>
                 -->
-                
 
-                <!-- 
+
+            <!-- 
                 <div class="partner-category">
                     <h1 class="text-center">
                         Media Partner
@@ -1452,38 +1294,30 @@
                     </div>
                 </div>
                 -->
-                <div class="sponsor-info">
-                    <p>
-                        <strong>Interested in sponsoring us?</strong><br />
-                        Send us an email at
-                        <a href="mailto:team@garudahacks.com"
-                            >team@garudahacks.com</a
-                        >
-                        for more details!
-                    </p>
-                </div>
+            <div class="sponsor-info">
+                <p>
+                    <strong>Interested in sponsoring us?</strong><br />
+                    Send us an email at
+                    <a href="mailto:team@garudahacks.com">team@garudahacks.com</a>
+                    for more details!
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-2">
-                        <img
-                            class="mx-auto mb-5 mb-lg-0"
-                            src="./img/logo-outline.png"
-                            alt="Garuda Hacks Logo"
-                        />
-                    </div>
-                    <div
-                        class="col 12 col-lg-8 offset-lg-1 text-center text-lg-left footer-text"
-                    >
-                        <div>
-                            <h1>Garuda Hacks</h1>
-                            <p class="bold">
-                                Virtual, August 12-14 2022
-                            </p>
-                            <!-- <p>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <img class="mx-auto mb-5 mb-lg-0" src="./img/logo-outline.png" alt="Garuda Hacks Logo" />
+                </div>
+                <div class="col 12 col-lg-8 offset-lg-1 text-center text-lg-left footer-text">
+                    <div>
+                        <h1>Garuda Hacks</h1>
+                        <p class="bold">
+                            Virtual, August 12-14 2022
+                        </p>
+                        <!-- <p>
                                 <i>Powered by</i>
                                 <img
                                     class="powered-img"
@@ -1491,54 +1325,45 @@
                                 />
                             </p> -->
 
-                            <p>
-                                Follow our
-                                <a href="https://www.instagram.com/garudahacks/"
-                                    >Instagram</a
-                                >
-                                <!--
+                        <p>
+                            Follow our
+                            <a href="https://www.instagram.com/garudahacks/">Instagram</a>
+                            <!--
                                 <a href="https://twitter.com/GarudaHacks"
                                     >Twitter</a
                                 >,  -->
-                                and
-                                <a href="https://www.facebook.com/GarudaHacks"
-                                    >Facebook</a
-                                >
-                                for the latest updates!
-                            </p>
-                            <p>
-                                Garuda Hacks is a fiscally sponsored 501(c)(3)
-                                non-profit organization based in the United
-                                States of America.
-                            </p>
-                            <!-- <p>Read our <a href="#">hacker guide!</a></p>
+                            and
+                            <a href="https://www.facebook.com/GarudaHacks">Facebook</a>
+                            for the latest updates!
+                        </p>
+                        <p>
+                            Garuda Hacks is a fiscally sponsored 501(c)(3)
+                            non-profit organization based in the United
+                            States of America.
+                        </p>
+                        <!-- <p>Read our <a href="#">hacker guide!</a></p>
             <p>
                 Submit your project on <a href="#">Devpost</a>!
             </p> -->
-                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
-        <script src="./js/index.js"></script>
-    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
 </html>
