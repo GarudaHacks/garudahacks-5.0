@@ -142,6 +142,20 @@ footer a:hover {
     padding: 15px 25px;
 }
 
+#newSubBtn {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-bottom: 0em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
+        0 16px 24px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px var(--grey);
+    color: var(--text-dark);
+    background-color: white;
+    padding: 8px 15px;
+}
+
 #forewordBtn {
     margin-top: 0px;
     margin-left: auto;
@@ -276,6 +290,19 @@ footer a:hover {
     min-width: 250px;
     max-height: 225px;
     max-width: 250px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.2s ease;
+}
+
+.subMethodBox {
+    border: solid 1px #f3f3f3;
+    margin-top: 30px;
+    min-height: 125px;
+    min-width: 250px;
+    max-height: 225px;
+    max-width: 450px;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
