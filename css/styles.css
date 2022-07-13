@@ -1,5 +1,6 @@
 :root {
     --garuda-red: #ff595e;
+    --garuda-red-2: #ea8387;
     --baby-blue: #d1edff;
     --sky-blue: #a9d8fa;
     --dark-blue: #87a9c5;
@@ -88,6 +89,10 @@ footer a:hover {
     line-height: 1.6;
 }
 
+.section-hero .container {
+    margin-top: -2vh;
+}
+
 @media screen and (min-width: 768px) {
     .section-hero {
         padding-top: 175px;
@@ -119,6 +124,8 @@ footer a:hover {
 
 .section-hero .hero-img {
     display: block;
+    margin-top: -5vw;
+    margin-bottom: 2vw;
     max-width: 400px;
     width: 100%;
 }
@@ -133,6 +140,34 @@ footer a:hover {
     color: var(--text-dark);
     background-color: white;
     padding: 15px 25px;
+}
+
+#newSubBtn {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-bottom: 0em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
+        0 16px 24px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px var(--grey);
+    color: var(--text-dark);
+    background-color: white;
+    padding: 8px 15px;
+}
+
+#forewordBtn {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-bottom: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04),
+        0 16px 24px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px var(--grey);
+    color: var(--text-dark);
+    background-color: white;
+    padding: 8px 15px;
 }
 
 .section-sponsor {
@@ -191,6 +226,7 @@ footer a:hover {
 }
 
 .section-what {
+    background-color: white;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -214,6 +250,13 @@ footer a:hover {
     color: var(--text-dark);
 }
 
+#ruralDev {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: var(--text-dark);
+    font-size: 29.5px !important;
+}
+
 .section-what .item-desc {
     max-width: 450px;
     font-size: 17px;
@@ -235,6 +278,10 @@ footer a:hover {
     .section-what .tools-container {
         justify-content: center;
     }
+
+    #dreamImg {
+        display: none;
+    }
 }
 
 .section-what .tool-box {
@@ -244,6 +291,19 @@ footer a:hover {
     min-width: 250px;
     max-height: 225px;
     max-width: 250px;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.2s ease;
+}
+
+.subMethodBox {
+    border: solid 1px #f3f3f3;
+    margin-top: 30px;
+    min-height: 125px;
+    min-width: 250px;
+    max-height: 225px;
+    max-width: 450px;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
@@ -414,7 +474,7 @@ footer a:hover {
     color: var(--text-secondary);
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: var(--garuda-red);
+    background-color:var(--grey-2);
 }
 
 .section-track h1 {
@@ -447,7 +507,7 @@ footer a:hover {
 
 .section-track .item .item-header {
     height: 20px;
-    background-color: #f4d35e;
+    background-color: var(--garuda-red);
 }
 
 .section-track .item .item-body {
@@ -500,7 +560,7 @@ footer a:hover {
     color: var(--text-dark);
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .section-prize .item .item-body {
@@ -576,7 +636,7 @@ footer a:hover {
 .section-sponsor-full {
     padding-top: 30px;
     padding-bottom: 120px;
-    background-color: var(--pastel-yelow);
+    background-color: lightgrey;
     color: var(--text-dark);
 }
 
@@ -637,7 +697,7 @@ footer a:hover {
 footer {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: var(--text-tertiary);
+    background-color: var(--grey-1);
     color: #0d3b66;
 }
 
@@ -665,4 +725,10 @@ footer .powered-img {
     padding-left: 5px;
     display: inline-block;
     height: 30px;
+}
+
+#dreamImg {
+    padding-left: auto;
+    padding-right: auto;
+    object-fit: cover;
 }
