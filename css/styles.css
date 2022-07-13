@@ -732,3 +732,28 @@ footer .powered-img {
     padding-right: auto;
     object-fit: cover;
 }
+
+.tool-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tool-img-box {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-img {
+    max-height: 100% !important;
+    max-width: 85%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.tool-details {
+    margin-top: auto;
+}
