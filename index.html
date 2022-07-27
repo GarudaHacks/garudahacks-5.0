@@ -146,7 +146,40 @@
         </div>
     </nav>
 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+               <h5>Why join GarudaHacks?</h5> 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h4>Stand a chance to win:</h4>
+                <ul>
+                    <li><h4>~$20 000 PRIZE POOL</h4></li>
+                    <li><h4>JOB OPPORTUNITIES</h4></li>
+                </ul>
+                <br />
+                <h4>Also introducing:</h4>
+                <ul><li><h4>NEW PITCH COMPETITION</h4></li></ul>
+
+                <br />
+                <!-- <h4>Featuring:</h4>
+                <img src="./img/sponsor/worldbank.png" width="100%" />
+                <br />
+                <br />
+                <img src="./img/sponsor/geng.png" width="100%"/>
+                ... and more! -->
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
     <section class="section-hero" id="home">
+        
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 mt-5">
@@ -254,14 +287,14 @@
                 
             </div>
             <hr />
-            <h1 class="mb-5 text-center">
+            <!-- <h1 class="mb-5 text-center">
                 What's Happening at Garuda Hacks?
             </h1>
             <iframe class="airtable-embed" src="https://airtable.com/embed/shryFDF9ezF6YjWss?backgroundColor=pink"
                 frameborder="0" onmousewheel="" width="100%" height="533"
                 style="background: transparent; border: 1px solid #ccc;"></iframe>
             <p>Note: Schedule is shown on your computer timezone</p>
-            <hr />
+            <hr /> -->
             <div class="item">
                 <h1 class="mb-5 text-center">Build your dream project.</h1>
                 <div class="row">
@@ -455,7 +488,7 @@
                     </div>
                     -->
 
-                <div class="judges-title">Judges</div>
+                <!-- <div class="judges-title">Judges</div>
                 <div class="judges-container">
                     <div class="judge-box">
                         <div class="judge-pic">
@@ -508,7 +541,7 @@
                 </div>
                 <div class="judge-many">
                     ... and many more
-                </div>
+                </div> -->
             </div>
             <div class="mlh-coc mt-5">
                 <div class="mlh-coc-text-container">
@@ -1142,31 +1175,55 @@
 
     <section class="section-sponsor-full" id="sponsor">
         <div class="container">
-            <!-- <div class="partner-category">
+            <div class="partner-category">
                     <h1 class="text-center">League Partner</h1>
                     <div class="items-container league-partner">
                         <img src="./img/sponsor/mlh.png" alt="MLH Logo" />
                     </div>
-                </div> -->
-
-            <!--
-                <div class="partner-category">
-                    <h1 class="text-center">
-                        Public Sector Partner
-                    </h1>
-                    <div class="items-container league-partner">
-                        <img
-                            src="./img/sponsor/kemenparekraf.png"
-                            alt="Kemenparekraf Logo"
-                        />
-                    </div>
                 </div>
-            -->
 
             
                 <div class="partner-category">
                     <h1 class="text-center">
-                        Sponsor
+                        Sponsors
+                    </h1>
+                    <div class="items-container league-partner">
+                        <img src="./img/sponsor/polygon.png" alt="Polygon" />
+                    </div>
+                </div>
+
+                <div class="partner-category">
+                    <h1 class="text-center">
+                        Track Partners
+                    </h1>
+                    
+                    <div class="items-container">
+                        <img src="./img/sponsor/wiui.webp" alt="wiui"/>
+                        <img src="./img/sponsor/prodia.png" alt="Prodia"/>
+                        <img src="./img/sponsor/worldbank.png" alt="WB" width="400px"/>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="partner-category">
+                    <h1 class="text-center">
+                        Knowledge Partners
+                    </h1>
+                    <div class="items-container league-partner">
+                        <img src="./img/sponsor/geng.png" alt="Generation Girls" />
+                    </div>
+                </div>
+
+                
+
+                
+           
+
+            
+                <div class="partner-category">
+                    <h1 class="text-center">
+                        Tech Partners
                     </h1>
                     
                     <div class="items-container">
@@ -1185,8 +1242,6 @@
                         />
                         <img src="./img/sponsor/DO.png" alt="DigitalOcean" />
                         <img src="./img/sponsor/cohere.svg" alt="Cohere" />
-                        <img src="./img/sponsor/polygon.png" alt="Polygon" />
-                        <img src="./img/sponsor/geng.png" alt="Generation Girls" />
                         
                     </div>
                     
@@ -1475,6 +1530,11 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
     <script src="./js/index.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#myModal').modal('show');
+        });
+    </script>
 </body>
 
 </html>

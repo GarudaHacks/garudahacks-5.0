@@ -297,6 +297,10 @@ footer a:hover {
     transition: 0.2s ease;
 }
 
+#myModal {
+    margin-top: 10em;
+}
+
 .subMethodBox {
     border: solid 1px #f3f3f3;
     margin-top: 30px;
