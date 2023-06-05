@@ -1,1766 +1,1154 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-167375737-1"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+<html>
+<head>
+  <title>Garuda Hacks | Indonesia's Premier Global Hackathon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!--Lang-switch script-->
+  <script>
+    $(document).ready(function(){
+      $('[lang="id"]').hide()
+      $("#EN-greyout").click(function(){
+        $('[lang="id"]').hide()
+        $('[lang="en"]').show()
+      })
+      $("#ID-greyout").click(function(){
+        $('[lang="en"]').hide()
+        $('[lang="id"]').show()
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var blur = 10 * Math.atan(0.005 * $(window).scrollTop())
+        $("#bg1,#bg2,#bg3,#bg4,#bg5,#bg6,#bg7").css("-webkit-filter","blur("+blur+"px)")
+      })
+    })
+  </script>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    @font-face{
+      font-family: League-Spartan-Bold;
+      src: url('static/LeagueSpartan-Bold.ttf') format('truetype');
+    }
+    @font-face{
+      font-family: League-Spartan-Regular;
+      src: url('static/LeagueSpartan-Regular.ttf') format('truetype');
+    }
+    @font-face{
+      font-family: Montserrat;
+      src: url('static/Montserrat-Bold.ttf') format('truetype');
+    }
+    @keyframes disappear{
+      from {opacity:1;}
+      to {opacity:0;}
+    }
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+    #Ghackstitle{ 
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 100px;
+      white-space:nowrap;
+    }
+    #Ghacksdate{
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 25px;
+      color: #424242;
+      white-space:nowrap;
+    }
+    #Ghacksrdy{
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 40px;
+      color: #640D14;
+      margin-top: 30px;
+      white-space:nowrap;
+    }
+    #heading-font{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 61px;
+      text-align: center;
+    }
+    #project-FAQ{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      color: black;
+      font-size: 22.6px;
+      line-height: 45px;
+    }
+    #project-FAQ::before{
+      content: url('info-mark.svg') ;
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+    }
+    .grey-box-text{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      color: black;
+      font-size: 22.6px;
+      line-height: 35px;
+    }
+    .navbartext{
+        font-family: League-Spartan-Regular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 25px;
+        color: #2E2E2E;
+    }
+    .red-button{
+        font-family: League-Spartan-Regular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        color:white ;
+        line-height: 25px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+    }
 
-            gtag("config", "UA-167375737-1");
-        </script>
+    .black-button{
+        font-family: League-Spartan-Regular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        color:white ;
+        line-height: 25px;
+        background: #242236;
+        box-shadow: 1px 1px 10px rgba(163, 163, 163, 0.5), inset 1px 1px 10px rgba(163, 163, 163, 0.75);
+        border-radius: 10px;
+    }
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta
-            name="description"
-            content="Garuda Hacks is a global 36-hour hackathon event where the world's greatest talents will compete to solve the world's most pressing challenges using technology. Held virtually, 14 - 16 August 2020."
-        />
-        <meta
-            property="og:title"
-            content="Garuda Hacks | Indonesia's Premier Global Hackathon"
-        />
-        <meta
-            property="og:description"
-            content="Garuda Hacks is a global 36-hour virtual
-            hackathon where the world's greatest talents will
-            compete to solve the world's most pressing
-            challenges using technology."
-        />
-        <meta
-            property="og:image"
-            content="https://garudahacks.com/img/share-banner.png"
-        />
-        <meta property="og:url" content="https://garudahacks.com" />
-        <meta name="twitter:card" content="summary_large_image" />
+    .about-button{
+      font-family: League-Spartan-Regular;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.75);
+      border: 4px solid #640D14;
+      /* GH-blue */
+      box-shadow: 1px 1px 10px rgba(163, 163, 163, 0.5), inset 1px 1px 10px rgba(163, 163, 163, 0.75);
+      border-radius: 10px;
+      color: #2E2E2E;
+      font-size:27px;
+      width:55%;
+    }
 
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./img/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./img/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./img/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    .about-title{
+      font-family: League-Spartan-Bold;
+      font-weight:300;
+    }
 
-        <!-- Bootstrap CSS -->
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./css/styles.css" />
+    .about-content{
+      font-family: League-Spartan-Regular;
+      font-weight:300;
+      font-size:20px;
+      padding-left:7%;
+      padding-right:7%;
+    }
 
-        <script
-            src="https://kit.fontawesome.com/b2247133c9.js"
-            crossorigin="anonymous"
-        ></script>
+    .how-works-title{
+      font-family: 'League Spartan';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 25px;
+      font-family: League-Spartan-Bold;
+      text-align: center;
+      margin-top: 2%;
+      color: #242236;
+    }
 
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
+    .how-works-button{
+        position:absolute;
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+        
+    }
 
-        <title>Garuda Hacks | Indonesia's Premier Global Hackathon</title>
+    .how-works-ul{
+      list-style:none; 
+      padding-left:1%; 
+    }
+    .withicon{
+      text-indent: -0.8em;
+      padding-left:5%;
+    }
+    .how-works-li{
+      font-weight:300;
+      font-size:19px;
+      position: relative;
+      margin-top: 10px;
+      font-style: normal;
+      line-height: 17px;
+      font-family: League-Spartan-Regular;
+      color:#2E2E2E;
+    }
+    #email1::before{
+      content: url('email1.png');
+      margin:0 10px 0 0;
+    }
+    #email2::before{
+      content: url('email2.png');
+      margin:0 10px 0 0;
+    }
 
-        <link rel="alternate" hreflang="en" href="https://garudahacks.com" />
-        <link rel="alternate" hreflang="id" href="https://id.garudahacks.com" />
-        <script
-            type="text/javascript"
-            src="https://cdn.weglot.com/weglot.min.js"
-        ></script>
-        <script>
-            Weglot.initialize({
-                api_key: "wg_eb8051f11a504cc4d97f0c8c513b885a2",
-                hide_switcher: true,
-            });
-        </script>
-        <!-- Facebook Pixel Code -->
-        <script>
-            !(function (f, b, e, v, n, t, s) {
-                if (f.fbq) return;
-                n = f.fbq = function () {
-                    n.callMethod
-                        ? n.callMethod.apply(n, arguments)
-                        : n.queue.push(arguments);
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = "2.0";
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s);
-            })(
-                window,
-                document,
-                "script",
-                "https://connect.facebook.net/en_US/fbevents.js"
-            );
-            fbq("init", "582480949358417");
-            fbq("track", "PageView");
-        </script>
-        <noscript
-            ><img
-                height="1"
-                width="1"
-                style="display: none;"
-                src="https://www.facebook.com/tr?id=582480949358417&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
-    </head>
+    .project-track-button{
+        position:absolute;
+        width: 415px;
+        height: 525px;
+        margin-top: 60px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-header{
+        position:absolute;
+        width: 415px;
+        height: 75px;
+        margin-top: 60px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px 10px 0px 0px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-info{
+        position:absolute;
+        width: 415px;
+        height: 525px;
+        margin-top: 60px;
+        background: white;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-button:hover {opacity:0;}
 
-    <body>
-        <a
-            id="mlh-trust-badge"
-            style="
-                display: block;
-                max-width: 100px;
-                min-width: 60px;
-                position: fixed;
-                right: 50px;
-                top: 0;
-                width: 10%;
-                z-index: 10000;
-            "
-            href="https://mlh.io/seasons/apac-2021/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=gray"
-            target="_blank"
-            ><img
-                src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-apac-gray.svg"
-                alt="Major League Hacking 2021 Hackathon Season"
-                style="width: 100%;"
-        /></a>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
+    .project-track-text{
+      margin-top:50px;
+      line-height:40px;
+      font-family: League-Spartan-Bold;
+      text-align: center;
+      font-weight: 800;
+      font-size: 50px;
+      color:white ;
+    }
+
+    .project-info-text{
+        padding-right:10px;
+        margin-left:25px;
+        line-height:20px;
+        font-family: League-Spartan-Regular;
+        text-align: left;
+        font-weight: 600;
+        font-size: 22px;
+        color:black ;
+    }
+    .project-header-info{
+        margin-top:25px;
+        margin-left:35px;
+        line-height:5px;
+        font-family: League-Spartan-Bold;
+        text-align: center;
+        font-weight: 800;
+        font-size: 30px;
+        color:white ;
+    }
+    .flex-container{
+      display:flex;
+      justify-content: center;
+      border:1px;
+    }
+
+    .project-track-dot{
+      display: list-item;                                        
+      margin-left : 2em;
+    }
+    
+    .project-track-question::before{
+      content: url('question-mark.svg') ;
+      display: inline-block;
+      padding-right: 3px;
+      vertical-align: middle;
+    }
+    .FAQ-button{
+        font-family: League-Spartan-Regular;
+        margin-top: 50px;
+        width: 95%;
+        height: 70px;
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 18px;
+        color:white ;
+        line-height: 20px;
+        background: #640D14;
+        background-image: url('downarrow.svg');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 95%;
+        border-radius: 10px;
+        border-color: #640D14;
+        position: relative;
+        display: inline-block;
+    }
+
+    .FAQ-content {
+      display: none;
+      position: absolute;
+      color: black;
+      text-align: left;
+      width: 100.5%;
+      border-radius: 0px 0px 10px 10px;
+      background: white;
+      border-color: white;
+      margin-left:-7px;
+      margin-top:7px;
+      padding: 12px ;
+      z-index:-1;
+    }
+
+    .FAQ-title{
+      text-align: middle;
+      margin-right:10%;
+      margin-top: 15px;
+      padding-left: 10px;
+    }
+
+    .langbutton-select {
+      display: inline-block;
+      color: black;
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 27px;
+    }
+
+    .langbutton-greyout {
+      display: inline-block;
+      color: rgba(177,177,180,1);
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 27px;
+    }
+
+    .FAQ-button:focus  {
+      background-image: url('uparrow.svg');
+      border-radius: 10px 10px 0px 0px;
+
+    }
+    .FAQ-button:focus .FAQ-content	 {
+      display: block;
+      z-index: 1;
+    }
+    .footer-font{
+      font-family: 'League Spartan';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 2px;
+      color: #424242;
+      font-family: League-Spartan-Regular;
+    }
+  </style>
+</head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand fixed-top" style="background: rgba(193, 193, 193, 0.5);height: 80px;">
+        <div class="container-fluid col-sm-1>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Avatar Logo" class="rounded-pill" style ="margin-left:80px;width:80px;height: 80px;"> 
+            </a>
+        </div>
+        <div class="container-fluid col-sm-7" style="overflow-x: visible;margin-right: -20px">
+            <ul class="navbar-nav">
+                <li class="nav-item" style = "margin-left:20%;">
+                  <a class="nav-link navbartext" href="#">Home</a>
+                </li>
+                <li class="nav-item" style = "margin-left:20%;">
+                  <a class="nav-link navbartext" href="#about" lang="en">About</a>
+                  <a class="nav-link navbartext" href="#about" lang="id">Trek</a>
+                </li>
+                <li class="nav-item" style = "margin-left:15%;">
+                  <a class="nav-link navbartext" href="#how-it-works" lang="en" style="width:200px;">How It Works</a>
+                  <a class="nav-link navbartext" href="#project-track" lang="id">Trek</a>
+                </li>
+                <li class="nav-item" style = "margin-left:10%;">
+                  <a class="nav-link navbartext" href="#project-track" lang="en">Track</a>
+                  <a class="nav-link navbartext" href="#project-track" lang="id">Trek</a>
+                </li>
+                <li class="nav-item" style = "margin-left:20%;">
+                  <a class="nav-link navbartext" href="#prize-pool" lang="en">Prizes</a>
+                  <a class="nav-link navbartext" href="#project-track" lang="id">Hadiah</a>
+                </li>
+                <li class="nav-item" style = "margin-left:20%;">
+                    <a class="nav-link navbartext" href="#FAQ">FAQ</a>
+                </li>
+                <!--
+                <li class="nav-item" style = "margin-left:25%;">
+                    <a class="nav-link navbartext" href="#Sponsors">Sponsors</a>
+                </li>
+              -->
+              </ul>
+        </div>
+        <div class="container-fluid col-sm-2">
+        </div>
+        <div class="container-fluid col-sm-2">
+                <img src="banner.png" alt="Avatar Logo" style ="margin-top:175px;width:250px;height: 280px;position: absolute;"> 
+        </div>
+  </nav>
+  <div class="container-fluid" style ="padding:0px;position: relative;overflow-x:visible;z-index:-1;" id="bg1">
+    <img src="landingpage.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+
+  <!--Title Page-->
+  <div class="row">
+    <div class="container-fluid col-sm-6" style="width:100%;top:200px;margin-left:100px;position:absolute;z-index:2;">
+      <h1 id="Ghackstitle">GARUDA<br>HACKS 4.0</h1>
+      <p id="Ghacksdate" lang="en">21-23 July 2023</p>
+      <p id="Ghacksdate" lang="id">21-23 Juli 2023</p>
+      <p id="Ghacksrdy" lang="en">Ready to Build the Future?</p>
+      <p id="Ghacksrdy" lang="id">Siap Membangun Masa Depan?</p>
+      <div class="row" style="width:50%;height:100%">
+        <div class="container-fluid col-sm-5 red-button" style="display:flex;align-items:center;height:60px;width:36%;margin-left:1%">
+          <a href="https://airtable.com/shrrNZAo4mECqKid0" target="_blank">
+            <button type="button" class="btn project-info-text" style="color:white;font-size:15px;padding-right:0" lang="en">
+              <img src="puzzle.svg" style="margin-right:6px;">
+              Register to Hackathon/Speaker Series
             </button>
-            <a class="navbar-brand d-none d-md-block" href="#"
-                ><img
-                    style="height: 45px;"
-                    src="./img/logo.png"
-                    alt="Garuda Hacks Logo"
-            /></a>
+          </a>
+        </div>
+        <div class="container-fluid col-sm-5 red-button" style="display:flex;align-items:center;height:60px;width:40%;margin-left:1%">
+          <a href="https://docs.google.com/forms/d/1m3YfgStI8vqyTBPWVikPzRCzYv3rrctul0sPKtS-vbQ/edit?ts=647c39d2 " target="_blank">
+            <button type="button" class="btn project-info-text" style="color:white" lang="en">
+              <img src="lightbulb.svg" style="margin-right:6px;">
+              Register as a Waitlist
+            </button>
+          </a>
+        </div>
+        <div class="container-fluid col-sm-2">
+        </div>
+      </div>
+      <div class="row" style="width:50%;height:100%;margin-top:1%">
+        <div class="container-fluid col-sm-5 black-button" style="display:flex;align-items:center;height:60px;width:36%;margin-left:1%">
+          <a href="https://airtable.com/shrrNZAo4mECqKid0" target="_blank">
+            <button type="button" class="btn project-info-text" style="color:white" lang="en">
+              <img src="mentor.svg" style="margin-right:6px;">
+              Register as a Mentor
+            </button>
+          </a>
+        </div>
+        <div class="container-fluid col-sm-5 black-button" style="display:flex;align-items:center;height:60px;width:40%;margin-left:1%">
+          <a href="https://airtable.com/shrYaNL0dMSdoElgm" target="_blank">
+            <button type="button" class="btn project-info-text" style="color:white" lang="en">
+              <img src="heartshake.svg" style="margin-right:6px;">
+              Join Us as a Volunteer
+            </button>
+          </a>
+        </div>
+        <div class="container-fluid col-sm-2">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid col-sm-6"></div>
+  </div>
+  <!--Lang Switch Buttons-->
+  <div style="position:fixed;bottom:8px;right:16px;z-index:4">
+    <div id="EN-button" class="langbutton-select" lang="en">EN</div>
+    <div id="EN-greyout" class="langbutton-greyout" lang="id">EN</div>
+    <div class="langbutton-select">/</div>
+    <div id="ID-button" class="langbutton-select" lang="id">ID</div>
+    <div id="ID-greyout" class="langbutton-greyout" lang="en">ID</div>
+  </div>
 
-            <div class="dropdown d-lg-none d-xl-none mr-auto">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="languageSelectorMobile"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                </a>
-                <div
-                    class="dropdown-menu dropdown-menu-center"
-                    aria-labelledby="languageSelectorMobile"
-                >
-                    <a class="dropdown-item" href="#Weglot-id"
-                        >🇮🇩 Bahasa Indonesia</a
-                    >
-                    <a class="dropdown-item" href="#Weglot-en">🇬🇧 English</a>
+<!--About-->
+  <div class="container-fluid" style="padding:0px;position: relative;overflow-x: visible" id="bg2">
+    <img src="tile1.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+  <div id="about" class="container-fluid" style="width:100%;top:1100px;position:absolute;">
+    <h1 id="heading-font" lang="en">About Garuda Hacks</h1>
+    <h1 id="heading-font" lang="id">Tentang Garuda Hacks</h1>
+    <div class="row" style="margin-top:50px">
+      <div class="container-fluid col-sm-12 red-button" style="width:85%;height: 250px;">
+      <div class="row" style="text-align:center;height:100%;">
+        <div class="container-fluid col-sm-2" style="position:relative;margin:auto">
+          <img src="logo2.png" style="display:block;position:relative;margin:auto;">
+        </div>
+        <div class="container-fluid col-sm-10" style="position:relative;height:100%">
+          <div class="row" style="text-align:left;position:relative;margin-top:30px">
+            <p style="font-size:27px;font-weight:100;line-height:30px" lang="en">We are a hackathon based off Indonesia where the world's greatest talents compete to solve the world's most &emsp;&emsp;pressing challenges using technology. We also have the largest concentration of Indonesian youth talent passionate about local issues at home. Furthermore, we are a 501c3 non-profit, driven by inspiring learning for our&emsp;&emsp; participants.</p>
+            <p style="font-size:27px;font-weight:100;line-height:30px" lang="id">Kami adalah hackathon yang berbasis di Indonesia di mana talenta terhebat dunia bersaing untuk menyelesaikan tantangan paling &emsp;&emsp;mendesak di dunia menggunakan teknologi. Kami juga memiliki konsentrasi terbesar talenta muda Indonesia yang bersemangat tentang isu-isu lokal di rumah. Selain itu, kami adalah organisasi nirlaba 501c3, didorong oleh pembelajaran yang menginspirasi untuk&emsp;&emsp; peserta.</p>
+          </div>
+          <div class="row" style=" padding-right:20px;">
+            <div class="container-fluid col-sm-4">
+              <div class="row" style="text-align:center;height:100%;">
+                <div class="container-fluid col-sm-3" style="position:relative;margin:auto">
+                  <img src="clock.svg" style="width:55%;display:block;position:relative;margin-left:80%;">
                 </div>
+                <div class="container-fluid col-sm-9">
+                  <div class="row">
+                    <p lang="en">36 Hours</p>
+                    <p lang="id">36 Jam</p>
+                  </div>
+                  <div class="row">
+                    <p style="font-weight:100" lang="en">Offline Hackathon</p>
+                    <p style="font-weight:100" lang="id">Hackathon Offline</p>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activity">Activity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#track">Track</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#prize">Prizes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sponsor">Sponsor</a>
-                    </li>
-                    <li
-                        class="nav-item dropdown d-none d-lg-block d-xl-block"
-                        style="margin-right: 100px;"
-                    >
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="languageSelector"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                        </a>
-                        <div
-                            class="dropdown-menu dropdown-menu-right"
-                            aria-labelledby="languageSelector"
-                        >
-                            <a class="dropdown-item" href="#Weglot-id"
-                                >🇮🇩 Bahasa Indonesia</a
-                            >
-                            <a class="dropdown-item" href="#Weglot-en"
-                                >🇬🇧 English</a
-                            >
-                        </div>
-                    </li>
-                </ul>
+            <div class="container-fluid col-sm-4">
+              <div class="row" style="text-align:center;height:100%;">
+                <div class="container-fluid col-sm-3" style="position:relative;margin:auto">
+                  <img src="docs.svg" style="width:55%;display:block;position:relative;margin-left:80%;">
+                </div>
+                <div class="container-fluid col-sm-9">
+                  <div class="row">
+                    <p>400+</p>
+                  </div>
+                  <div class="row">
+                    <p style="font-weight:100" lang="en">Projects Submitted</p>
+                    <p style="font-weight:100" lang="id">Proyek Yang Telah Diajukan</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
+            <div class="container-fluid col-sm-4">
+              <div class="row" style="text-align:center;height:100%;">
+                <div class="container-fluid col-sm-3" style="position:relative;margin:auto">
+                  <img src="medallion.svg" style="width:55%;display:block;position:relative;margin-left:80%;">
+                </div>
+                <div class="container-fluid col-sm-9">
+                  <div class="row">
+                    <p>30+</p>
+                  </div>
+                  <div class="row">
+                    <p style="font-weight:100" lang="en">Prize Categories</p>
+                    <p style="font-weight:100" lang="id">Kategori Hadiah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
-        <section class="section-hero" id="home">
-            <div class="container">
+    <div class="row" style="width:100%;margin-top:10%;text-align: center;">
+      <div class="container-fluid col-sm-4" style="width:33%">
+        <div class="about-button" style="position:relative;margin-left: auto;margin-right:auto;z-index:3;height:100%">
+          <img src="rocket.png" style="margin-top:-27.5%;width:60%">
+          <p class="about-title" style="margin-top:5%" lang="en">Our Mission</p>
+          <p class="about-title" style="margin-top:5%" lang="id">Misi Kami</p>
+          <p class="about-content" style="font-weight:100" lang="en">We create opportunities that empower young Indonesians with the motivation and skills needed to develop solutions for Indonesia’s most pressing issues. </p>
+          <p class="about-content" style="font-weight:100" lang="id">Kami menciptakan peluang yang memberdayakan kaum muda Indonesia dengan motivasi dan keterampilan yang dibutuhkan untuk mengembangkan solusi bagi masalah paling mendesak di Indonesia. </p>
+          <img src="line.svg" style="padding-bottom:15%;padding-top:5%">
+        </div>
+      </div>
+      <div class="container-fluid col-sm-4" style="width:33%">
+        <div class="about-button" style="position:relative;margin-left: auto;margin-right:auto;z-index:3;height:100%">
+          <img src="eyebulb.png" style="margin-top:-27.5%;width:60%">
+          <p class="about-title" style="margin-top:5%" lang="en">Our Vision</p>
+          <p class="about-title" style="margin-top:5%" lang="id">Visi Kami</p>
+          <p class="about-content" style="font-weight:100" lang="en">We envision a community of future technology leaders and cultivating a culture of student entrepreneurship in Indonesia.</p>
+          <p class="about-content" style="font-weight:100" lang="id">Kami membayangkan komunitas pemimpin teknologi masa depan dan menumbuhkan budaya kewirausahaan mahasiswa di Indonesia.</p>
+          <br>
+          <img src="line.svg" style="padding-bottom:15%;padding-top:2.5%">
+        </div>
+      </div>
+      <div class="container-fluid col-sm-4" style="width:33%">
+        <div class="about-button" style="position:relative;margin-left: auto;margin-right:auto;z-index:3;height:100%">
+          <img src="chartpaper.png" style="margin-top:-27.5%;width:60%">
+          <p class="about-title" style="margin-top:5%" lang="en">Our Past Events</p>
+          <p class="about-title" style="margin-top:5%" lang="id">Kompetisi Sebelumnya</p>
+          <p class="about-content" style="font-weight:100">Garuda Hacks 1.0, 2.0, 3.0 Komodo Hacks<br>Future Tech Leaders Fellowship</p>
+          <br><br>
+          <img src="line.svg" style="padding-bottom:15%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--How It Works-->
+  <div class="container-fluid" style="padding:0px;position: relative;overflow-x: visible" id="bg3">
+    <img src="tile2.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+  <div id="how-it-works" class="container-fluid" style="top:2200px;position:absolute;">
+    <h1 id="heading-font" lang="en">How It Works</h1>
+    <div class="row" style="width:100%">
+      <img src="dashed.svg" style="position:absolute;width:70%;margin-left:15%;margin-top:4.5%">
+      <div class="container-fluid col-sm-1">       
+      </div>
+      <div class="container-fluid col-sm-2">
+        <img src="stars.png" style="width:60%;display:block;position:relative;margin:auto;">
+      </div>  
+      <div class="container-fluid col-sm-2">
+        <img src="cal2.png" style="width:60%;display:block;position:relative;margin:auto;">
+      </div>
+      <div class="container-fluid col-sm-2">
+        <img src="email.png" style="width:60%;display:block;position:relative;margin:auto;">
+      </div>
+      <div class="container-fluid col-sm-2">
+        <img src="human-tick.png" style="width:60%;display:block;position:relative;margin:auto;">
+      </div>
+      <div class="container-fluid col-sm-2">
+        <img src="calendar.png" style="width:60%;display:block;position:relative;margin:auto;">
+      </div>
+      <div class="container-fluid col-sm-1" >
+      </div>
+    </div>
+    <div class="row" style="width:100%">
+      <div class="container-fluid col-sm-1">       
+      </div>
+      <div class="container-fluid col-sm-2">
+        <p class="how-works-title" lang="en">SIGN UP FOR</p>
+        <p class="how-works-title" lang="id">DAFTAR UNTUK</p>
+      </div>  
+      <div class="container-fluid col-sm-2">
+        <p class="how-works-title" lang="en">REGISTRATION</p>
+        <p class="how-works-title" lang="id">REGISTRASI</p>
+      </div>
+      <div class="container-fluid col-sm-2">
+        <p class="how-works-title" lang="en">INVITATION</p>
+        <p class="how-works-title" lang="id">UNDANGAN</p>
+      </div>
+      <div class="container-fluid col-sm-2">
+        <p class="how-works-title" lang="en">ATTENDANCE</p>
+        <p class="how-works-title" lang="id">KEHADIRAN</p>
+      </div>
+      <div class="container-fluid col-sm-2">
+        <p class="how-works-title" lang="en">EVENT DATE</p>
+        <p class="how-works-title" lang="id">TANGGAL KOMPETISI</p>
+      </div>
+      <div class="container-fluid col-sm-1" >
+      </div>
+    </div>
+    <div class="row" style="width:100%;height:200px;text-align: left;">
+      <div class="container-fluid col-sm-1">       
+      </div>
+      <div class="container-fluid col-sm-2 red-button" style="padding-top:0;padding-left:1%;width:15%;">
+        <p class="how-works-li" style="font-weight: 700;color:white">Hackathon</p>
+        <p class="how-works-li" style="font-size:18px;font-weight: 300;margin-top:-3%;color:white" lang="en">Automatic registration to the Speaker Series</p>
+        <p class="how-works-li" style="font-size:18px;font-weight: 300;margin-top:-3%;color:white" lang="id">Registrasi otomatis untuk acara Speaker Series</p>
+        <img src="signup.svg" style="padding-bottom:5%;width:60%;display:block;position:relative;margin:auto;">
+      </div>  
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li" lang="en">Registration opens on <span style="font-weight: bold ;">June 1</span></li>
+          <li class="how-works-li" lang="id">Pendaftaran dibuka pada tanggal <span style="font-weight: bold ;">1 Juni</span></li>
+          <li class="how-works-li" lang="en">Decisions will be sent via email on a rolling basis until we have enough participants</li>
+          <li class="how-works-li" lang="id">Keputusan akan dikirim melalui email secara bergiliran sampai peserta kami cukup</li>
+          <li class="how-works-li red-button" style="display:flex;align-items:center;height:40px;width:65%;margin-right:auto;margin-left:auto;margin-top:10%">
+            <a href="https://airtable.com/shrrNZAo4mECqKid0" target="_blank">
+              <button type="button" class="btn project-info-text" style="padding-left:0;color:white;" lang="en">
+                <img src="puzzle.svg" style="margin-right:6px;">
+                Register 
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Check your email regularly for invitations to the events.</li>
+          <li class="how-works-li">If you have not received a decision within 21 days, please reach out:</li>
+          <li id="email1" class="how-works-li withicon">team@garudahacks.com</li>
+          <li id="email2" class="how-works-li withicon">@garudahacks</li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Participants must plan to be on-site twice (Friday and Saturday), as a prerequisite to completing the hackathon</li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Event will run from:<span style="font-weight:bold"><br>July 21 (6 PM) - 23 (6 AM)</span></li>
+          <li class="how-works-li">Closing ceremony will be <br>held on: <span style="font-weight:bold">July 23 (7 PM)</span></li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-1" >
+      </div>
+    </div>
+    <div class="row" style="margin-top:3%;width:100%;height:200px;text-align: left;">
+      <div class="container-fluid col-sm-1">       
+      </div>
+      <div class="container-fluid col-sm-2 red-button" style="padding-top:1%;padding-left:1%;width:15%;">
+        <p class="how-works-li" style="font-weight: 700;color:white">Speaker Series</p>
+        <img src="discussion.png" style="padding-bottom:5%;width:60%;display:block;position:relative;margin:auto;">
+      </div>  
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Registration opens on <span style="font-weight: bold ;">June 1</span></li>
+          <li class="how-works-li">You can simply register and you’ll be invited to the event!</li>
+          <li class="how-works-li red-button" style="display:flex;align-items:center;height:40px;width:65%;margin-right:auto;margin-left:auto;margin-top:10%">
+            <a href="https://airtable.com/shrrNZAo4mECqKid0" target="_blank">
+              <button type="button" class="btn project-info-text" style="padding-left:0;color:white;" lang="en">
+                <img src="lightbulb.svg" style="margin-right:6px;">
+                Register 
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Check your email regularly for invitations to the events.</li>
+          <li class="how-works-li">If you have not received a decision within 21 days, please reach out:</li>
+          <li id="email1" class="how-works-li withicon">team@garudahacks.com</li>
+          <li id="email2" class="how-works-li withicon">@garudahacks</li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Feel free to come at any time of the event to network with companies and attend the company talks</li>
+          <li class="how-works-li">However, hackathon area will be secured and closed off to the public</li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+        <ul class="how-works-ul">
+          <li class="how-works-li">Event will run from:<span style="font-weight:bold"><br>July 21 (3pm) - 23 (7pm)</span></li>
+        </ul>
+      </div>
+      <div class="container-fluid col-sm-1" >
+      </div>
+    </div>  
+  </div>
+
+  
+  
+  <!-- Project Track-->
+  <div class="container-fluid" style ="padding:0px;position: relative;overflow-x: visible" id="bg4">
+    <img src="tile3.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+
+  <div id="project-track" class="container-fluid" style="top:3300px;position:absolute;">
+    <h1 id="heading-font" lang="en">Choose Your Project Track</h1>
+    <h1 id="heading-font" lang="id">Pilihan Trek</h1>
+    <div class="row" id="triggerblur">
+      <div class="col-sm-4 flex-container">
+        <div class="project-track-button" style="z-index: 3;">
+          <p class="project-track-text">SUSTAINABILITY</p>
+          <img src="sustainability.svg" style="margin-top:20px;width:90%;filter: brightness(0) invert(0.99);margin-left:5%;">
+        </div>
+        <div class="project-track-header" style="z-index: 2;">
+          <p class="project-header-info" style="display:inline-block;">
+              SUSTAINABILITY
+              <img src="sustainability.svg" style="margin-top:-10px;width:50px;display:inline-block;margin-left:5px;position: relative;filter: brightness(0) invert(0.99);">
+          </p>
+        </p>
+      </div>
+      <div class="project-track-info" style="z-index: 1;" lang="en">
+          <p class="project-info-text" style="margin-top:100px">
+            Whether your approach is preventive or innovative interventions, what you create can save and improve future generations.
+          </p>
+          <p class=" project-info-text project-track-question">
+            How do we:
+          </p>
+          <p class=" project-info-text project-track-dot">
+            Educate the public on the importance on environmental conservation?
+          </p>
+          <p class=" project-info-text project-track-dot">
+            Successfully facilitate top-down and grassroots efforts to empower people Indonesians, regardless of creed, ethnicity or socioeconomic status, to conserve the environment?
+          </p>
+          <p class=" project-info-text project-track-dot">
+            Facilitate the creation of a green and sustainable green economy?
+          </p>
+      </div>
+      <div class="project-track-info" style="z-index: 1;" lang="id">
+        <p class="project-info-text" style="margin-top:100px">
+          Apakah solusi Anda intervensi preventif atau innovatif, apa yang Anda buat dapat memperbaiki generasi mendatang
+        </p>
+        <p class=" project-info-text project-track-question">
+          Bagaimana kita:
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Mendidik masyarakat tentang pentingnya pelestarian lingkungan?
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Berhasil memfasilitasi upaya top-down dan akar rumput untuk memberdayakan masyarakat Indonesia, terlepas dari kepercayaan, etnis atau status sosial ekonomi, untuk melestarikan lingkungan?
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Memfasilitasi terciptanya ekonomi yang hijau dan berkelanjutan?
+        </p>
+    </div>
+    </div>
+    <div class="col-sm-4 flex-container">
+      <div class="project-track-button" style="z-index:3;">
+        <p class="project-track-text" lang="en">FUTURE OF<br>AI</p>
+        <p class="project-track-text" lang="id">MASA DEPAN<br>AI</p>
+        <img src="future_of_work.png" style="width:75%;margin-left:12.5%;">
+      </div> 
+      <div class="project-track-header" style="z-index: 2;">
+          <p class="project-header-info" style="font-size:30px;display:inline-block;" lang="en">
+              FUTURE OF AI
+              <img src="future_of_work.png" style="margin-top:-10px;width:35px;display:inline-block;margin-left:5px;position: relative;">
+          </p>
+          <p class="project-header-info" style="font-size:20px;display:inline-block;" lang="id">
+            MASA DEPAN DUNIA KERJA
+            <img src="future_of_work.png" style="margin-top:-10px;width:35px;display:inline-block;margin-left:5px;position: relative;">
+        </p>
+      </div>
+      <div class="project-track-info" style="z-index: 1;" lang="en">
+            <p class="project-info-text" style="margin-top:100px">
+              We believe that each one of your solutions can create important developments in both the tech and traditional workspace
+            </p>
+            <p class=" project-info-text project-track-question">
+              How do we:
+            </p>
+            <p class=" project-info-text project-track-dot">
+              Leverage advancements in AI, automation, and the cloud to add value to sectors ripe for technological disruption?
+            </p>
+            <p class=" project-info-text project-track-dot">
+              Provide upskilling and reskilling opportunities for our workforce to adapt to the changing workplace environment?
+            </p>
+            <p class=" project-info-text project-track-dot">
+              Transform workplaces to become happier, safer, and more equitable environments?
+            </p>
+      </div>
+      <div class="project-track-info" style="z-index: 1;" lang="id">
+        <p class="project-info-text" style="margin-top:100px">
+          Kami percaya bahwa setiap solusi Anda dapat menciptakan perkembangan penting baik di ruang kerja teknologi maupun tradisional
+        </p>
+        <p class=" project-info-text project-track-question">
+          Bagaimana kita:
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Memanfaatkan AI, otomasi, dan cloud untuk mengembangkan sektor yang siap menghadapi gangguan teknologi?
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Menyediakan peningkatan bagi tenaga kerja untuk beradaptasi dengan lingkungan kerja yang berubah?
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Mengubah lingkungan kerja menjadi lebih bahagia, lebih aman, dan lebih adil?
+        </p>
+  </div>
+      </div>
+    <div class="col-sm-4 flex-container">
+      <div class="project-track-button" style="z-index:3;">
+        <p class="project-track-text" lang="en">YOUTH<br>EMPOWERMENT</p>
+        <p class="project-track-text" lang="id">PEMBERDAYAAN ANAK MUDA</p>
+        <img src="youth_empowerment.png" style="margin-top:-30%;margin-left:5%;">
+      </div>
+      <div class="project-track-header" style="z-index: 2;">
+          <p class="project-header-info" style="display:inline-block;" lang="en">
+              YOUTH EMPOWERMENT
+              <img src="youth_empowerment.png" style="margin-top:-15px;width:40px;display:inline-block;margin-left:5px;position: relative;">
+          </p>
+          <p class="project-header-info" style="font-size:20px;display:inline-block;" lang="id">
+            PEMBERDAYAAN ANAK MUDA
+            <img src="youth_empowerment.png" style="margin-top:-10px;width:35px;display:inline-block;margin-left:5px;position: relative;">
+        </p>
+      </div> 
+      <div class="project-track-info" style="z-index: 1;" lang="en">
+            <p class="project-info-text" style="margin-top:100px">
+              Inspiring and enabling our young innovators to accomplish greater things
+            </p>
+            <p class=" project-info-text project-track-question">
+              How do we:
+            </p>
+            <p class=" project-info-text project-track-dot">
+              Provide communities for our youth to interact and socialize with each other?
+            </p>
+            <p class=" project-info-text project-track-dot">
+              Facilitate skill development opportunities for our youth to learn from others and each other to prepare them to enter society and the workforce?
+            </p>
+            <p class=" project-info-text project-track-dot">
+              Create a channel for our youth to ideate and iterate on their ideas on how to improve their own societies?
+            </p>
+       </div>
+       <div class="project-track-info" style="z-index: 1;" lang="id">
+        <p class="project-info-text" style="margin-top:100px">
+          Menginspirasi dan memungkinkan inovator muda kita untuk mencapai hal-hal yang lebih besar
+        </p>
+        <p class=" project-info-text project-track-question">
+          Bagaimana kita:
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Menyediakan komunitas remaja untuk berinteraksi dan bersosialisasi satu sama lain?
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Memfasilitasi pengembangan bagi kaum muda untuk belajar dari satu sama lain untuk mempersiapkan mereka memasuki masyarakat?
+        </p>
+        <p class=" project-info-text project-track-dot">
+          Membuat saluran bagi kaum muda untuk mengidealkan ide-ide tentang meningkatkan masyarakat?
+        </p>
+   </div>
+      </div>    
+  <div style="height:625px"></div>
+  <div class="flex-container" style="position:relative;margin-right: auto;margin-left: auto;margin-top:40px;width: 1782px;height: 137px;background: rgba(217, 217, 217, 0.6);border-radius: 20px;">
+      <p id="project-FAQ" style="display:inline-block;" lang="en">
+          Each of the following 3 tracks will have no-code alternatives, the pitch competition tracks, where participants submit a 5-minute pitch video.<br>
+          <span style="margin-left:35px;">Check out</span>
+          <a href="#FAQ" style="color:black;">FAQ Section</a>
+          for more info!
+      </p>
+      <p id="project-FAQ" style="display:inline-block;" lang="id">
+        Masing-masing dari 3 trek berikut akan memiliki alternatif tanpa kode, trek kompetisi pitch, di mana peserta mengirimkan video pitch berdurasi 5 menit.<br>
+          <span style="margin-left:35px;">Lihat</span>
+          <a href="#FAQ" style="color:black;">bagian FAQ</a>
+          untuk info lebih lanjut!
+      </p>
+  </div>
+</div>
+</div>
+
+  <!-- Prize Pool -->
+  <div class="container-fluid" style ="padding:0px;position: relative;overflow-x: visible;z-index:1 " id="bg5">
+    <img src="tile4.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+  <div id="prize-pool" class="container-fluid" style="top:4400px;position:absolute;z-index: 2">
+    <h1 id="heading-font" style=" margin-top: 40px;">PRIZE POOL<br><span style="font-size:70px;">$15,000</span></h1>
+    
+    <div class="flex-container" style="position:relative;margin-right: auto;margin-left: auto;margin-top:40px;width: 1782px;height: 137px;background: rgba(217, 217, 217, 0.6);border-radius: 20px;">
+      <p class="grey-box-text" style="margin-top:20px;text-align:center;" lang="en">
+        No hackathon event is complete without the prizes to recognize your hard work!<br>
+        Stand a chance to win cash, a pitching session with Silicon Valley investors, an invitation from startup accelerator programs, and many more.
+      </p>
+      <p class="grey-box-text" style="margin-top:20px;text-align:center;" lang="id">
+        Tidak ada acara hackathon yang lengkap tanpa hadiah untuk menghargai kerja keras Anda!<br>
+        Raih kesempatan untuk memenangkan uang tunai, sesi pitching dengan investor Silicon Valley, undangan dari program akselerator startup, dan masih banyak lagi.
+      </p>
+      <img src="treasure.svg" style="position:absolute;display:block;margin: auto;left: 0;right: 0;top:150px">
+      <img src="coins.svg" style="position:absolute;display:block;margin: auto;left: 0;right: 0;top:-200px">
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="container-fluid" style ="padding:0px;position: relative;overflow-x: visible;z-index: 1" id="bg6">
+    <img src="tile5.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+  <div id="FAQ" class="container-fluid" style="top:5500px;position:absolute;z-index: 2">
+    <h1 id="heading-font" style="margin-top: 40px;">Frequently Asked Questions</h1>
+    <div class="flex-container" style="position:relative;margin-right:auto;margin-left:auto;margin-top:40px;width: 1782px;height: 137px;background: rgba(217, 217, 217, 0.6);border-radius: 20px;">
+      <p class="grey-box-text" style="margin-top: 20px;text-align:center;" lang="en">
+        We know you have a lot of questions, so check below for some of the most common questions we've received.<br>
+        For further questions, you may also contact us at 
+        <a href="#" style="color: black;">team@garudahacks.com</a>
+      </p>
+      <p class="grey-box-text" style="margin-top: 20px;text-align:center;" lang="id">
+        Kami tahu Anda memiliki banyak pertanyaan,jadi periksa di bawah untuk beberapa pertanyaan paling umum yang kami terima.<br>
+        Untuk pertanyaan lebih lanjut, Anda juga dapat menghubungi kami di 
+        <a href="#" style="color: black;">team@garudahacks.com</a>
+      </p>
+    </div>
+  <div class="row">
+    <div class="container-fluid col-sm-1">
+    </div>
+    <div class="container-fluid col-sm-3" style="z-index:0;">
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">What is a hackathon?</p>
+        <p class="FAQ-title" lang="id">Apa itu hackathon?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">A hackathon is a programming competition in which competitors use technology to build innovative projects within 36 hours. There will be opportunities to win cool prizes, learn from our key-note speakers, and network with our sponsors.</p>
+          <p lang="id" style="font-weight:100">Hackathon adalah kompetisi pemrograman di mana para pesaing menggunakan teknologi untuk membangun proyek inovatif dalam waktu 36 jam. Akan ada peluang untuk memenangkan hadiah keren, belajar dari pembicara utama kami, dan berjejaring dengan sponsor kami.</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">What is different about Garuda Hacks 4.0?</p>
+        <p class="FAQ-title" lang="id">Apa bedanya dengan Garuda Hacks 4.0?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">Garuda Hacks 4.0 will merge two of our core events (hackathons and career development events) into one event. Also, as we are emerging from COVID-19, the event will be held offline in Indonesia!</p>
+          <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan menggabungkan dua acara inti kami (hackathon dan acara pengembangan karir) menjadi satu acara. Selain itu, seiring dengan merebaknya COVID-19, acara ini akan diadakan secara offline di Indonesia!</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">Where will it be hosted?</p>
+        <p class="FAQ-title" lang="id">Di mana acara akan diadakan?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">Garuda Hacks 4.0 will be hosted on July 21-23 2023 in Jakarta, Indonesia. We will provide access to a Discord channel for participants to get in touch with each other approximately one month prior to the event</p>
+          <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan diselenggarakan pada 21-23 Juli 2023 di Jakarta, Indonesia. Kami akan memberikan akses ke saluran Discord bagi peserta untuk saling berhubungan sekitar satu bulan sebelum acara</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">Who can participate?</p>
+        <p class="FAQ-title" lang="id">Siapa yang dapat berpartisipasi?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">Everyone can participate! We encourage anyone who is interested in learning more about Hackathons, programming, and the tech industry to join Garuda Hacks!</p>
+          <p lang="id" style="font-weight:100">Setiap orang dapat berpartisipasi! Kami mendorong siapa pun yang tertarik untuk mempelajari lebih Ianjut tentang Hackathon, pemrograman, dan industri teknologi untuk bergabung dengan Garuda Hacks!</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">Do I have to know code?</p>
+        <p class="FAQ-title" lang="id">Apakah saya harus tahu kode?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">Nope! You can learn along the way or team up with experienced programmers. Skills such as designing, business planning, and etc are all going to impact the projects in various ways! Also, check our new pitch competition tracks!</p>
+          <p lang="id" style="font-weight:100">Tidak! Anda bisa belajar sambil jalan atau bekerja dengan programmer berpengalaman. Keterampilan seperti mendesain, perencanaan bisnis, dan lain-lain semuanya akan berdampak pada proyek dengan berbagai cara! Juga, periksa trek kompetisi nada baru kami!</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">How much does it cost?</p>
+        <p class="FAQ-title" lang="id">Berapa harga berpartisipasi?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">Nothing at all! However, please note that meals are not covered, and travel and accommodation outside of the venue will be at the participant’s own expense</p>
+          <p lang="id" style="font-weight:100">Gratis! Namun, harap diperhatikan bahwa makanan tidak ditanggung, dan perjalanan serta akomodasi di luar tempat akan ditanggung oleh peserta sendiri</p>
+        </div>
+      </button>
+    </div>
+    <div class="container-fluid col-sm-1 ">
+    </div>
+    <div class="container-fluid col-sm-3" style="margin-left:0;z-index: 1;">
+      <button type="button" class="FAQ-button" >
+        <p class="FAQ-title" lang="en">How do I apply?</p>
+        <p class="FAQ-title" lang="id">Bagaimana cara mendaftar?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">You can apply as an individual or as a team (up to 4 participants max). If in any case, you are looking for team members, you can form teams with other participating hackers at the beginning of our event. Don’t worry, we will help you pair up with other hackers!</p>
+          <p lang="id" style="font-weight:100">Anda dapat mendaftar sebagai individu atau sebagai tim (hingga maksimal 4 peserta). Jika Anda mencari anggota tim, Anda dapat membentuk tim dengan peretas lain yang berpartisipasi di awal acara kami. Jangan khawatir, kami akan membantu Anda berpasangan dengan peretas lain!</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">How do we submit our projects?</p>
+        <p class="FAQ-title" lang="id">Bagaimana cara kirim proyek saya?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">You must submit your project's video demonstration through Devpost. Additionally, it is optional for you to submit your project's live website too.</p>
+          <p lang="id" style="font-weight:100">Anda harus mengirimkan demonstrasi video proyek Anda melalui Devpost. Selain itu, Anda juga opsional untuk mengirimkan situs web langsung proyek Anda.</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">What are the pitch tracks?</p>
+        <p class="FAQ-title" lang="id">Apa trek nadanya?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">For each of the 3 project tracks, we have additional no-code tracks as alternatives where participants submit a 5-minute pitch video, much like a pitch competition. One project cannot qualify for both a pitch competition track and a regular track. More info is included in the handbook.</p>
+          <p lang="id" style="font-weight:100">Untuk masing-masing dari 3 trek proyek, kami memiliki trek tanpa kode tambahan sebagai alternatif di mana peserta mengirimkan video pitch 5 menit, seperti kompetisi pitch. Satu proyek tidak dapat memenuhi syarat untuk trek kompetisi pitch dan trek reguler.</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">What can I make?</p>
+        <p class="FAQ-title" lang="id">Apa yang bisa saya buat?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">We welcome all software, hardware hacks that align with our tracks, as well as pitch videos for our pitch competition tracks.</p>
+          <p lang="id" style="font-weight:100">Kami menerima semua perangkat lunak, peretasan perangkat keras yang selaras dengan trek kami, serta video pitch untuk trek kompetisi pitch.</p>
+        </div>
+      </button>
+      <button type="button" class="FAQ-button" >
+        <p class="FAQ-title" lang="en">What is a career fair?</p>
+        <p class="FAQ-title" lang="id">Apa itu pameran karir?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">Our career fair is a open-to-all event held at Universitas Pelita Harapan, held in collaboration with KarirLab. If you are looking for internships or full-time positions, this is for you!</p>
+          <p lang="id" style="font-weight:100">Career fair kami adalah acara terbuka untuk semua yang diadakan di Universitas Pelita Harapan, bekerja sama dengan KarirLab. Jika Anda mencari magang atau posisi penuh waktu, ini untuk Anda!</p>
+        </div>
+      </button>
+      <button type="button" class=" FAQ-button" >
+        <p class="FAQ-title" lang="en">What companies will come to the career fair?</p>
+        <p class="FAQ-title" lang="id">Perusahaan apa yang berada di pameran karir?</p>
+        <div class="FAQ-content">
+          <p lang="en" style="font-weight:100">We will publish a preliminary list of companies by early July, and we will be proactively updating the list to provide you with the best experience</p>
+          <p lang="id" style="font-weight:100">Kami akan menerbitkan daftar awal perusahaan pada awal Juli, dan kami akan memperbarui daftar tersebut secara proaktif untuk memberi Anda pengalaman terbaik</p>
+        </div>
+      </button>
+    </div>
+    <div class="container-fluid col-sm-1">
+
+    </div>
+  </div>
+  </div>
+  <!--Sponsors-->
+  <div class="container-fluid" style ="padding:0px;position:relative;overflow-x: visible;z-index:-1" id="bg7">
+    <img src="tile6.png" alt="Avatar Logo" style="min-width:100%;">
+  </div>
+  <div id="about" class="container-fluid" style="width:100%;top:6600px;position:absolute;">
+    <h1 id="heading-font" lang="en">Sponsors</h1>
+    <h1 id="heading-font" lang="id">Sponsors</h1>
+  </div>
+
+  <!--Footer-->
+  <div id="footer" class="container-fluid" style="height:80px;width:100%;position:absolute;background: rgba(255, 255, 255, 0.5)">
+    <div class="row footer-font" style="height:100%;width:100%;">
+      <div class="col-sm-5" style="margin-top:2.5%">
+        <p style="padding-left:5%">© 2023. Garuda Hacks. All rights reserved.</p>
+      </div>
+      <div class="col-sm-6" style="margin-top:0.5%">
+        <div class="row" style=" padding-right:20px;margin-top:2.5%;">
+          <div class="container-fluid col-sm-3">
+            <div class="row" style="text-align:left;height:100%;">
+              <div class="container-fluid col-sm-3" style="position:relative;margin-right:auto;margin-left:auto;">
+                <img src="footeremail.svg" style="width:80%;display:block;position:relative;margin-left:40%">
+              </div>
+              <div class="container-fluid col-sm-9">
+                <div class="row"> 
+                  <p style="font-weight: 700;">EMAIL</p>
+                </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6 text-center text-lg-left">
-                        <h1>
-                            Build the Future at Garuda Hacks.
-                        </h1>
-                        <p>
-                            Garuda Hacks, powered by Blibli, is a global 36-hour
-                            virtual hackathon where the world's greatest talents
-                            will compete to solve the world's most pressing
-                            challenges using technology.<br /><br />
-
-                            Win various prizes, receive certificates, and get
-                            prioritized job applications at Indonesia's top
-                            technology companies.<br /><br />
-
-                            Free and open to everyone all over the globe.
-                        </p>
-                        <strong>
-                            Held virtually, 14 - 16 August 2020
-                        </strong>
-                        <div class="row d-block d-lg-flex">
-                            <div class="col-auto">
-                                <a class="btn btn-register" href="./register"
-                                    >REGISTER AS PARTICIPANT</a
-                                >
-                            </div>
-                            <div class="col-auto">
-                                <a
-                                    class="btn btn-register"
-                                    href="https://slack.garudahacks.com"
-                                    >JOIN SLACK CHANNEL</a
-                                >
-                            </div>
-                            <div class="col-auto">
-                                <a
-                                    class="btn btn-register"
-                                    href="https://garudahacks.com/livestream"
-                                    >WATCH OUR LIVESTREAM</a
-                                >
-                            </div>
-                        </div>
-                        <p class="registration-fineprint">
-                            Open to both Indonesian citizens and non-citizens.
-                        </p>
-                    </div>
-                    <div class="col-12 col-lg-6 mt-5">
-                        <img
-                            src="./img/hero.svg"
-                            class="mx-auto hero-img"
-                            alt="An illustration of a person programming"
-                        />
-                    </div>
+                  <p style="font-weight:100">team@garudahacks.com</p>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section-sponsor">
-            <div class="container">
-                <p class="text-center sponsor-text">
-                    Supported By
-                </p>
+          </div>
+          <div class="container-fluid col-sm-3">
+            <div class="row" style="text-align:left;height:100%;margin-left:10%">
+              <div class="container-fluid col-sm-3" style="position:relative;margin-right:auto;margin-left:auto;">
+                <img src="ig2.svg" style="width:100%;display:block;position:relative;margin-left:40%;">
+              </div>
+              <div class="container-fluid col-sm-9">
                 <div class="row">
-                    <div class="mx-auto col-12 col-md-6 col-lg-4">
-                        <img
-                            src="./img/sponsor/blibli.png"
-                            class="mx-auto title-sponsor"
-                            alt="Blibli Logo"
-                        />
-                    </div>
+                  <p style="font-weight: 700;">INSTAGRAM</p>
                 </div>
-            </div>
-            <div class="main-carousel">
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/ovo.png"
-                        class="mx-auto sponsor-img"
-                        alt="OVO Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/wahyoo.png"
-                        class="mx-auto sponsor-img"
-                        alt="Wahyoo Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/kotakode.png"
-                        class="mx-auto sponsor-img"
-                        alt="Wahyoo Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/intudo.png"
-                        class="mx-auto sponsor-img"
-                        alt="Intudo Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/bubble.png"
-                        class="mx-auto sponsor-img"
-                        alt="Bubble Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/dana.png"
-                        class="mx-auto sponsor-img"
-                        alt="Dana Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/cotter.png"
-                        class="mx-auto sponsor-img"
-                        alt="Cotter Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/balsamiq.png"
-                        class="mx-auto sponsor-img"
-                        alt="Balsamiq Logo"
-                    />
-                </div>
-                <div class="carousel-cell">
-                    <img
-                        src="./img/sponsor/linode.png"
-                        class="mx-auto sponsor-img"
-                        alt="Linode Logo"
-                    />
-                </div>
-            </div>
-        </section>
-        <section class="section-what" id="activity">
-            <div class="container">
-                <h1 class="mb-5 text-center text-md-left">
-                    What's Happening at Garuda Hacks?
-                </h1>
-                <iframe
-                    class="airtable-embed"
-                    src="https://airtable.com/embed/shryFDF9ezF6YjWss?backgroundColor=pink"
-                    frameborder="0"
-                    onmousewheel=""
-                    width="100%"
-                    height="533"
-                    style="background: transparent; border: 1px solid #ccc;"
-                ></iframe>
-                <p>Note: Schedule is shown on your computer timezone</p>
-                <div class="item">
-                    <p class="item-title">Build your dream project.</p>
-                    <div class="row">
-                        <div class="item-desc col-12 col-md-auto">
-                            Garuda Hacks challenges your creativity, innovation,
-                            and skills by facilitating an immersive environment
-                            for innovators!<br /><br />
-
-                            <strong
-                                >Participants will receive free access to
-                                various premium tools and softwares to help
-                                build their project.</strong
-                            >
-                        </div>
-                        <div class="item-img col-12 col-md-auto pl-md-5 pt-5">
-                            <img src="./img/code.svg" />
-                        </div>
-                    </div>
-                    <div class="tools-container">
-                        <div class="tool-box">
-                            <div class="tool-logo">
-                                <img src="./img/sponsor/xyz.png" />
-                            </div>
-                            <div class="tool-name">
-                                .xyz
-                            </div>
-                            <div class="tool-desc">
-                                Free domain name
-                            </div>
-                        </div>
-                        <div class="tool-box">
-                            <div class="tool-logo">
-                                <img src="./img/sponsor/digitalocean.png" />
-                            </div>
-                            <div class="tool-name">
-                                Digital Ocean
-                            </div>
-                            <div class="tool-desc">
-                                Free $50 cloud credits
-                            </div>
-                        </div>
-                        <div class="tool-box">
-                            <div class="tool-logo">
-                                <img src="./img/sponsor/echoar.png" />
-                            </div>
-                            <div class="tool-name">
-                                echoAR
-                            </div>
-                            <div class="tool-desc">
-                                Free business tier access
-                            </div>
-                        </div>
-                        <div class="tool-box">
-                            <div class="tool-logo">
-                                <img src="./img/sponsor/wolfram.png" />
-                            </div>
-                            <div class="tool-name">
-                                Wolfram
-                            </div>
-                            <div class="tool-desc">
-                                Free access to Wolfram|One
-                            </div>
-                        </div>
-                        <div class="tool-box">
-                            <div class="tool-logo">
-                                <img src="./img/sponsor/balsamiq.png" />
-                            </div>
-                            <div class="tool-name">
-                                Balsamiq
-                            </div>
-                            <div class="tool-desc">
-                                Free 90-days wireframing software trial
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="item">
-                    <p class="item-title">Learn from experts.</p>
-                    <div class="row">
-                        <div class="item-desc col-12 col-md-auto">
-                            With professionals from the tech industry as our
-                            guest-speakers, our workshops will open new channels
-                            and expand your knowledge.<br /><br />
-
-                            <strong
-                                >Participate in workshops covering topics such
-                                as software engineering, product design, to
-                                startups.</strong
-                            >
-                        </div>
-                        <div class="item-img col-12 col-md-auto pl-md-5 pt-5">
-                            <img src="./img/learn.svg" />
-                        </div>
-                    </div>
-                </div>
-                <hr />
-
-                <div class="item">
-                    <p class="item-title">Win prizes and get recruited.</p>
-                    <div class="row">
-                        <div class="item-desc col-12 col-md-auto">
-                            Rise to the top and win various prizes like money, a
-                            pitching session with Silicon Valley investors, a
-                            spot in a startup accelerator, and many more.<br /><br />
-
-                            <strong
-                                >Winners will also stand a chance to receive a
-                                prioritized job application process to
-                                Indonesia's top technology companies.</strong
-                            >
-                        </div>
-                        <div class="item-img col-12 col-md-auto pl-md-5 pt-5">
-                            <img src="./img/win.svg" />
-                        </div>
-                    </div>
-                    <div class="hiring-title">Hiring Partners</div>
-                    <div class="hiring-container-blibli">
-                        <a href="https://careers.blibli.com/"
-                            ><img
-                                src="./img/sponsor/blibli.png"
-                                alt="Blibli Logo"
-                        /></a>
-                    </div>
-                    <div class="hiring-container">
-                        <img src="./img/sponsor/wahyoo.png" alt="Wahyoo Logo" />
-                        <img src="./img/sponsor/ovo.png" />
-                        <img src="./img/sponsor/dana.png" />
-                        <img src="./img/sponsor/kotakode.png" />
-                    </div>
-                    <div class="judges-title">Judges</div>
-                    <div class="judges-container">
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/alon.png" />
-                            </div>
-                            <div class="judge-name">
-                                Alon Grinshpoon
-                            </div>
-                            <div class="judge-desc">
-                                Chief Executive Officer of echoAR
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/michael.png" />
-                            </div>
-                            <div class="judge-name">
-                                Michael Dihardja
-                            </div>
-                            <div class="judge-desc">
-                                Chief Technology Officer of Wahyoo
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/cory.png" />
-                            </div>
-                            <div class="judge-name">
-                                Cory Levy
-                            </div>
-                            <div class="judge-desc">
-                                Entrepreneur & Investor<br />Founder of First
-                                Text
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/david.png" />
-                            </div>
-                            <div class="judge-name">
-                                David Bromberg
-                            </div>
-                            <div class="judge-desc">
-                                Partner at OpenWater VC
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/howard.png" />
-                            </div>
-                            <div class="judge-name">
-                                Howard Li
-                            </div>
-                            <div class="judge-desc">
-                                Venture Capitalist at RAVV VC
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/jorge.png" />
-                            </div>
-                            <div class="judge-name">
-                                Jorge Ferreiro
-                            </div>
-                            <div class="judge-desc">
-                                Software Engineer at Eventbrite | ex-Amazon
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/joey.png" />
-                            </div>
-                            <div class="judge-name">
-                                Joey Bronner
-                            </div>
-                            <div class="judge-desc">
-                                Software Engineer at SAP
-                            </div>
-                        </div>
-                        <div class="judge-box">
-                            <div class="judge-pic">
-                                <img src="./img/judges/scott.png" />
-                            </div>
-                            <div class="judge-name">
-                                Scott Sunarto
-                            </div>
-                            <div class="judge-desc">
-                                Director & Founder of Garuda Hacks
-                            </div>
-                        </div>
-                    </div>
-                    <div class="judge-many">
-                        ... and many more
-                    </div>
-                </div>
-                <div class="mlh-coc mt-5">
-                    <div class="mlh-coc-text-container">
-                        At Garuda Hacks, we believe in creating an inclusive,
-                        accessible, and conducive creative space. All Garuda
-                        Hacks participants are expected to abide to Major League
-                        Hacking (MLH) Code of Conduct to help create a positive
-                        hackathon experience.
-                    </div>
-                </div>
-                <div class="row no-gutters">
-                    <a
-                        class="btn btn-coc mx-auto"
-                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                        >Major League Hacking Code of Conduct</a
-                    >
-                </div>
-            </div>
-        </section>
-        <section class="section-track" id="track">
-            <div class="container">
-                <h1 class="text-center">
-                    Choose Your Project Track!
-                </h1>
-                <p class="mx-auto text-center subtitle">
-                    At Garuda Hacks, we strive to solve Indonesia's most
-                    pressing issues.<br />
-                    This year, Garuda Hacks will focus on tackling...
-                </p>
-                <div class="row items-container">
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <div class="item">
-                            <div class="item-header"></div>
-                            <div class="item-body">
-                                <p class="item-title">Health</p>
-                                <p class="item-desc">
-                                    Although not all of us are medical
-                                    professionals, we can still find additional
-                                    ways to empower health care workers and
-                                    support the Indonesian medical industry
-                                    through innovative ways.
-                                </p>
-                                <p><strong>How can we:</strong></p>
-                                <ul>
-                                    <li>
-                                        Help parts of Indonesia with rampant
-                                        poverty that still deal with the lack of
-                                        access to medical services
-                                    </li>
-                                    <li>
-                                        Provide easy access to the ever-changing
-                                        updates in the healthcare system
-                                    </li>
-                                    <li>
-                                        Play our part to support health care
-                                        workers on the front lines
-                                    </li>
-                                    <li>
-                                        Improve the Indonesian health care
-                                        system in general
-                                    </li>
-                                    <li>... and many more.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <div class="item">
-                            <div class="item-header"></div>
-                            <div class="item-body">
-                                <p class="item-title">Education</p>
-                                <p class="item-desc">
-                                    Easy access to good quality education is
-                                    crucial in Indonesia. There is still so much
-                                    space to improve the educational system
-                                    through technology and programming.
-                                </p>
-                                <p><strong>How can we:</strong></p>
-                                <ul>
-                                    <li>
-                                        Create innovative channels to boost
-                                        educational services online
-                                    </li>
-                                    <li>
-                                        Build digital study aids and online
-                                        learning materials to help students all
-                                        over Indonesia
-                                    </li>
-                                    <li>Bring accessibility at hand!</li>
-                                    <li>... and many more.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                        <div class="item">
-                            <div class="item-header"></div>
-                            <div class="item-body">
-                                <p class="item-title">
-                                    Small Business
-                                </p>
-                                <p class="item-desc">
-                                    Starting a business is never easy,
-                                    especially in our rapidly changing economy.
-                                    Through the use of technological platforms,
-                                    current and future Indonesian businesses can
-                                    make use of online platforms for growth,
-                                    efficiency, and productivity.
-                                </p>
-                                <p><strong>How can we:</strong></p>
-                                <ul>
-                                    <li>
-                                        Expand this? Think about small
-                                        businesses, growing enterprises.
-                                    </li>
-                                    <li>
-                                        Increase our economic prosperity through
-                                        technology
-                                    </li>
-                                    <li>
-                                        Boost Indonesia’s standard of living
-                                    </li>
-                                    <li>
-                                        Empower small Indonesian businesses and
-                                        uplift the overall economy
-                                    </li>
-                                    <li>... and many more.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-prize" id="prize">
-            <div class="container">
-                <h1 class="text-center">
-                    Prizes
-                </h1>
-                <p class="mx-auto text-center subtitle">
-                    No hackathon event is complete without the prizes to
-                    recognize your hard work!<br /><br />
-                    Stand a chance to win cash, a pitching session with Silicon
-                    Valley investors, an invitation from startup accelerator
-                    programs, and many more.
-                </p>
-                <div class="row items-container">
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">Best Health Project</p>
-                            <p class="item-body">
-                                Team cash prize: $500
-                                <br /><br />
-                                - $250 Digital Ocean Cloud Credits<br /><br />
-                                Each team member will receive: <br />
-                                - 1 year of Jetbrains All Products Pack<br />
-                                - 1 year of 1Password Families<br />
-                                - 1 year of Egghead.io Pro<br />
-                                - 4 months of Cloudsploit Standard service<br />
-                                - $100 worth of Bugsee credits<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best Education Project
-                            </p>
-                            <p class="item-body">
-                                Team cash prize: $500
-                                <br /><br />
-                                - $250 Digital Ocean Cloud Credits<br /><br />
-                                Each team member will receive:
-                                <br />
-                                - 1 year of Jetbrains All Products Pack<br />
-                                - 1 year of 1Password Families<br />
-                                - 1 year of Egghead.io Pro<br />
-                                - 4 months of Cloudsploit Standard service<br />
-                                - $100 worth of Bugsee credits<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best Small Business Project
-                            </p>
-                            <p class="item-body">
-                                Team cash prize: $500
-                                <br /><br />
-                                - $250 Digital Ocean Cloud Credits<br /><br />
-                                Each team member will receive:
-                                <br />
-                                - 1 year of Jetbrains All Products Pack<br />
-                                - 1 year of 1Password Families<br />
-                                - 1 year of Egghead.io Pro<br />
-                                - 4 months of Cloudsploit Standard service<br />
-                                - $100 worth of Bugsee credits<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best Pre-university Hack
-                            </p>
-                            <p class="item-body">
-                                Only for high school students and younger.<br /><br />
-
-                                - $250 Digital Ocean Cloud Credits<br /><br />
-
-                                Each team member will receive:<br />
-                                - HyperX Alloy Core RGB Membrane Keyboard<br />
-                                - 1 year of 1Password Families
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best Beginner Hackers
-                            </p>
-                            <p class="item-body">
-                                Our best team of beginners will take home
-                                arduino starter kits to continue hacking on at
-                                future events.<br /><br />
-                                Teams must be at least 50% first time hackers to
-                                be eligible.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Most Awesomely Useless Hack
-                            </p>
-                            <p class="item-body">
-                                The most useless, silly, and creative hack will
-                                take home arduino starter kits too!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                First Text Office Hour
-                            </p>
-                            <p class="item-body">
-                                Winners will be invited to attend a First Text
-                                office hour with top Silicon Valley
-                                entrepreneurs and investors.<br /><br />
-
-                                Previous First Text mentors includes:<br />
-                                - Jawed Karim (Co-founder of YouTube)<br />
-                                - Steve Huffman (Co-founder of Reddit)<br />
-                                - For more information, visit
-                                <a href="https://www.firsttext.com"
-                                    >firsttext.com</a
-                                >
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                OpenWater Accelerator
-                            </p>
-                            <p class="item-body">
-                                Suitable projects will be invited by
-                                <a href="https://openwatervc.com"
-                                    >OpenWater Accelerator </a
-                                >to join their next program batch.<br /><br />
-
-                                Accepted projects will receive:<br />
-                                - A dedicated team of engineers, designers, and
-                                growth hackers. <br />
-                                - $125.000 in cloud credits.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                VC Pitching Session
-                            </p>
-                            <p class="item-body">
-                                Selected and eligible projects will be invited
-                                to pitch to venture capitalists (VC) from
-                                Silicon Valley to stand a chance for
-                                pre-seed/seed funding.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best Use of Bubble.io
-                            </p>
-                            <p class="item-body">
-                                Awarded to the best project using Bubble's
-                                No-Code/Visual Programming Platform (<a
-                                    href="https://bubble.io"
-                                    >https://bubble.io</a
-                                >).<br /><br />
-                                - 2x JBL Speakers<br /><br />
-
-                                Each team member will receive:<br />
-                                - $1000 Bubble Credits<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best Use of echoAR
-                            </p>
-                            <p class="item-body">
-                                - $50 Amazon Gift Card<br />
-                                - 1 month of echoAR Business Tier access<br />
-                                - A feature in echoAR's newsletter (sent to
-                                investors and AR/VR ecosystem)<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best UiPath Automation Hack
-                            </p>
-                            <p class="item-body">
-                                Build an automation hack using UiPath!
-                                <br /><br />Each winning team member will
-                                receive a UiPath Branded Backpack.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Best use of Microsoft Azure
-                            </p>
-                            <p class="item-body">
-                                Leverage all of the amazing services available
-                                on Microsoft Azure in your hack this weekend to
-                                win security keys for you and your team.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                The Wolfram Award
-                            </p>
-                            <p class="item-body">
-                                - Award letter from Wolfram Alpha<br />
-                                - 1 year of Wolfram|One Personal Edition<br />
-                                - 1 year of Wolfram|Alpha Pro<br />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="item mx-auto">
-                            <p class="item-title">
-                                Script Foundation Award
-                            </p>
-                            <p class="item-body">
-                                Awarded to the best projects in 10 different
-                                categories. Winners will receive a digital
-                                certificate from Script Foundation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="prize-many">
-                    ... and many more to be announced
-                </div>
-            </div>
-        </section>
-
-        <section class="section-faq" id="faq">
-            <div class="container">
-                <h1 class="text-center">
-                    Frequently Asked Questions
-                </h1>
-                <p class="mx-auto text-center subtitle">
-                    We know you have a lot of questions, so check below for some
-                    of the most common questions we’ve received. <br /><br />For
-                    further questions, you may also contact us at
-                    <a href="mailto:team@garudahacks.com"
-                        >team@garudahacks.com</a
-                    >
-                </p>
-
-                <div class="accordion" id="accordionFAQ">
-                    <div class="row magic-container">
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingOne"
-                                    data-toggle="collapse"
-                                    data-target="#collapseOne"
-                                    aria-expanded="true"
-                                    aria-controls="collapseOne"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                What is a Hackathon?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseOne"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        A hackathon is a programming competition
-                                        in which competitors use technology to
-                                        build innovative projects within 36
-                                        hours. There will be opportunities to
-                                        win cool prizes, learn from our key-note
-                                        speakers, and network with our sponsors.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingTwo"
-                                    data-toggle="collapse"
-                                    data-target="#collapseTwo"
-                                    aria-expanded="true"
-                                    aria-controls="collapseTwo"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Where will it be hosted?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseTwo"
-                                    class="collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Garuda Hacks will be hosted on August
-                                        14-16, 2020, completely virtually. All
-                                        you need is to create a Slack account to
-                                        communicate with our Garuda Hacks
-                                        community.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingThree"
-                                    data-toggle="collapse"
-                                    data-target="#collapseThree"
-                                    aria-expanded="true"
-                                    aria-controls="collapseThree"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Who can participate?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseThree"
-                                    class="collapse"
-                                    aria-labelledby="headingThree"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Everyone can participate! We encourage
-                                        anyone who is interested in learning
-                                        more about Hackathons, programming, and
-                                        the tech industry to join Garuda Hacks!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingSeven"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSeven"
-                                    aria-expanded="true"
-                                    aria-controls="collapseSeven"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Do I have to know how to code to
-                                                join?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseSeven"
-                                    class="collapse"
-                                    aria-labelledby="headingSeven"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Nope! You can learn along the way or
-                                        team up with experienced programmers.
-                                        Skills such as designing, business
-                                        planning, and etc are all going to
-                                        impact the projects in various ways!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingEight"
-                                    data-toggle="collapse"
-                                    data-target="#collapseEight"
-                                    aria-expanded="true"
-                                    aria-controls="collapseEight"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                Are there any rules?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseEight"
-                                    class="collapse"
-                                    aria-labelledby="headingEight"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Attendees must abide by the
-                                        <a
-                                            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                                            >Major League Hacking (MLH) Code of
-                                            Conduct</a
-                                        >. We want to respect each other and
-                                        keep Garuda Hacks a safe environment for
-                                        all participants.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingOne"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFour"
-                                    aria-expanded="true"
-                                    aria-controls="collapseFour"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                How do I apply? What if I don’t
-                                                have a team?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseFour"
-                                    class="collapse"
-                                    aria-labelledby="headingFour"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        You can apply as an individual or as a
-                                        team (up to 4 participants max). If in
-                                        any case, you are looking for team
-                                        members, you can form teams with other
-                                        participating hackers at the beginning
-                                        of our event. Don’t worry, we will help
-                                        you pair up with other hackers!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingFive"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFive"
-                                    aria-expanded="true"
-                                    aria-controls="collapseFive"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                How much will Garuda Hacks cost
-                                                me?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseFive"
-                                    class="collapse"
-                                    aria-labelledby="headingFive"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        Nothing at all!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingSix"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSix"
-                                    aria-expanded="true"
-                                    aria-controls="collapseSix"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                How do we submit our projects?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseSix"
-                                    class="collapse"
-                                    aria-labelledby="headingSix"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        You must submit your project’s video
-                                        demonstration through Devpost.
-                                        Additionally, it is optional for you to
-                                        submit your project’s live website too.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header collapsed"
-                                    id="headingNine"
-                                    data-toggle="collapse"
-                                    data-target="#collapseNine"
-                                    aria-expanded="true"
-                                    aria-controls="collapseNine"
-                                >
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>
-                                                What can I make?
-                                            </p>
-                                        </div>
-                                        <div class="col-auto mr-auto">
-                                            <i class="fas fa-chevron-up"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    id="collapseNine"
-                                    class="collapse"
-                                    aria-labelledby="headingNine"
-                                    data-parent="#accordionFAQ"
-                                >
-                                    <div class="card-body">
-                                        We welcome all software and hardware
-                                        hacks that align with our tracks.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-sponsor-full" id="sponsor">
-            <div class="container">
-                <div class="partner-category">
-                    <h1 class="text-center">League Partner</h1>
-                    <div class="items-container league-partner">
-                        <img src="./img/sponsor/mlh.png" alt="MLH Logo" />
-                    </div>
-                </div>
-                <div class="partner-category">
-                    <h1 class="text-center">
-                        Public Sector Partner
-                    </h1>
-                    <div class="items-container league-partner">
-                        <img
-                            src="./img/sponsor/kemenparekraf.png"
-                            alt="Kemenparekraf Logo"
-                        />
-                    </div>
-                </div>
-                <div class="partner-category">
-                    <h1 class="text-center">
-                        Sponsor
-                    </h1>
-                    <div class="row">
-                        <div class="mx-auto col-12 col-lg-6">
-                            <img
-                                class="mx-auto title"
-                                src="./img/sponsor/blibli.png"
-                                alt="Blibli Logo"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="items-container">
-                        <img src="./img/sponsor/bubble.png" alt="Bubble Logo" />
-                        <img src="./img/sponsor/ovo.png" alt="OVO Logo" />
-                        <img src="./img/sponsor/wahyoo.png" alt="Wahyoo Logo" />
-                        <img
-                            src="./img/sponsor/kotakode.png"
-                            alt="KotaKode Logo"
-                        />
-                        <img src="./img/sponsor/cotter.png" alt="Cotter Logo" />
-                        <img src="./img/sponsor/dana.png" alt="Dana Logo" />
-                        <img
-                            src="./img/sponsor/intudo.png"
-                            alt="Intudo VC Logo"
-                        />
-                        <img src="./img/sponsor/echoar.png" alt="echoAR Logo" />
-                        <img
-                            src="./img/sponsor/firsttext.png"
-                            alt="FirstText Logo"
-                        />
-                        <img
-                            src="./img/sponsor/wolfram.png"
-                            alt="Wolfram Logo"
-                        />
-                        <img
-                            src="./img/sponsor/balsamiq.png"
-                            alt="Balsamiq Logo"
-                        />
-                        <img src="./img/sponsor/linode.png" alt="Linode Logo" />
-                        <img
-                            src="./img/sponsor/populix.png"
-                            alt="Populix Logo"
-                        />
-                        <img
-                            src="./img/sponsor/giveaway-agency.png"
-                            alt="Giveaway Agency Logo"
-                        />
-                        <img
-                            src="./img/sponsor/jetbrains.png"
-                            alt="Jetbrains Logo"
-                        />
-                        <img src="./img/sponsor/bugsee.png" alt="Bugsee Logo" />
-                        <img src="./img/sponsor/hyperx.png" alt="HyperX Logo" />
-                        <img
-                            src="./img/sponsor/egghead.png"
-                            alt="Egghead Logo"
-                        />
-                        <img
-                            src="./img/sponsor/hackplus.png"
-                            alt="Hack+ Logo"
-                        />
-                        <!-- sometimes life is just weird, but that's fine -->
-                        <a
-                            href="http://hackp.ac/mlh-stickermule-hackathons"
-                            style="max-width: 40%;"
-                        >
-                            <img
-                                src="./img/sponsor/stickermule.png"
-                                alt="Stickermule Logo"
-                                style="margin: 1rem 0rem; max-width: 100%;"
-                        /></a>
-                        <img src="./img/sponsor/xyz.png" alt="XYZ Logo" />
-                        <img
-                            src="./img/sponsor/digitalocean.png"
-                            alt="DigitalOcean Logo"
-                        />
-                        <img src="./img/sponsor/ravv.png" alt="RAVV Logo" />
-                        <a
-                            href="https://joinglimpse.com"
-                            style="max-width: 40%;"
-                        >
-                            <img
-                                src="./img/sponsor/glimpse.png"
-                                alt="Glimpse Logo"
-                                style="margin: 1rem 0rem; max-width: 100%;"
-                            />
-                        </a>
-                    </div>
-                </div>
-                <div class="partner-category">
-                    <h1 class="text-center">
-                        Media Partner
-                    </h1>
-                    <div class="items-container">
-                        <img
-                            src="./img/sponsor/dailysocial.png"
-                            alt="DailySocial Logo"
-                        />
-                        <img
-                            src="./img/sponsor/filemagz.png"
-                            alt="FileMagz Logo"
-                        />
-                        <img
-                            src="./img/sponsor/kamar-pelajar.png"
-                            alt="Kamar Pelajar Logo"
-                        />
-                    </div>
-                </div>
-                <div class="partner-category">
-                    <h1 class="text-center">
-                        Community Partner
-                    </h1>
-                    <div class="items-container">
-                        <img
-                            src="./img/sponsor/ppi-hongkong.png"
-                            alt="PPI Hong Kong Logo"
-                        />
-                        <img
-                            src="./img/sponsor/ppi-singapore.png"
-                            alt="PPI Singapore Logo"
-                        />
-                        <img
-                            src="./img/sponsor/australia.png"
-                            alt="PPI Australia Logo"
-                        />
-                        <img
-                            src="./img/sponsor/ppi-belanda.png"
-                            alt="PPI Belanda Logo"
-                        />
-                        <img
-                            src="./img/sponsor/jepang.png"
-                            alt="PERMIAS Jepang Logo"
-                        />
-                        <img
-                            src="./img/sponsor/seattle.png"
-                            alt="PERMIAS Seattle Logo"
-                        />
-
-                        <img src="./img/sponsor/nyu.png" alt="ISA NYU Logo" />
-                        <img
-                            src="./img/sponsor/isuci.png"
-                            alt="Indonesian Students at UC Irvine Logo"
-                        />
-                        <img
-                            src="./img/sponsor/bentley.png"
-                            alt="Bentley Indonesian Student Association Logo"
-                        />
-                        <img
-                            src="./img/sponsor/indodvc.png"
-                            alt="Diablo Valley College Indonesian Student Association Logo"
-                        />
-                        <img
-                            src="./img/sponsor/deanza.png"
-                            alt="Permias De Anza Logo"
-                        />
-                        <img
-                            src="./img/sponsor/pennstate.png"
-                            alt="Permias Penn State Logo"
-                        />
-                        <img
-                            src="./img/sponsor/permias-san-diego.png"
-                            alt="Permias San Diego Logo"
-                        />
-                        <img
-                            src="./img/sponsor/texasam.png"
-                            alt="Permias Texas A&M Logo"
-                        />
-                        <img
-                            src="./img/sponsor/minnesota.png"
-                            alt="Permias Minnesota A&M Logo"
-                        />
-                        <img
-                            src="./img/sponsor/davis.png"
-                            alt="PERMIAS Davis Logo"
-                        />
-                        <img
-                            src="./img/sponsor/msu.png"
-                            alt="PERMIAS Michigan State Logo"
-                        />
-                        <img src="./img/sponsor/dc.png" alt="PERMIAS DC Logo" />
-                        <img src="./img/sponsor/unsw.png" alt="UNSW Logo" />
-                        <img src="./img/sponsor/rmit.png" alt="RMIT Logo" />
-                        <img
-                            src="./img/sponsor/georgiatech.png"
-                            alt="Georgia Tech Logo"
-                        />
-                        <img src="./img/sponsor/isc.png" alt="ISC Logo" />
-                        <img src="./img/sponsor/uw.png" alt="ISA UW Logo" />
-                        <img
-                            src="./img/sponsor/kcl.png"
-                            alt="KCL Asian Society Logo"
-                        />
-                        <img
-                            src="./img/sponsor/imperial.png"
-                            alt="Imperial Logo"
-                        />
-                        <img src="./img/sponsor/usc.png" alt="ASIS USC Logo" />
-                        <img
-                            src="./img/sponsor/berkeley.png"
-                            alt="BISA Berkeley Logo"
-                        />
-                        <img
-                            src="./img/sponsor/ibsa.png"
-                            alt="IBSA UCLA Logo"
-                        />
-                        <img src="./img/sponsor/hku.png" alt="HKUINASA Logo" />
-                        <img
-                            src="./img/sponsor/cambridge.png"
-                            alt="Cambridge Indonesia Association Logo"
-                        />
-                        <img src="./img/sponsor/yipa.png" alt="YIPA Logo" />
-                        <img src="./img/sponsor/gisau.png" alt="GISAU Logo" />
-                        <img
-                            src="./img/sponsor/einhoven.png"
-                            alt="PPI Einhoven Indonesia Association Logo"
-                        />
-                        <img
-                            src="./img/sponsor/nanjing.png"
-                            alt="PPI Nanjing Logo"
-                        />
-                        <img
-                            src="./img/sponsor/ppi dunia.png"
-                            alt="PPI Dunia Logo"
-                        />
-                        <img
-                            src="./img/sponsor/ningbo.png"
-                            alt="PERMIT Ningbo Logo"
-                        />
-                        <img src="./img/sponsor/osu.png" alt="OSU Logo" />
-                        <img
-                            src="./img/sponsor/madison.png"
-                            alt="Madison Logo"
-                        />
-                        <img
-                            src="./img/sponsor/hannover.png"
-                            alt="Hannover Logo"
-                        />
-                        <img
-                            src="./img/sponsor/warwick.png"
-                            alt="Warwick Logo"
-                        />
-                        <img src="./img/sponsor/alsace.png" alt="Alsace Logo" />
-                        <img
-                            src="./img/sponsor/sfba.png"
-                            alt="Permias SFBA Logo"
-                        />
-                        <img
-                            src="./img/sponsor/pullman.png"
-                            alt="Pullman Logo"
-                        />
-                        <img
-                            src="./img/sponsor/hackcbs.png"
-                            alt="HackCBS Logo"
-                        />
-                        <img
-                            src="./img/sponsor/nyc.png"
-                            alt="Permias NYC Logo"
-                        />
-                        <img src="./img/sponsor/binus.png" alt="Binus Logo" />
-                        <img
-                            src="./img/sponsor/bahackathon.png"
-                            alt="Bay Area Hackathons Logo"
-                        />
-                        <img
-                            src="./img/sponsor/hackau.png"
-                            alt="Hackathons Australia"
-                        />
-                        <img src="./img/sponsor/gen-g.png"/ alt="Generation Girl
-                        Logo">
-                        <img
-                            src="./img/sponsor/did.png"
-                            alt="Developers in
-                        Depth Logo"
-                        />
-                        <img src="./img/sponsor/byyou.png" alt="ByYou Logo" />
-                        <img src="./img/sponsor/zubi.png" alt="Zubi Logo" />
-                        <img
-                            src="./img/sponsor/royal-hackaway.png"
-                            alt="Royal Hackaway Logo"
-                        />
-                        <img src="./img/sponsor/siso.png" alt="SISO" />
-                    </div>
-                </div>
-                <div class="partner-category">
-                    <h1 class="text-center">
-                        Education Partner
-                    </h1>
-                    <div class="items-container">
-                        <img
-                            src="./img/sponsor/script.png"
-                            alt="Script Foundation Logo"
-                        />
-                        <img src="./img/sponsor/binar.png" alt="Binar Logo" />
-                        <img
-                            src="./img/sponsor/hh-india.png"
-                            alt="HH India Logo"
-                        />
-                    </div>
-                </div>
-                <div class="sponsor-info">
-                    <p>
-                        <strong>Interested in sponsoring us?</strong><br />
-                        Send us an email at
-                        <a href="mailto:team@garudahacks.com"
-                            >team@garudahacks.com</a
-                        >
-                        for more details!
-                    </p>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-2">
-                        <img
-                            class="mx-auto mb-5 mb-lg-0"
-                            src="./img/logo-outline.png"
-                            alt="Garuda Hacks Logo"
-                        />
-                    </div>
-                    <div
-                        class="col 12 col-lg-8 offset-lg-1 text-center text-lg-left footer-text"
-                    >
-                        <div>
-                            <h1>Garuda Hacks</h1>
-                            <p class="bold">
-                                Virtual, 14-16 August 2020
-                            </p>
-                            <p>
-                                <i>Powered by</i>
-                                <img
-                                    class="powered-img"
-                                    src="./img/sponsor/blibli-mono.png"
-                                />
-                            </p>
-
-                            <p>
-                                Follow our
-                                <a href="https://www.instagram.com/garudahacks/"
-                                    >Instagram</a
-                                >,
-                                <a href="https://twitter.com/GarudaHacks"
-                                    >Twitter</a
-                                >, and
-                                <a href="https://www.facebook.com/GarudaHacks"
-                                    >Facebook</a
-                                >
-                                for the latest updates!
-                            </p>
-                            <p>
-                                Garuda Hacks is a fiscally sponsored 501(c)(3)
-                                non-profit organization based in the United
-                                States of America.
-                            </p>
-                            <!-- <p>Read our <a href="#">hacker guide!</a></p>
-            <p>
-                Submit your project on <a href="#">Devpost</a>!
-            </p> -->
-                        </div>
-                    </div>
+                  <p style="font-weight:100" >@garudahacks</p>
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
+          <div class="container-fluid col-sm-3">
+            <div class="row" style="text-align:left;height:100%;margin-left:5%">
+              <div class="container-fluid col-sm-3" style="position:relative;margin-right:auto;margin-left:auto;">
+                <img src="linkedin.svg" style="width:80%;display:block;position:relative;margin-left:40%;">
+              </div>
+              <div class="container-fluid col-sm-9">
+                <div class="row">
+                  <p style="font-weight: 700;">LINKEDIN</p>
+                </div>
+                <div class="row">
+                  <p style="font-weight:100">Garuda Hacks</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid col-sm-3">
+            <div class="row" style="text-align:center;height:100%;">
+              <div class="container-fluid col-sm-3" style="position:relative;margin-right:auto;margin-left:auto;">
+                <img src="wa.svg" style="width:80%;display:block;position:relative;margin-left:160%;">
+              </div>
+              <div class="container-fluid col-sm-9">
+                <div class="row">
+                  <p style="font-weight:700">WHATSAPP</p>
+                </div>
+                <div class="row">
+                  <p style="font-weight:100" >123 456 789</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid col-sm-1">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
-        <script src="./js/index.js"></script>
-    </body>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
