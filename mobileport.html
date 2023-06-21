@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+			Garuda Hacks | Indonesia's Premier Global Hackathon
+    </title>
+		<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('[lang="id"]').hide()
+				$("#EN-greyout").click(function(){
+					$('[lang="id"]').hide()
+					$('[lang="en"]').show()
+				})
+				$("#ID-greyout").click(function(){
+					$('[lang="en"]').hide()
+					$('[lang="id"]').show()
+				})
+			})
+		</script>
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					var blur = 10 * Math.atan(0.005 * $(window).scrollTop())
+					$(".bgimagecontainer").css("-webkit-filter","blur("+blur+"px)")
+				})
+			})
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#hamburger").click(function(){
+					if ($("#hamburger").attr("aria-expanded") === "true"){
+						$("#navv").css({"background-color":"rgba(141, 139, 139, 0.8)","transition":"background-color 0.3s ease"});}
+					
+					if ($("#hamburger").attr("aria-expanded") === "false"){
+						$("#navv").css({"background-color":"rgba(141, 139, 139, 0.4)","transition":"background-color 0.3s ease"});}
+					})
+			})
+
+		</script>
+		<link rel="icon" type="image/png" href="logo.png">
+		<style>
+			@font-face{
+				font-family: League-Spartan-Bold;
+				src: url('static/LeagueSpartan-Bold.ttf') format('truetype');
+			}
+			@font-face{
+				font-family: League-Spartan-Regular;
+				src: url('static/LeagueSpartan-Regular.ttf') format('truetype');
+			}
+			@font-face{
+				font-family: Montserrat;
+				src: url('static/Montserrat-Bold.ttf') format('truetype');
+			}
+			@keyframes disappear{
+				from {opacity:1;}
+				to {opacity:0;}
+			}
+	
+			#Ghackstitlemobile{ 
+				font-family: Montserrat;
+				font-weight: 700;
+				font-size: 40px;
+				white-space:nowrap;
+			}
+			#Ghackstitle{ 
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 100px;
+      white-space:nowrap;
+    	}
+			#Ghacksdate{
+				font-family: League-Spartan-Bold;
+				font-style: normal;
+				font-weight: 1000;
+				font-size: 25px;
+				color: #424242;
+				white-space:nowrap;
+			}
+			#Ghacksdatemobile{
+				font-family: League-Spartan-Bold;
+				font-style: normal;
+				font-weight: 1000;
+				font-size: 16px;
+				color: #424242;
+				white-space:nowrap;
+			}
+			#Ghacksrdymobile{
+				font-family: League-Spartan-Bold;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				color: #640D14;
+				margin-top: 10px;
+				white-space:nowrap;
+				line-height:10px
+			}
+			#Ghacksrdy{
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 40px;
+      color: #640D14;
+      margin-top: 30px;
+      white-space:nowrap;
+    	}
+			#heading-font{
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 61px;
+				text-align: center;
+			}
+			#heading-font-mobile{
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 36px;
+				text-align: center;
+			}
+			#subheading-font{
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 61px;
+				text-align: center;
+			}
+			#project-FAQ{
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 300;
+				color: black;
+				font-size: 22.6px;
+				line-height: 45px;
+			}
+			#project-FAQ::before{
+				content: url('info-mark.svg') ;
+				display: inline-block;
+				padding-right: 3px;
+				vertical-align: middle;
+			}
+			.grey-box-text{
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 300;
+				color: black;
+				font-size: 22.6px;
+				line-height: 35px;
+			}
+			.navbartext{
+					font-family: League-Spartan-Regular;
+					font-style: normal;
+					font-weight: 100;
+					font-size: 27px;
+					line-height: 30px;
+					color: #2E2E2E;
+			}
+			.red-button{
+					font-family: League-Spartan-Regular;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 27px;
+					color:white ;
+					line-height: 25px;
+					background: #640D14;
+					box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+					border-radius: 10px;
+			}
+	
+			.black-button{
+					font-family: League-Spartan-Regular;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 27px;
+					color:white ;
+					line-height: 25px;
+					background: #242236;
+					box-shadow: 1px 1px 10px rgba(163, 163, 163, 0.5), inset 1px 1px 10px rgba(163, 163, 163, 0.75);
+					border-radius: 10px;
+			}
+	
+			.about-button{
+				font-family: League-Spartan-Regular;
+				box-sizing: border-box;
+				background: rgba(255, 255, 255, 0.75);
+				border: 4px solid #640D14;
+				/* GH-blue */
+				box-shadow: 1px 1px 10px rgba(163, 163, 163, 0.5), inset 1px 1px 10px rgba(163, 163, 163, 0.75);
+				border-radius: 10px;
+				color: #2E2E2E;
+				font-size:27px;
+				width:55%;
+			}
+			.about-button-mobile{
+				font-family: League-Spartan-Regular;
+				box-sizing: border-box;
+				background: rgba(255, 255, 255, 0.75);
+				border: 4px solid #640D14;
+				/* GH-blue */
+				box-shadow: 1px 1px 10px rgba(163, 163, 163, 0.5), inset 1px 1px 10px rgba(163, 163, 163, 0.75);
+				border-radius: 10px;
+				color: #2E2E2E;
+				font-size:27px;
+				width:86%;
+			}
+	
+			.about-title{
+				font-family: League-Spartan-Bold;
+				font-weight:300;
+			}
+	
+			.about-content{
+				font-family: League-Spartan-Regular;
+				font-weight:300;
+				font-size:20px;
+				padding-left:7%;
+				padding-right:7%;
+			}
+	
+			.how-works-title{
+				font-family: 'League Spartan';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 25px;
+				font-family: League-Spartan-Bold;
+				text-align: center;
+				margin-top: 2%;
+				color: #242236;
+			}
+			.how-works-title-mobile{
+				font-family: 'League Spartan';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 25px;
+				font-family: League-Spartan-Bold;
+				text-align: center;
+				margin-top: 2%;
+				color: #242236;
+			}
+	
+			.how-works-button{
+					position:absolute;
+					width: 400px;
+					height: 400px;
+					margin-top: 40px;
+					background: #640D14;
+					box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+					border-radius: 10px;
+					transition: 0.3s;
+					z-index:1;
+					
+			}
+	
+			.how-works-ul{
+				list-style:none; 
+				padding-left:1%; 
+			}
+			.withicon{
+				text-indent: -0.8em;
+				padding-left:5%;
+			}
+			.how-works-li{
+				font-weight:300;
+				font-size:16px;
+				position: relative;
+				margin-top: 10px;
+				font-style: normal;
+				padding-right:5px;
+				
+				line-height: 17px;
+				font-family: League-Spartan-Regular;
+				color:#2E2E2E;
+			}
+			#email1::before{
+				content: url('email1.png');
+				margin:0 10px 0 0;
+			}
+			#email2::before{
+				content: url('email2.png');
+				margin:0 10px 0 0;
+			}
+	
+			.project-track-button{
+					position:absolute;
+					width: 415px;
+					height: 525px;
+					margin-top: 60px;
+					background: #640D14;
+					box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+					border-radius: 10px;
+					transition: 0.3s;
+					z-index:1;
+			}
+			.project-track-header{
+					position:absolute;
+					width: 415px;
+					height: 75px;
+					margin-top: 60px;
+					background: #640D14;
+					box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+					border-radius: 10px 10px 0px 0px;
+					transition: 0.3s;
+					z-index:1;
+			}
+			.project-track-info{
+					position:absolute;
+					width: 415px;
+					height: 525px;
+					margin-top: 60px;
+					background: white;
+					box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+					border-radius: 10px;
+					transition: 0.3s;
+					z-index:1;
+			}
+			.project-track-button:hover {opacity:0;}
+	
+			.project-track-text{
+				margin-top:50px;
+				line-height:40px;
+				font-family: League-Spartan-Bold;
+				text-align: center;
+				font-weight: 800;
+				font-size: 50px;
+				color:white ;
+			}
+	
+			.project-info-text{
+					padding-right:10px;
+					margin-left:25px;
+					line-height:20px;
+					font-family: League-Spartan-Regular;
+					text-align: left;
+					font-weight: 600;
+					font-size: 22px;
+					color:black ;
+			}
+			.project-header-info{
+					margin-top:25px;
+					margin-left:35px;
+					line-height:5px;
+					font-family: League-Spartan-Bold;
+					text-align: center;
+					font-weight: 800;
+					font-size: 30px;
+					color:white ;
+			}
+			.flex-container{
+				display:flex;
+				justify-content: center;
+				border:1px;
+			}
+	
+			.project-track-dot{
+				display: list-item;                                        
+				margin-left : 2em;
+			}
+			
+			.project-track-question::before{
+				content: url('question-mark.svg') ;
+				display: inline-block;
+				padding-right: 3px;
+				vertical-align: middle;
+			}
+			.FAQ-button{
+					font-family: League-Spartan-Regular;
+					margin-top: 50px;
+					width: 95%;
+					height: 70px;
+					font-style: normal;
+					font-weight: 1000;
+					font-size: 18px;
+					color:white ;
+					line-height: 20px;
+					background: #640D14;
+					background-image: url('downarrow.svg');
+					background-repeat: no-repeat;
+					background-position-y: center;
+					background-position-x: 95%;
+					border-radius: 10px;
+					border-color: #640D14;
+					position: relative;
+					display: inline-block;
+			}
+	
+			.FAQ-content {
+				display: none;
+				position: absolute;
+				color: black;
+				text-align: left;
+				width: 100.5%;
+				border-radius: 0px 0px 10px 10px;
+				background: white;
+				border-color: white;
+				margin-left:-7px;
+				margin-top:7px;
+				padding: 12px ;
+				z-index:-1;
+			}
+	
+			.FAQ-title{
+				text-align: middle;
+				margin-right:10%;
+				margin-top: 15px;
+				padding-left: 10px;
+			}
+	
+			.langbutton-select {
+				display: inline-block;
+				color: black;
+				font-family: League-Spartan-Regular;
+				font-style: normal;
+				font-weight: 100;
+				font-size: 27px;
+			}
+	
+			.langbutton-greyout {
+				display: inline-block;
+				color: rgb(230, 230, 238);
+				font-family: League-Spartan-Regular;
+				font-style: normal;
+				font-weight: 100;
+				font-size: 27px;
+			}
+	
+			.FAQ-button:focus  {
+				background-image: url('uparrow.svg');
+				border-radius: 10px 10px 0px 0px;
+	
+			}
+			.FAQ-button:focus .FAQ-content	 {
+				display: block;
+				z-index: 1;
+			}
+			.footer-font{
+				font-family: 'League Spartan';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 2px;
+				color: #424242;
+				font-family: League-Spartan-Regular;
+			}
+			.custom-toggler.navbar-toggler {
+        border-color: transparent;
+			}
+			.custom-toggler .navbar-toggler-icon {
+        background-image: url("hamburger.png")
+			}
+
+			.bgimagecontainer{
+				background-image: url("modified-bg1.png"), url("modified-bg2.png");
+				background-repeat:no-repeat,repeat;
+				background-position:center top, center bottom;
+				background-size:cover;
+				z-index: -5;
+				position:fixed;
+				top:0px;
+				right:0px;
+				bottom:0px;
+				left:0px
+
+
+			}
+		</style>
+  </head>
+
+	<body>
+		<!--BACKGROUND IMAGE-->
+		<div class="bgimagecontainer">
+		</div>
+
+
+		<!--NAVBAR-->
+		<nav id="navv" class="navbar navbar-expand-sm fixed-top navbar-dark" style="background-color:rgba(141, 139, 139, 0.4)">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img src="logo.png" alt="Avatar Logo" style ="width:48px;"> </a>
+				<button id="hamburger" class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="z-index:10">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li><a class="dropdown-item navbartext" href="#about" style="margin-left:20px;margin-top:30px">About</a></li>
+						<li><a class="dropdown-item navbartext" href="#how-it-works" style="margin-left:20px">How It Works</a></li>
+						<li><a class="dropdown-item navbartext" href="#project-track" style="margin-left:20px">Tracks</a></li>
+						<li><a class="dropdown-item navbartext" href="#prize-pool" style="margin-left:20px">Prizes</a></li>
+						<li><a class="dropdown-item navbartext" href="#FAQ" style="margin-left:20px">FAQ</a></li>
+						<li>
+						  <div style="margin-left:20px">
+								<div id="EN-button" class="langbutton-select" lang="en">EN</div>
+								<div id="EN-greyout" class="langbutton-greyout" lang="id">EN</div>
+								<div class="langbutton-select">/</div>
+								<div id="ID-button" class="langbutton-select" lang="id">ID</div>
+								<div id="ID-greyout" class="langbutton-greyout" lang="en">ID</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	  <div class="row" style="margin:auto">
+			<div class="container-fluid col-sm-6" style="text-align:center;top:90px;margin:0 auto;position:absolute;z-index:2;">
+				<h1 id="Ghackstitlemobile">GARUDA<br>HACKS 4.0</h1>
+				<p id="Ghacksdatemobile" lang="en">21-23 July 2023</p>
+				<p id="Ghacksdatemobile" lang="id">21-23 Juli 2023</p>
+				<p id="Ghacksrdymobile" lang="en">Ready to Build the Future?</p>
+				<p id="Ghacksrdymobile" lang="id">Siap Membangun Masa Depan?</p>
+				<div class="row" style="width:86%;height:100%;margin:auto"> 
+					<div class="container-fluid col-sm-5 red-button" style="margin-top:18px;display:flex;flex-direction:row;align-items:center;height:50px;justify-content:center">
+						<a href="https://airtable.com/shrrNZAo4mECqKid0" target="_blank">
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="en">
+								<img src="puzzle.svg" style="margin-right:6px;">
+								Register for Hackathon
+							</button>
+							<button type="button" class="btn project-info-text" style="color:white;padding-right:0;font-size:16px" lang="id">
+								<img src="puzzle.svg" style="margin-right:6px;">
+								Registrasi untuk Hackathon
+							</button>
+						</a>
+					</div>
+					<div class="container-fluid col-sm-5 red-button" style="margin-top:18px;display:flex;flex-direction:row;align-items:center;height:50px;justify-content:center">
+						<a href="https://airtable.com/shrZPgAnAwXVwDhXs" target="_blank">
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="en">
+								<img src="lightbulb.svg" style="margin-right:6px;">
+								Register for Speaker Series
+							</button> 
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="id">
+								<img src="lightbulb.svg" style="margin-right:6px;">
+								Registrasi untuk Speaker Series
+							</button>
+						</a>
+					</div>
+					<div class="container-fluid col-sm-2">
+					</div>
+				</div>
+				<div class="row" style="width:86%;height:100%;margin:auto">
+					<div class="container-fluid col-sm-5 black-button" style="margin-top:18px;display:flex;flex-direction:row;align-items:center;height:50px;justify-content:center">
+						<a href="https://airtable.com/shr3PcTx6XUkES4st" target="_blank">
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="en">
+								<img src="mentor.svg" style="margin-right:6px;">
+								Register as a Mentor
+							</button>
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="id">
+								<img src="mentor.svg" style="margin-right:6px;">
+								Registrasi sebagai Mentor
+							</button>
+						</a>
+					</div>
+					<div class="container-fluid col-sm-5 black-button" style="margin-top:18px;display:flex;flex-direction:row;align-items:center;height:50px;justify-content:center">
+						<a href="https://airtable.com/shrYaNL0dMSdoElgm" target="_blank">
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="en">
+								<img src="heartshake.svg" style="margin-right:6px;">
+								Join Us as a Volunteer
+							</button>
+							<button type="button" class="btn project-info-text" style="color:white;font-size:16px" lang="id">
+								<img src="heartshake.svg" style="margin-right:6px;">
+								Registrasi sebagai sukarelawan
+							</button>
+						</a>
+					</div>
+					<div class="container-fluid col-sm-2">
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid col-sm-6"></div>
+		</div>
+
+		<!--About-->
+		<div id="about" class="container-fluid" style="top:900px;position:absolute;margin:auto">
+			<h1 id="heading-font-mobile" lang="en">About Garuda Hacks</h1>
+			<h1 id="heading-font-mobile" lang="id">Tentang Garuda Hacks</h1>
+			<div class="row" style="margin-top:18px">
+				<div class="container-fluid col-sm-12 red-button" style="width:86%;">
+				<div class="row" style="text-align:center;height:100%;">
+					<div class="container-fluid col-sm-10" style="position:relative;height:100%">
+						<div class="row" style="text-align:center;position:relative;margin-top:30px">
+							<p style="font-size:20px;font-weight:400;line-height:23px" lang="en">We are a hackathon based off Indonesia where the world's greatest talents compete to solve the world's most pressing challenges using technology. We also have the largest concentration of Indonesian youth talent passionate about local issues at home. Furthermore, we are a 501c3 non-profit, driven by inspiring learning for our participants.</p>
+							<p style="font-size:20px;font-weight:100;line-height:23px" lang="id">Kami adalah hackathon yang berbasis di Indonesia di mana talenta terhebat dunia bersaing untuk menyelesaikan tantangan paling mendesak di dunia menggunakan teknologi. Kami juga memiliki konsentrasi terbesar talenta muda Indonesia yang bersemangat tentang isu-isu lokal di rumah. Selain itu, kami adalah organisasi nirlaba 501c3, didorong oleh pembelajaran yang menginspirasi untuk peserta.</p>
+						</div>
+						<div class="row" style=" padding-right:20px;">
+							<div class="container-fluid col-sm-4">
+								<div class="row" style="text-align:center;height:100%;">
+									<div class="container-fluid col-sm-3" style="position:relative;margin:auto">
+										<img src="clock.svg" style="width:25px;display:block;position:relative;margin-left:80%;">
+									</div>
+									<div class="container-fluid col-sm-9">
+										<div class="row">
+											<p lang="en">36 Hours</p>
+											<p lang="id">36 Jam</p>
+										</div>
+										<div class="row">
+											<p style="font-weight:100" lang="en">Offline Hackathon</p>
+											<p style="font-weight:100" lang="id">Hackathon Offline</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid col-sm-4">
+								<div class="row" style="text-align:center;height:100%;">
+									<div class="container-fluid col-sm-3" style="position:relative;margin:auto">
+										<img src="docs.svg" style="width:25px;display:block;position:relative;margin-left:80%;">
+									</div>
+									<div class="container-fluid col-sm-9">
+										<div class="row">
+											<p>400+</p>
+										</div>
+										<div class="row">
+											<p style="font-weight:100" lang="en">Projects Submitted</p>
+											<p style="font-weight:100" lang="id">Proyek Yang Telah Diajukan</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid col-sm-4">
+								<div class="row" style="text-align:center;height:100%;">
+									<div class="container-fluid col-sm-3" style="position:relative;margin:auto">
+										<img src="medallion.svg" style="width:25px;display:block;position:relative;margin-left:80%;">
+									</div>
+									<div class="container-fluid col-sm-9">
+										<div class="row">
+											<p>30+</p>
+										</div>
+										<div class="row">
+											<p style="font-weight:100" lang="en">Prize Categories</p>
+											<p style="font-weight:100" lang="id">Kategori Hadiah</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+	
+			<div class="row" style="width:100%;margin:120px auto 0;text-align: center;">
+				<div class="container-fluid col-sm-4" style="width:100%">
+					<div class="about-button-mobile" style="position:relative;margin-left: auto;margin-right:auto;z-index:3;height:100%">
+						<img src="rocket.png" style="margin-top:-27.5%;width:60%">
+						<p class="about-title" style="margin-top:5%" lang="en">Our Mission</p>
+						<p class="about-title" style="margin-top:5%" lang="id">Misi Kami</p>
+						<p class="about-content" style="font-weight:100" lang="en">We create opportunities that empower young Indonesians with the motivation and skills needed to develop solutions for Indonesia’s most pressing issues. </p>
+						<p class="about-content" style="font-weight:100" lang="id">Kami menciptakan peluang yang memberdayakan kaum muda Indonesia dengan motivasi dan keterampilan yang dibutuhkan untuk mengembangkan solusi bagi masalah paling mendesak di Indonesia. </p>
+						<img src="line.svg" style="padding-bottom:15%;padding-top:5%">
+					</div>
+				</div>
+				<div class="container-fluid col-sm-4" style="margin-top:120px;width:100%">
+					<div class="about-button-mobile" style="position:relative;margin-left: auto;margin-right:auto;z-index:3;height:100%">
+						<img src="eyebulb.png" style="margin-top:-27.5%;width:60%">
+						<p class="about-title" style="margin-top:5%" lang="en">Our Vision</p>
+						<p class="about-title" style="margin-top:5%" lang="id">Visi Kami</p>
+						<p class="about-content" style="font-weight:100" lang="en">We envision a community of future technology leaders and cultivating a culture of student entrepreneurship in Indonesia.</p>
+						<p class="about-content" style="font-weight:100" lang="id">Kami membayangkan komunitas pemimpin teknologi masa depan dan menumbuhkan budaya kewirausahaan mahasiswa di Indonesia.</p>
+						<br>
+						<img src="line.svg" style="padding-bottom:15%;padding-top:2.5%">
+					</div>
+				</div>
+				<div class="container-fluid col-sm-4" style="margin-top:120px;width:100%">
+					<div class="about-button-mobile" style="position:relative;margin-left: auto;margin-right:auto;z-index:3;height:100%">
+						<img src="chartpaper.png" style="margin-top:-27.5%;width:60%">
+						<p class="about-title" style="margin-top:5%" lang="en">Our Past Events</p>
+						<p class="about-title" style="margin-top:5%" lang="id">Kompetisi Sebelumnya</p>
+						<p class="about-content" style="font-weight:100">Garuda Hacks 1.0, 2.0, 3.0<br>Komodo Hacks<br>Future Tech Leaders Fellowship</p>
+						<br><br>
+						<img src="line.svg" style="padding-bottom:15%;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--HOW IT WORKS-->
+		<div id="how-it-works" class="container-fluid" style="top:3300px;position:absolute">
+			<h1 id="heading-font-mobile">How It Works</h1>
+			<div class="row" style="width:100%;margin:auto">
+				
+				<div class="container-fluid col-sm-1">       
+				</div>
+				<div class="container-fluid col-sm-2" style="text-align:center;width:86%;margin:auto">
+					<img src="stars.png" style="width:40px;display:inline-block;position:relative;margin:auto;">
+					<p class="how-works-title-mobile" lang="en" style="display:inline-block">SIGN UP FOR</p>
+					<p class="how-works-title-mobile" lang="id" style="display:inline-block">DAFTAR UNTUK</p>
+					<br>
+					<div style="display:flex;">
+						<div class="container-fluid col-sm-2 red-button" style="flex:1;flex-direction:column;padding-top:5px;padding-left:10px;width:42%;text-align:left;display:inline-block;margin-right:2.5%">
+							<p class="how-works-li" style="font-weight: 700;color:white">Hackathon</p>
+							<p class="how-works-li" style="font-size:18px;font-weight: 300;margin-top:-3%;color:white" lang="en">Automatic registration to the Speaker Series</p>
+							<p class="how-works-li" style="font-size:18px;font-weight: 300;margin-top:-3%;color:white" lang="id">Registrasi otomatis untuk acara Speaker Series</p>
+							<img src="signup.svg" style="padding-bottom:5%;width:60%;display:block;position:relative;margin:auto;">
+						</div>
+						<div class="container-fluid col-sm-2 red-button" style="flex:1;flex-direction:column;padding-top:5px;padding-left:10px;width:42%;text-align:left;display:inline-block;margin-left:2.5%">
+							<p class="how-works-li" style="font-weight: 700;color:white">Speaker Series</p>
+							<img src="discussion.png" style="width:109px;height:109px;padding-bottom:5%;display:block;position:relative;margin:auto;">
+						</div>
+					</div>
+					<br>
+				</div>  
+				<div class="container-fluid col-sm-2" style="text-align:center">
+					<img src="cal2.png" style="width:40px;display:inline-block;position:relative;margin:auto;">
+					<p class="how-works-title-mobile" lang="en" style="display:inline-block">REGISTRATION</p>
+					<p class="how-works-title-mobile" lang="id" style="display:inline-block">REGISTRASI</p>
+				</div>
+				<div class="container-fluid col-sm-2" style="text-align:center">
+					<img src="email.png" style="width:40px;display:inline-block;position:relative;margin:auto;">
+					<p class="how-works-title-mobile" lang="en" style="display:inline-block">INVITATION</p>
+					<p class="how-works-title-mobile" lang="id" style="display:inline-block">UNDANGAN</p>
+				</div>
+				<div class="container-fluid col-sm-2" style="text-align:center">
+					<img src="human-tick.png" style="width:40px;display:inline-block;position:relative;margin:auto;">
+					<p class="how-works-title-mobile" lang="en" style="display:inline-block">ATTENDANCE</p>
+					<p class="how-works-title-mobile" lang="id" style="display:inline-block">KEHADIRAN</p>
+				</div>
+				<div class="container-fluid col-sm-2" style="text-align:center">
+					<img src="calendar.png" style="width:40px;display:inline-block;position:relative;margin:auto;">
+					<p class="how-works-title-mobile" lang="en" style="display:inline-block">EVENT DATE</p>
+					<p class="how-works-title-mobile" lang="id" style="display:inline-block">TANGGAL KOMPETISI</p>
+				</div>
+			</div>
+
+			<div class="row" style="width:100%;height:200px;text-align: left;">
+				<div class="container-fluid col-sm-1">       
+				</div>
+				<div class="container-fluid col-sm-2 red-button" style="padding-top:0;padding-left:1%;width:15%;">
+					<p class="how-works-li" style="font-weight: 700;color:white">Hackathon</p>
+					<p class="how-works-li" style="font-size:18px;font-weight: 300;margin-top:-3%;color:white" lang="en">Automatic registration to the Speaker Series</p>
+					<p class="how-works-li" style="font-size:18px;font-weight: 300;margin-top:-3%;color:white" lang="id">Registrasi otomatis untuk acara Speaker Series</p>
+					<img src="signup.svg" style="padding-bottom:5%;width:60%;display:block;position:relative;margin:auto;">
+				</div>  
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Registration opens on <span style="font-weight: bold ;">June 10</span></li>
+						<li class="how-works-li" lang="id">Pendaftaran dibuka pada tanggal <span style="font-weight: bold ;">10 Juni</span></li>
+						<li class="how-works-li" lang="en">Decisions will be sent via email on a rolling basis until we have enough participants</li>
+						<li class="how-works-li" lang="id">Keputusan akan dikirim melalui email secara bergiliran sampai peserta kami cukup</li>
+	
+						<li class="how-works-li red-button" style="display:flex;align-items:center;height:40px;width:65%;margin-right:auto;margin-left:auto;margin-top:10%">
+							<a href="https://airtable.com/shrrNZAo4mECqKid0" target="_blank">
+								<button type="button" class="btn project-info-text" style="padding-left:0;color:white;" lang="en">
+									<img src="puzzle.svg" style="margin-right:6px;">
+									Register 
+								</button>
+								<button type="button" class="btn project-info-text" style="padding-left:0;color:white;" lang="id">
+									<img src="puzzle.svg" style="margin-right:6px;">
+									Registrasi 
+								</button>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Check your email regularly for invitations to the events.</li>
+						<li class="how-works-li" lang="id">Periksa email Anda secara teratur untuk undangan ke acara tersebut.</li>
+						<li class="how-works-li" lang="en">If you have not received a decision within 21 days, please reach out:</li>
+						<li class="how-works-li" lang="id">Jika Anda belum menerima keputusan dalam 21 hari, harap hubungi:</li>
+						<li id="email1" class="how-works-li withicon">inquiries@garudahacks.com</li>
+						<li id="email2" class="how-works-li withicon">@garudahacks</li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Participants must plan to be on-site twice (Friday and Saturday), as a prerequisite to completing the hackathon</li>
+						<li class="how-works-li" lang="id">Peserta harus merencanakan untuk berada di tempat dua kali (Jumat dan Sabtu), sebagai prasyarat untuk menyelesaikan hackathon</li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Event will run from:<span style="font-weight:bold"><br>July 21 (6 PM) - 23 (6 AM)</span></li>
+						<li class="how-works-li" lang="id">Acara akan berlangsung dari:<span style="font-weight:bold"><br>Juli 21 (6 PM) - 23 (6 AM)</span></li>
+						<li class="how-works-li" lang="en">Closing ceremony will be <br>held on: <span style="font-weight:bold">July 23 (7 PM)</span></li>
+						<li class="how-works-li" lang="id">Upacara penutupan akan <br>held on: <span style="font-weight:bold">Juli 23 (7 PM)</span></li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-1" >
+				</div>
+			</div>
+			<div class="row" style="margin-top:3%;width:100%;height:200px;text-align: left;">
+				<div class="container-fluid col-sm-1">       
+				</div>
+				<div class="container-fluid col-sm-2 red-button" style="padding-top:1%;padding-left:1%;width:15%;">
+					<p class="how-works-li" style="font-weight: 700;color:white">Speaker Series</p>
+					<img src="discussion.png" style="padding-bottom:5%;width:60%;display:block;position:relative;margin:auto;">
+				</div>  
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Registration opens on <span style="font-weight: bold ;">June 10</span></li>
+						<li class="how-works-li" lang="id">Pendaftaran dibuka pada tanggal <span style="font-weight: bold ;">10 Juni</span></li>
+						<li class="how-works-li" lang="en">You can simply register and you’ll be invited to the event!</li>
+						<li class="how-works-li" lang="id">Cukup mendaftar dan Anda akan diundang ke acara tersebut!</li>
+						<li class="how-works-li red-button" style="display:flex;align-items:center;height:40px;width:65%;margin-right:auto;margin-left:auto;margin-top:10%">
+							<a href="https://airtable.com/shrZPgAnAwXVwDhXs" target="_blank">
+								<button type="button" class="btn project-info-text" style="padding-left:0;color:white;" lang="en">
+									<img src="lightbulb.svg" style="margin-right:6px;">
+									Register 
+								</button>
+								<button type="button" class="btn project-info-text" style="padding-left:0;color:white;" lang="id">
+									<img src="lightbulb.svg" style="margin-right:6px;">
+									Registrasi 
+								</button>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Check your email regularly for invitations to the events.</li>
+						<li class="how-works-li" lang="id">Periksa email Anda secara teratur untuk undangan ke acara tersebut.</li>
+						<li class="how-works-li" lang="en">If you have not received a decision within 21 days, please reach out:</li>
+						<li class="how-works-li" lang="id">Jika Anda belum menerima keputusan dalam 21 hari, harap hubungi:</li>
+						<li id="email1" class="how-works-li withicon">inquiries@garudahacks.com</li>
+						<li id="email2" class="how-works-li withicon">@garudahacks</li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Feel free to come at any time of the event to network with companies and attend the company talks</li>
+						<li class="how-works-li" lang="id">Jangan ragu untuk datang kapan saja pada acara tersebut untuk berjejaring dengan perusahaan dan menghadiri pembicaraan perusahaan</li>
+						<li class="how-works-li" lang="en">However, hackathon area will be secured and closed off to the public</li>
+						<li class="how-works-li" lang="id">Namun, area hackathon akan diamankan dan ditutup untuk umum</li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-2 about-button about-content" style="display:flex;align-items:center;width:15%;padding:1%;font-size:18px;">
+					<ul class="how-works-ul">
+						<li class="how-works-li" lang="en">Event will run from:<span style="font-weight:bold"><br>July 21 (3pm) - 23 (7pm)</span></li>
+						<li class="how-works-li" lang="id">Acara akan berlangsung dari:<span style="font-weight:bold"><br>Juli 21 (3pm) - 23 (7pm)</span></li>
+					</ul>
+				</div>
+				<div class="container-fluid col-sm-1" >
+				</div>
+			</div>  
+		</div>
+	</body>
+</html>
