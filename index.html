@@ -23,6 +23,18 @@
   </script>
   <script>
     $(document).ready(function(){
+      $("#hamburger").click(function(){
+        if ($("#hamburger").attr("aria-expanded") === "true"){
+          $("#navv").css({"background-color":"rgba(141, 139, 139, 0.8)","transition":"background-color 0.3s ease"});}
+        
+        if ($("#hamburger").attr("aria-expanded") === "false"){
+          $("#navv").css({"background-color":"rgba(141, 139, 139, 0.4)","transition":"background-color 0.3s ease"});}
+        })
+    })
+
+  </script>
+  <script>
+    $(document).ready(function(){
       $(window).scroll(function(){
         var blur = 10 * Math.atan(0.005 * $(window).scrollTop())
         $("#bg1,#bg2,#bg3,#bg4,#bg5,#bg6,#bg7,.bgimagecontainer").css("-webkit-filter","blur("+blur+"px)")
