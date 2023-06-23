@@ -527,6 +527,26 @@
         position: relative;
         display: inline-block;
     }
+    .FAQ-button-mobile{
+        font-family: League-Spartan-Regular;
+        margin-top: 50px;
+        width: 86%;
+        height: 70px;
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 18px;
+        color:white ;
+        line-height: 20px;
+        background: #640D14;
+        background-image: url('downarrow.svg');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 95%;
+        border-radius: 10px;
+        border-color: #640D14;
+        position: relative;
+        display: inline-block;
+    }
 
     .FAQ-content {
       display: none;
@@ -574,6 +594,15 @@
 
     }
     .FAQ-button:focus .FAQ-content	 {
+      display: block;
+      z-index: 1;
+    }
+    .FAQ-button-mobile:focus  {
+      background-image: url('uparrow.svg');
+      border-radius: 10px 10px 0px 0px;
+
+    }
+    .FAQ-button-mobile:focus .FAQ-content	 {
       display: block;
       z-index: 1;
     }
@@ -2079,7 +2108,7 @@
         </p>
       </div>
       <div class="container-fluid col-sm-3" style="z-index:0;">
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">What is a hackathon?</p>
           <p class="FAQ-title" lang="id">Apa itu hackathon?</p>
           <div class="FAQ-content">
@@ -2087,7 +2116,7 @@
             <p lang="id" style="font-weight:100">Hackathon adalah kompetisi pemrograman di mana para pesaing menggunakan teknologi untuk membangun proyek inovatif dalam waktu 36 jam. Akan ada peluang untuk memenangkan hadiah keren, belajar dari pembicara utama kami, dan berjejaring dengan sponsor kami.</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">What is different about Garuda Hacks 4.0?</p>
           <p class="FAQ-title" lang="id">Apa bedanya dengan Garuda Hacks 4.0?</p>
           <div class="FAQ-content">
@@ -2095,7 +2124,7 @@
             <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan menggabungkan dua acara inti kami (hackathon dan acara pengembangan karir) menjadi satu acara. Selain itu, seiring dengan merebaknya COVID-19, acara ini akan diadakan secara offline di Indonesia!</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">Where will it be hosted?</p>
           <p class="FAQ-title" lang="id">Di mana acara akan diadakan?</p>
           <div class="FAQ-content">
@@ -2103,7 +2132,7 @@
             <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan diselenggarakan pada 21-23 Juli 2023 di Jakarta, Indonesia. Kami akan memberikan akses ke saluran Discord bagi peserta untuk saling berhubungan sekitar satu bulan sebelum acara</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">Who can participate?</p>
           <p class="FAQ-title" lang="id">Siapa yang dapat berpartisipasi?</p>
           <div class="FAQ-content">
@@ -2111,7 +2140,7 @@
             <p lang="id" style="font-weight:100">Setiap orang dapat berpartisipasi! Kami mendorong siapa pun yang tertarik untuk mempelajari lebih Ianjut tentang Hackathon, pemrograman, dan industri teknologi untuk bergabung dengan Garuda Hacks!</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">Do I have to know code?</p>
           <p class="FAQ-title" lang="id">Apakah saya harus tahu kode?</p>
           <div class="FAQ-content">
@@ -2119,7 +2148,7 @@
             <p lang="id" style="font-weight:100">Tidak! Anda bisa belajar sambil jalan atau bekerja dengan programmer berpengalaman. Keterampilan seperti mendesain, perencanaan bisnis, dan lain-lain semuanya akan berdampak pada proyek dengan berbagai cara!</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How much does it cost?</p>
           <p class="FAQ-title" lang="id">Berapa harga berpartisipasi?</p>
           <div class="FAQ-content">
@@ -2127,7 +2156,7 @@
             <p lang="id" style="font-weight:100">Gratis! Namun, harap diperhatikan bahwa makanan tidak ditanggung, dan perjalanan serta akomodasi di luar tempat akan ditanggung oleh peserta sendiri</p>
           </div>
         </button>
-        <button type="button" class="FAQ-button" >
+        <button type="button" class="FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How do I apply?</p>
           <p class="FAQ-title" lang="id">Bagaimana cara mendaftar?</p>
           <div class="FAQ-content">
@@ -2135,7 +2164,7 @@
             <p lang="id" style="font-weight:100">Anda dapat mendaftar sebagai individu atau sebagai tim (hingga maksimal 4 peserta). Jika Anda mencari anggota tim, Anda dapat membentuk tim dengan peretas lain yang berpartisipasi di awal acara kami. Jangan khawatir, kami akan membantu Anda berpasangan dengan peretas lain!</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How do we submit our projects?</p>
           <p class="FAQ-title" lang="id">Bagaimana cara kirim proyek saya?</p>
           <div class="FAQ-content">
@@ -2143,7 +2172,7 @@
             <p lang="id" style="font-weight:100">Anda harus mengirimkan demonstrasi video proyek Anda melalui Devpost. Selain itu, Anda juga opsional untuk mengirimkan situs web langsung proyek Anda.</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">What can I make?</p>
           <p class="FAQ-title" lang="id">Apa yang bisa saya buat?</p>
           <div class="FAQ-content">
@@ -2151,7 +2180,7 @@
             <p lang="id" style="font-weight:100">Kami menerima semua perangkat lunak, peretasan perangkat keras yang selaras dengan trek kami. Kami akan menerima alternatif tanpa kode sebagai peretasan, namun kami tidak memiliki kriteria penilaian terpisah yang secara khusus disesuaikan dengannya</p>
           </div>
         </button>
-        <button type="button" class=" FAQ-button" >
+        <button type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How will projects be judged?</p>
           <p class="FAQ-title" lang="id">Bagaimana proyek akan dinilai?</p>
           <div class="FAQ-content">
