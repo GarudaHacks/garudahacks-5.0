@@ -24,6 +24,7 @@
       })
     })
   </script>
+  <!--MOBILE PROJECT TRACK SWITCH-->
   <script>
     $(document).ready(function(){
       $(".project-track-button-mobile").click(function(){
@@ -48,6 +49,198 @@
       })
     })
   </script>
+  <!--MOBILE FAQ SWITCH SCRIPT-->
+  <script>
+    $(document).ready(function(){
+      $("#but1").click(function(){
+        if($("#cont1").is(":visible")){
+          $("#cont1").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont1").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but2").click(function(){
+        if($("#cont2").is(":visible")){
+          $("#cont2").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont2").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but3").click(function(){
+        if($("#cont3").is(":visible")){
+          $("#cont3").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont3").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but4").click(function(){
+        if($("#cont4").is(":visible")){
+          $("#cont4").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont4").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but5").click(function(){
+        if($("#cont5").is(":visible")){
+          $("#cont5").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont5").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but6").click(function(){
+        if($("#cont6").is(":visible")){
+          $("#cont6").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont6").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but7").click(function(){
+        if($("#cont7").is(":visible")){
+          $("#cont7").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont7").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but8").click(function(){
+        if($("#cont8").is(":visible")){
+          $("#cont8").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont8").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but9").click(function(){
+        if($("#cont9").is(":visible")){
+          $("#cont9").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont9").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#but10").click(function(){
+        if($("#cont10").is(":visible")){
+          $("#cont10").fadeOut()
+        }
+        else{
+          $(".FAQ-content-mobile").fadeOut()
+          $("#cont10").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        }
+      })
+    })
+  </script>
+  <!--MOBILE NAVBAR COLOR FADING HAMBURGER SWITCH-->
   <script>
     $(document).ready(function(){
       $("#hamburger").click(function(){
@@ -60,6 +253,7 @@
     })
 
   </script>
+  <!--SCROLL BLUR SCRIPT-->
   <script>
     $(document).ready(function(){
       $(window).scroll(function(){
@@ -68,6 +262,7 @@
       })
     })
   </script>
+  <!--DESKTOP/MOBILE SWITCH SCRIPT-->
   <script>
     $(document).ready(function(){
       if(screen.availHeight > screen.availWidth) {
@@ -81,6 +276,7 @@
       $(".project-track-info-mobile").hide()
       $("#prize-poolm").hide()
       $("#FAQm").hide()
+      $("#sponsorsm").hide()
     }
     })
   </script>
@@ -546,6 +742,7 @@
         border-color: #640D14;
         position: relative;
         display: inline-block;
+        z-index:5
     }
 
     .FAQ-content {
@@ -561,6 +758,20 @@
       margin-top:7px;
       padding: 12px ;
       z-index:-1;
+    }
+    .FAQ-content-mobile {
+      display: none;
+      position: absolute;
+      color: black;
+      text-align: left;
+      width: 80.7%;
+      border-radius: 0px 0px 10px 10px;
+      background: white;
+      border-color: white;
+      transform:translate(8.25%,0);
+      padding: 12px ;
+      margin-top:-10px;
+      z-index:10;
     }
 
     .FAQ-title{
@@ -597,15 +808,7 @@
       display: block;
       z-index: 1;
     }
-    .FAQ-button-mobile:focus  {
-      background-image: url('uparrow.svg');
-      border-radius: 10px 10px 0px 0px;
 
-    }
-    .FAQ-button-mobile:focus .FAQ-content	 {
-      display: block;
-      z-index: 1;
-    }
     .footer-font{
       font-family: 'League Spartan';
       font-style: normal;
@@ -2107,88 +2310,102 @@
           Untuk pertanyaan lebih lanjut, Anda juga dapat menghubungi kami di <a href="#" style="color: black;">inquiries@garudahacks.com</a>
         </p>
       </div>
-      <div class="container-fluid col-sm-3" style="z-index:0;">
-        <button type="button" class=" FAQ-button-mobile" >
+      <div class="container-fluid col-sm-3" style="text-align:center">
+        <button id="but1" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">What is a hackathon?</p>
           <p class="FAQ-title" lang="id">Apa itu hackathon?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">A hackathon is a programming competition in which competitors use technology to build innovative projects within 36 hours. There will be opportunities to win cool prizes, learn from our key-note speakers, and network with our sponsors.</p>
-            <p lang="id" style="font-weight:100">Hackathon adalah kompetisi pemrograman di mana para pesaing menggunakan teknologi untuk membangun proyek inovatif dalam waktu 36 jam. Akan ada peluang untuk memenangkan hadiah keren, belajar dari pembicara utama kami, dan berjejaring dengan sponsor kami.</p>
-          </div>
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont1" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">A hackathon is a programming competition in which competitors use technology to build innovative projects within 36 hours. There will be opportunities to win cool prizes, learn from our key-note speakers, and network with our sponsors.</p>
+          <p lang="id" style="font-weight:100">Hackathon adalah kompetisi pemrograman di mana para pesaing menggunakan teknologi untuk membangun proyek inovatif dalam waktu 36 jam. Akan ada peluang untuk memenangkan hadiah keren, belajar dari pembicara utama kami, dan berjejaring dengan sponsor kami.</p>
+        </div>
+        <button id="but2" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">What is different about Garuda Hacks 4.0?</p>
           <p class="FAQ-title" lang="id">Apa bedanya dengan Garuda Hacks 4.0?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">Garuda Hacks 4.0 will merge two of our core events (hackathons and career development events) into one event. Also, as we are emerging from COVID-19, the event will be held offline in Indonesia!</p>
-            <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan menggabungkan dua acara inti kami (hackathon dan acara pengembangan karir) menjadi satu acara. Selain itu, seiring dengan merebaknya COVID-19, acara ini akan diadakan secara offline di Indonesia!</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont2" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">Garuda Hacks 4.0 will merge two of our core events (hackathons and career development events) into one event. Also, as we are emerging from COVID-19, the event will be held offline in Indonesia!</p>
+          <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan menggabungkan dua acara inti kami (hackathon dan acara pengembangan karir) menjadi satu acara. Selain itu, seiring dengan merebaknya COVID-19, acara ini akan diadakan secara offline di Indonesia!</p>
+        </div>
+        <button id="but3" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">Where will it be hosted?</p>
           <p class="FAQ-title" lang="id">Di mana acara akan diadakan?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">Garuda Hacks 4.0 will be hosted on July 21-23 2023 in Jakarta, Indonesia. We will provide access to a Discord channel for participants to get in touch with each other approximately one month prior to the event</p>
-            <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan diselenggarakan pada 21-23 Juli 2023 di Jakarta, Indonesia. Kami akan memberikan akses ke saluran Discord bagi peserta untuk saling berhubungan sekitar satu bulan sebelum acara</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont3" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">Garuda Hacks 4.0 will be hosted on July 21-23 2023 in Jakarta, Indonesia. We will provide access to a Discord channel for participants to get in touch with each other approximately one month prior to the event</p>
+          <p lang="id" style="font-weight:100">Garuda Hacks 4.0 akan diselenggarakan pada 21-23 Juli 2023 di Jakarta, Indonesia. Kami akan memberikan akses ke saluran Discord bagi peserta untuk saling berhubungan sekitar satu bulan sebelum acara</p>
+        </div>
+        <button id="but4" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">Who can participate?</p>
           <p class="FAQ-title" lang="id">Siapa yang dapat berpartisipasi?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">Everyone can participate! We encourage anyone who is interested in learning more about Hackathons, programming, and the tech industry to join Garuda Hacks!</p>
-            <p lang="id" style="font-weight:100">Setiap orang dapat berpartisipasi! Kami mendorong siapa pun yang tertarik untuk mempelajari lebih Ianjut tentang Hackathon, pemrograman, dan industri teknologi untuk bergabung dengan Garuda Hacks!</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont4" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">Everyone can participate! We encourage anyone who is interested in learning more about Hackathons, programming, and the tech industry to join Garuda Hacks!</p>
+          <p lang="id" style="font-weight:100">Setiap orang dapat berpartisipasi! Kami mendorong siapa pun yang tertarik untuk mempelajari lebih Ianjut tentang Hackathon, pemrograman, dan industri teknologi untuk bergabung dengan Garuda Hacks!</p>
+        </div>
+        <button id="but5" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">Do I have to know code?</p>
           <p class="FAQ-title" lang="id">Apakah saya harus tahu kode?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">Nope! You can learn along the way or team up with experienced programmers. Skills such as designing, business planning, and etc are all going to impact the projects in various ways!</p>
-            <p lang="id" style="font-weight:100">Tidak! Anda bisa belajar sambil jalan atau bekerja dengan programmer berpengalaman. Keterampilan seperti mendesain, perencanaan bisnis, dan lain-lain semuanya akan berdampak pada proyek dengan berbagai cara!</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont5" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">Nope! You can learn along the way or team up with experienced programmers. Skills such as designing, business planning, and etc are all going to impact the projects in various ways!</p>
+          <p lang="id" style="font-weight:100">Tidak! Anda bisa belajar sambil jalan atau bekerja dengan programmer berpengalaman. Keterampilan seperti mendesain, perencanaan bisnis, dan lain-lain semuanya akan berdampak pada proyek dengan berbagai cara!</p>
+        </div>
+        <button id="but6" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How much does it cost?</p>
           <p class="FAQ-title" lang="id">Berapa harga berpartisipasi?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">Nothing at all! However, please note that meals are not covered, and travel and accommodation outside of the venue will be at the participant’s own expense</p>
-            <p lang="id" style="font-weight:100">Gratis! Namun, harap diperhatikan bahwa makanan tidak ditanggung, dan perjalanan serta akomodasi di luar tempat akan ditanggung oleh peserta sendiri</p>
-          </div>
+          
         </button>
-        <button type="button" class="FAQ-button-mobile" >
+        <div id="cont6" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">Nothing at all! However, please note that meals are not covered, and travel and accommodation outside of the venue will be at the participant’s own expense</p>
+          <p lang="id" style="font-weight:100">Gratis! Namun, harap diperhatikan bahwa makanan tidak ditanggung, dan perjalanan serta akomodasi di luar tempat akan ditanggung oleh peserta sendiri</p>
+        </div>
+        <button id="but7" type="button" class="FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How do I apply?</p>
           <p class="FAQ-title" lang="id">Bagaimana cara mendaftar?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">You can apply as an individual or as a team (up to 4 participants max). If in any case, you are looking for team members, you can form teams with other participating hackers at the beginning of our event. Don’t worry, we will help you pair up with other hackers!</p>
-            <p lang="id" style="font-weight:100">Anda dapat mendaftar sebagai individu atau sebagai tim (hingga maksimal 4 peserta). Jika Anda mencari anggota tim, Anda dapat membentuk tim dengan peretas lain yang berpartisipasi di awal acara kami. Jangan khawatir, kami akan membantu Anda berpasangan dengan peretas lain!</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont7" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">You can apply as an individual or as a team (up to 4 participants max). If in any case, you are looking for team members, you can form teams with other participating hackers at the beginning of our event. Don’t worry, we will help you pair up with other hackers!</p>
+          <p lang="id" style="font-weight:100">Anda dapat mendaftar sebagai individu atau sebagai tim (hingga maksimal 4 peserta). Jika Anda mencari anggota tim, Anda dapat membentuk tim dengan peretas lain yang berpartisipasi di awal acara kami. Jangan khawatir, kami akan membantu Anda berpasangan dengan peretas lain!</p>
+        </div>
+        <button id="but8" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How do we submit our projects?</p>
           <p class="FAQ-title" lang="id">Bagaimana cara kirim proyek saya?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">You must submit your project's video demonstration through Devpost. Additionally, it is optional for you to submit your project's live website too.</p>
-            <p lang="id" style="font-weight:100">Anda harus mengirimkan demonstrasi video proyek Anda melalui Devpost. Selain itu, Anda juga opsional untuk mengirimkan situs web langsung proyek Anda.</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont8" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">You must submit your project's video demonstration through Devpost. Additionally, it is optional for you to submit your project's live website too.</p>
+          <p lang="id" style="font-weight:100">Anda harus mengirimkan demonstrasi video proyek Anda melalui Devpost. Selain itu, Anda juga opsional untuk mengirimkan situs web langsung proyek Anda.</p>
+        </div>
+        <button id="but9" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">What can I make?</p>
           <p class="FAQ-title" lang="id">Apa yang bisa saya buat?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">We welcome all software, hardware hacks that align with our tracks. We will accept no-code alternatives as a hack, however we do not have a separate judging criteria specifically tailored to it</p>
-            <p lang="id" style="font-weight:100">Kami menerima semua perangkat lunak, peretasan perangkat keras yang selaras dengan trek kami. Kami akan menerima alternatif tanpa kode sebagai peretasan, namun kami tidak memiliki kriteria penilaian terpisah yang secara khusus disesuaikan dengannya</p>
-          </div>
+          
         </button>
-        <button type="button" class=" FAQ-button-mobile" >
+        <div id="cont9" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">We welcome all software, hardware hacks that align with our tracks. We will accept no-code alternatives as a hack, however we do not have a separate judging criteria specifically tailored to it</p>
+          <p lang="id" style="font-weight:100">Kami menerima semua perangkat lunak, peretasan perangkat keras yang selaras dengan trek kami. Kami akan menerima alternatif tanpa kode sebagai peretasan, namun kami tidak memiliki kriteria penilaian terpisah yang secara khusus disesuaikan dengannya</p>
+        </div>
+        <button id="but10" type="button" class=" FAQ-button-mobile" >
           <p class="FAQ-title" lang="en">How will projects be judged?</p>
           <p class="FAQ-title" lang="id">Bagaimana proyek akan dinilai?</p>
-          <div class="FAQ-content">
-            <p lang="en" style="font-weight:100">Projects will be judged based on originality, (un)conventionality, practicality and scalability. We are looking for projects that bring awareness to issues that not many people are currently trying to solve, while still having the potential to scale.</p>
-            <p lang="id" style="font-weight:100">Proyek akan dinilai berdasarkan orisinalitas, (tidak)konvensional, kepraktisan, dan skalabilitas. Kami mencari proyek yang menyadarkan akan masalah yang saat ini tidak banyak orang coba selesaikan, sambil tetap memiliki potensi untuk ditingkatkan.</p>
-          </div>
+          
         </button>
+        <div id="cont10" class="FAQ-content-mobile">
+          <p lang="en" style="font-weight:100">Projects will be judged based on originality, (un)conventionality, practicality and scalability. We are looking for projects that bring awareness to issues that not many people are currently trying to solve, while still having the potential to scale.</p>
+          <p lang="id" style="font-weight:100">Proyek akan dinilai berdasarkan orisinalitas, (tidak)konvensional, kepraktisan, dan skalabilitas. Kami mencari proyek yang menyadarkan akan masalah yang saat ini tidak banyak orang coba selesaikan, sambil tetap memiliki potensi untuk ditingkatkan.</p>
+        </div>
       </div>
+    </div>
+
+    <!--SPONSORS-->
+    <div id="sponsorsm" style="position:absolute;top:9700px">
+      SPONSORS
     </div>
   </div>
 </body>
