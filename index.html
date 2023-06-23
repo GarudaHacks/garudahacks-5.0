@@ -9,15 +9,42 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <!--Lang-switch script-->
   <script>
+    let engl = true
     $(document).ready(function(){
       $('[lang="id"]').hide()
       $("#EN-greyout,#EN-greyoutm").click(function(){
         $('[lang="id"]').hide()
         $('[lang="en"]').show()
+        engl = true
       })
       $("#ID-greyout,#ID-greyoutm").click(function(){
         $('[lang="en"]').hide()
         $('[lang="id"]').show()
+        engl = false
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".project-track-button-mobile").click(function(){
+        $(".project-track-info-mobile").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        $(this).fadeOut()
+      })
+      $(".project-track-info-mobile").click(function(){
+        $(".project-track-button-mobile").fadeIn()
+        if(engl) {
+          $('[lang="id"]').hide()
+        }
+        else {
+          $('[lang="en"]').hide()
+        }
+        $(this).fadeOut()
       })
     })
   </script>
@@ -127,7 +154,7 @@
       line-height: 61px;
       text-align: center;
     }
-    #heading-font-mobile{
+    .heading-font-mobile{
 				font-family: 'Montserrat';
 				font-style: normal;
 				font-weight: 700;
@@ -311,11 +338,33 @@
         transition: 0.3s;
         z-index:1;
     }
+    .project-track-button-mobile{
+        position:absolute;
+        width: 100%;
+        height: 525px;
+        margin-top: 60px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:7;
+    }
     .project-track-header{
         position:absolute;
         width: 415px;
         height: 75px;
         margin-top: 60px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px 10px 0px 0px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-header-mobile{
+        position:absolute;
+        width: 100%;
+        height: 70px;
+        margin-top: 0;
         background: #640D14;
         box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
         border-radius: 10px 10px 0px 0px;
@@ -333,6 +382,17 @@
         transition: 0.3s;
         z-index:1;
     }
+    .project-track-info-mobile{
+        position:absolute;
+        width: 100%;
+        height: 525px;
+        margin-top: 60px;
+        background: white;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:5;
+    }
     .project-track-button:hover {opacity:0;}
 
     .project-track-text{
@@ -342,6 +402,15 @@
       text-align: center;
       font-weight: 800;
       font-size: 50px;
+      color:white ;
+    }
+    .project-track-text-mobile{
+      margin-top:50px;
+      line-height:40px;
+      font-family: League-Spartan-Bold;
+      text-align: center;
+      font-weight: 800;
+      font-size: 30px;
       color:white ;
     }
 
@@ -362,7 +431,7 @@
         font-family: League-Spartan-Regular;
         text-align: left;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
         color:black ;
     }
     .project-header-info{
@@ -1734,6 +1803,180 @@
 			</div>
 
 		</div>
+
+    <!--PROJECT TRACKS-->
+    <div style="position:absolute;top:5100px;width:100%;">
+      <h1 class="heading-font-mobile" style="padding:0 20% 0" lang="en">Choose Your Project Track</h1>
+      <h1 class="heading-font-mobile" style="padding:0 20% 0" lang="id">Pilihan Trek</h1>
+
+      <!--SUSTAINABILITY TRACK-->
+      <div style="position:relative;width:86%;margin:auto;text-align:center">
+        <div class="project-track-button-mobile">
+          <p class="project-track-text-mobile">SUSTAINABILITY</p>
+          <img src="sustainability.svg" style="position:relative;margin:auto;width:90%;filter: brightness(0) invert(0.99);padding-left:8%;top:5%">
+        </div>
+        
+        <div class="project-track-info-mobile" lang="en">
+          <div class="project-track-header-mobile">
+            <p class="project-header-info" style="display:inline-block;">
+                SUSTAINABILITY
+                <img src="sustainability.svg" style="margin-top:-13px;width:50px;display:inline-block;margin-left:0px;position: relative;filter: brightness(0) invert(0.99);">
+            </p>
+          </div>
+          <p class="project-info-text-mobile" style="margin-top:80px">
+            Whether your approach is preventive or innovative interventions, what you create can save and improve future generations.
+          </p>
+          <p class=" project-info-text-mobile project-track-question">
+            How do we:
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Educate the public on the importance on environmental conservation?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Successfully facilitate top-down and grassroots efforts to empower ALL Indonesians to conserve the environment?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Facilitate the creation of a green and sustainable green economy?
+          </p>
+        </div>
+        <div class="project-track-info-mobile" lang="id">
+          <div class="project-track-header-mobile">
+            <p class="project-header-info" style="display:inline-block;">
+                SUSTAINABILITY
+                <img src="sustainability.svg" style="margin-top:-13px;width:50px;display:inline-block;margin-left:0px;position: relative;filter: brightness(0) invert(0.99);">
+            </p>
+          </div>
+          <p class="project-info-text-mobile" style="margin-top:80px">
+            Apakah solusi Anda intervensi preventif atau innovatif, apa yang Anda buat dapat memperbaiki generasi mendatang
+          </p>
+          <p class=" project-info-text-mobile project-track-question">
+            Bagaimana kita:
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Mendidik masyarakat tentang pentingnya pelestarian lingkungan?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Berhasil memfasilitasi upaya top-down dan akar rumput untuk memberdayakan masyarakat Indonesia, terlepas dari kepercayaan, etnis atau status sosial ekonomi, untuk melestarikan lingkungan?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Memfasilitasi terciptanya ekonomi yang hijau dan berkelanjutan?
+          </p>
+        </div>
+      </div>
+
+      <!--FUTURE OF AI TRACK-->
+      <div style="position:relative;width:86%;margin:auto;text-align:center;top:600px">
+        <div class="project-track-button-mobile">
+          <p class="project-track-text-mobile">FUTURE OF<br>AI</p>
+          <img src="future_of_work.png" style="position:relative;margin:auto;width:70%;filter: brightness(0) invert(0.99);top:5%">
+        </div>
+
+        <div class="project-track-info-mobile" lang="en">
+          <div class="project-track-header-mobile">
+            <p class="project-header-info" style="display:inline-block;">
+                FUTURE OF AI
+                <img src="future_of_work.png" style="margin-top:-12px;width:40px;display:inline-block;margin-left:5px;position: relative;filter: brightness(0) invert(0.99);">
+            </p>
+          </div>
+          <p class="project-info-text-mobile" style="margin-top:80px">
+            We believe that each one of your solutions can create important developments in both the tech and traditional workspace
+          </p>
+          <p class=" project-info-text-mobile project-track-question">
+            How do we:
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Leverage advancements in AI, automation, and the cloud to add value to sectors ripe for technological disruption?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Provide upskilling and reskilling opportunities for our workforce to adapt to the changing workplace environment?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Transform workplaces to become happier, safer, and more equitable environments?
+          </p>
+        </div>
+        <div class="project-track-info-mobile" lang="id">
+          <div class="project-track-header-mobile">
+            <p class="project-header-info" style="display:inline-block;">
+                FUTURE OF AI
+                <img src="future_of_work.png" style="margin-top:-12px;width:40px;display:inline-block;margin-left:5px;position: relative;filter: brightness(0) invert(0.99);">
+            </p>
+          </div>
+          <p class="project-info-text-mobile" style="margin-top:80px">
+            Kami percaya bahwa setiap solusi Anda dapat menciptakan perkembangan penting baik di ruang kerja teknologi maupun tradisional
+          </p>
+          <p class=" project-info-text-mobile project-track-question">
+            Bagaimana kita:
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Memanfaatkan AI, otomasi, dan cloud untuk mengembangkan sektor yang siap menghadapi gangguan teknologi?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Menyediakan peningkatan bagi tenaga kerja untuk beradaptasi dengan lingkungan kerja yang berubah?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Mengubah lingkungan kerja menjadi lebih bahagia, lebih aman, dan lebih adil?
+          </p>
+        </div>
+
+      </div>
+
+      <!--YOUTH EMPOWERMENT TRACK-->
+      <div style="position:relative;width:86%;margin:auto;text-align:center;top:1200px">
+        <div class="project-track-button-mobile">
+          <p class="project-track-text-mobile">YOUTH<br>EMPOWERMENT</p>
+          <img src="youth_empowerment.png" style="position:relative;margin:auto;width:90%;filter: brightness(0) invert(0.99);bottom:15%">
+        </div>
+
+        <div class="project-track-info-mobile" lang="en">
+          <div class="project-track-header-mobile">
+            <p class="project-header-info" style="display:inline-block;font-size:25px;margin-left:15px;margin-top:15px">
+                YOUTH EMPOWERMENT
+                <img src="youth_empowerment.png" style="margin-top:-12px;width:45px;display:inline-block;margin-left:-5px;position:relative;filter:brightness(0) invert(0.99);">
+            </p>
+          </div>
+          <p class="project-info-text-mobile" style="margin-top:80px">
+            Inspiring and enabling our young innovators to accomplish greater things
+          </p>
+          <p class=" project-info-text-mobile project-track-question">
+            How do we:
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Provide communities for our youth to interact and socialize with each other?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Facilitate skill development opportunities for our youth to learn from others and each other to prepare them to enter society and the workforce?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Create a channel for our youth to ideate and iterate on their ideas on how to improve their own societies?
+          </p>
+        </div>
+        <div class="project-track-info-mobile" lang="id">
+          <div class="project-track-header-mobile">
+            <p class="project-header-info" style="display:inline-block;font-size:25px;margin-left:15px;margin-top:15px">
+                YOUTH EMPOWERMENT
+                <img src="youth_empowerment.png" style="margin-top:-12px;width:45px;display:inline-block;margin-left:-5px;position:relative;filter:brightness(0) invert(0.99);">
+            </p>
+          </div>
+          <p class="project-info-text-mobile" style="margin-top:80px">
+            Menginspirasi dan memungkinkan inovator muda kita untuk mencapai hal-hal yang lebih besar
+          </p>
+          <p class=" project-info-text-mobile project-track-question">
+            Bagaimana kita:
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Menyediakan komunitas remaja untuk berinteraksi dan bersosialisasi satu sama lain?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Memfasilitasi pengembangan bagi kaum muda untuk belajar dari satu sama lain untuk mempersiapkan mereka memasuki masyarakat?
+          </p>
+          <p class=" project-info-text-mobile project-track-dot">
+            Membuat saluran bagi kaum muda untuk mengidealkan ide-ide tentang meningkatkan masyarakat?
+          </p>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
