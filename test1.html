@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Garuda Hacks | Indonesia's Premier Global Hackathon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    @font-face{
+      font-family: League-Spartan-Bold;
+      src: url('static/LeagueSpartan-Bold.ttf') format('truetype');
+    }
+    @font-face{
+      font-family: League-Spartan-Regular;
+      src: url('static/LeagueSpartan-Regular.ttf') format('truetype');
+    }
+    @font-face{
+      font-family: Montserrat;
+      src: url('static/Montserrat-Bold.ttf') format('truetype');
+    }
+    @keyframes disappear{
+      from {opacity:1;}
+      to {opacity:0;}
+    }
+    @media(max-width:700px){
+      .red-button{
+        width: 100%;
+        height: 62px;
+        font-family: League-Spartan-Regular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        color:white ;
+        line-height: 25px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+    }
+  }
+    @media(max-width:1150px){
+      .project-track-button{
+        width: 415px;
+        height: 525px;
+        margin-top: 60px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-info{
+        width: 415px;
+        height: 525px;
+        margin-top: 60px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-text{
+      margin-top:50px;
+      line-height:40px;
+      font-family: League-Spartan-Bold;
+      text-align: center;
+      font-weight: 800;
+      font-size: 50px;
+      color:white ;
+    }
+  }
+    .navbartext{
+        font-family: League-Spartan-Regular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 25px;
+        color: #2E2E2E;
+    }
+    .red-button{
+
+        font-family: League-Spartan-Regular;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        color:white ;
+        line-height: 25px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+    .FAQ-button{
+        font-family: League-Spartan-Regular;
+        margin-left:25%;
+        margin-top: 50px;
+        width: 40%;
+        height: 70px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        color:white ;
+        line-height: 25px;
+        background: #640D14;
+        border-radius: 10px;
+        border-color: #640D14;
+    }
+    .project-track-button{
+        width: 415px;
+        height: 525px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+        overflow-x: visible;
+    }
+    .project-track-info{
+        width: 415px;
+        height: 525px;
+        background: #640D14;
+        box-shadow: 1px 1px 10px rgba(241, 173, 180, 0.5), inset 1px 1px 10px rgba(241, 173, 180, 0.5);
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index:1;
+    }
+    .project-track-button:hover {opacity:0;}
+
+    .project-track-text{
+      margin-top: 30px;
+      line-height:40px;
+      font-family: League-Spartan-Bold;
+      text-align: center;
+      font-weight: 800;
+      font-size: 50px;
+      color:white ;
+    }
+    .flex-container{
+      display:flex;
+      justify-content: center;
+      border:1px;
+      align-items: center;
+    }
+    #Ghackstitle{ 
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 4em;
+      white-space: nowrap;
+    }
+    #Ghacksdate{
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 25px;
+      color: #424242;
+      white-space: nowrap;
+    }
+    #Ghacksrdy{
+      font-family: League-Spartan-Bold;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 40px;
+      color: #640D14;
+      margin-top: 30px;
+      white-space: nowrap;
+    }
+    #heading-font{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 61px;
+      margin-left:575px;
+      white-space: nowrap
+    }
+    #project-FAQ{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 300;
+      color: black;
+      font-size: 22.6px;
+      line-height: 45px;
+    }
+    
+  </style>
+</head>
+<body>  
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand fixed-top" style="background: rgba(193, 193, 193, 0.5);z-index:3">
+    <a class="navbar-brand" height="100%"  href="#">
+        <img src="logo.png" alt="Avatar Logo" class="rounded-pill" height="30" style="margin-left:80px"> 
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item" style = "margin-left:20%;">
+            <a class="nav-link navbartext" href="#">Home</a>
+          </li>
+          <li class="nav-item" style = "margin-left:20%;">
+            <a class="nav-link navbartext" href="#project-track">Track</a>
+          </li>
+          <li class="nav-item" style = "margin-left:20%;">
+            <a class="nav-link navbartext" href="#prize-pool">Prizes</a>
+          </li>
+          <li class="nav-item" style = "margin-left:20%;">
+              <a class="nav-link navbartext" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <img src="banner.png" alt="Avatar Logo" style ="float:right;z-index:4;position:relative;width:10%;margin-left:20px">
+
+   <!--Title Page-->
+  <div class="flex-container" style ="display: block;background-size:cover;background-image: url(landingpage.png);background-repeat:no-repeat;width:100vw;:1;position:relative">
+    <div class="container-fluid" style="top:10vw;position:relative;z-index:2;position:relative">
+      <h1 id="Ghackstitle" style="margin-left:5%;background-color: #2E2E2E;">GARUDA<br>HACKS 4.0</h1>
+      <p id="Ghacksdate">26-29 August 2023</p>
+      <p id="Ghacksrdy">Ready to Build the Future?</p>
+      <button type="button" class="btn red-button" style="margin-bottom:20px;width: 350px;height: 70px">
+        <img src="participant.svg" style="margin-right:6px;">
+        Register as Participant
+      </button>
+      <button type="button" class="btn red-button" style="margin-bottom:20px;width: 350px;height: 70px">
+        <img src="mentor.svg" style="margin-right:6px;">
+        Register as Member
+      </button>
+      <button type="button" class="btn red-button" style="margin-bottom:20px;width: 350px;height: 70px  ">
+        <img src="heartshake.svg" style="margin-right:6px;">
+        Join us as a Sponsor
+      </button>
+    </div>
+  </div>
+
+ <!-- Project Track-->
+ 
+
+      
+
+  
