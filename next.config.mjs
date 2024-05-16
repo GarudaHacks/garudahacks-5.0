@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
         unoptimized: true
   },
-    basePath: "/2022-garudahacks.com"
+    basePath: "./"
 };
 
 export default nextConfig;
