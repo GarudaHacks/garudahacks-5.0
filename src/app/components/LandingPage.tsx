@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 
+
 const LandingPage = () => {
   return (
         <main className="min-h-screen bg-black relative overflow-clip">
@@ -29,7 +30,7 @@ const LandingPage = () => {
       {/* Background image */}
        <div className="absolute bottom-0 left-0 w-[80%] lg:h-[40%] lg:w-auto -translate-x-[40%] lg:-translate-x-[40%] lg:translate-y-[10%] z-0">
         <Image 
-          src="/gradient.png"
+          src="gradient.png"
           width={1197}
           height={1296}
           alt="Gradients"
@@ -38,7 +39,7 @@ const LandingPage = () => {
       </div>
       <div className="absolute top-0 right-0 w-[80%] translate-x-[40%] lg:h-[40%] lg:w-auto lg:translate-x-[40%] lg:-translate-y-[50%] z-0">
         <Image 
-          src="/gradient2.png"
+          src="gradient2.png"
           width={1197}
           height={1296}
           alt="Gradients"

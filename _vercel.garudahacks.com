@@ -1,1 +1,0 @@
-vc-domain-verify=www.garudahacks.com,fcb207aaaba4c2523d68
