@@ -18,7 +18,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="flex justify-center z-10">
-          <a href="http://ristek.link/GarudaHacks5.0Registration" target="_blank">
+          <a href="https://airtable.com/apphenlZsFuH6HYFR/pagaUiTnXBQDMklZf/form" target="_blank">
             <button className="text-white font-pptelegraflight px-8 py-4 border border-white bg-black-500 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out">
               Register Now
             </button>
