@@ -5,7 +5,7 @@ import { useState } from 'react';
 const FAQs = () => {
 
     return (
-        <main className="w-full h-[1312px]">
+        <main className="w-full h-[130vh]">
             <h1 className="text-white text-center font-pptelegraf pt-8">
                 Got Questions? We've Got Answers! 
             </h1>
@@ -45,6 +45,7 @@ const FAQs = () => {
             <div className="flex w-10/12 lg:w-[1040px] mx-auto mt-3 pl-3 pb-3 py-3 rounded-md border border-white  hover:bg-slate-900">
                 <Accordion title="How will projects be judged?" answer="Projects will be judged based on originality, (un)conventionality, practicality and scalability. We are looking for projects that bring awareness to issues that not many people are currently trying to solve, while still having the potential to scale."/> 
             </div>
+            
         </main>
     )
 }
