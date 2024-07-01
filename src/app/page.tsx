@@ -3,15 +3,33 @@ import FAQs from "./components/FAQs";
 import LandingPage from "./components/LandingPage"
 import Tracks from "./components/Tracks"
 import Foreword from "./components/Foreword"
+import AnimatedSection from './components/AnimatedSection';
+import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
+import Judges from './components/Judges'
 
 export default function Home() {
   return (
     <section className="bg-black">
-    <LandingPage />
+      <AnimatedSection>
+      <LandingPage />
+      </AnimatedSection>
+    <AnimatedSection>
     <Foreword />
-    <Tracks />
-    <FAQs /> 
+</AnimatedSection>
+<AnimatedSection>
+<Tracks />
+      </AnimatedSection>
+      {/* <AnimatedSection>
+      <HorizontalScrollCarousel />
+      </AnimatedSection> */}
+      <AnimatedSection>
+        <Judges />
+      </AnimatedSection>
+      <AnimatedSection>
+      <FAQs />
+      </AnimatedSection>
     </section>
   );
 }
 
+// hello
