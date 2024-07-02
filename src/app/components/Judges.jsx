@@ -57,7 +57,7 @@ const cards = [
     id: 9, 
   },
   {
-    url: "/imgs/abstract/img7.jpeg",
+    url: "/imgs/abstract/img7.jpg",
     name: "Viandrudigo Djianto",
     description: "Software Engineer at Meta",
     bio: "Vian Djianto is a Software Engineer at Meta, where he works on the Ads team. Previously, Vian studied at the University of Pennsylvania, earning degrees from the College of Arts and Sciences, the School of Engineering and Applied Science, and The Wharton School. Vian grew up in Jakarta, Indonesia, before moving to the United States for university. Outside of work, Vian is a music enthusiast and loves sports. Name a time and place and he’ll be there even if he’s never tried the sport before!",
