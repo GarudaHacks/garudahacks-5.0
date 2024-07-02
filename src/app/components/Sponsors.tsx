@@ -115,7 +115,7 @@ const Sponsors: React.FC = () => {
         <AnimatedSection>
         <div className="flex items-center justify-center">
         <Image 
-          src="caffino.png"
+          src="Caffino_logo.svg"
           width={300}
           height={150}
           alt="Gradients"

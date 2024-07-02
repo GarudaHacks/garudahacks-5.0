@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const JudgesGrid = () => {
   return (
-    <section className="min-h-screen bg-black py-10 max-w-7xl w-full mx-auto">
+    <section className="bg-black py-10 max-w-7xl w-full mx-auto display:flex">
       <h2 className="text-white text-center text-3xl font-bold pb-10">Judges</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-min-content md:grid-cols-3 lg:grid-cols-3 gap-6 px-4">
         {cards.map((card) => (
           <Card card={card} key={card.id} />
         ))}
@@ -23,7 +23,7 @@ const Card = ({ card }) => {
         alt={card.name}
         width={300} // Add width property
         height={300} // Add height property
-        className="w-3/4 h-3/4 object-cover transition-transform duration-300 rounded-t-lg"
+        className="w-3/4 h-3/4 object-cover transition-transform duration-300 rounded-t-lg object-fit"
       />
       <div className="text-center mt-4">
         <p className="text-white text-xl">{card.name}</p>
