@@ -6,6 +6,7 @@ import Foreword from "./components/Foreword"
 import AnimatedSection from './components/AnimatedSection';
 import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
 import Judges from './components/Judges'
+import Sponsors from './components/Sponsors'
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
       </AnimatedSection>
       <AnimatedSection>
       <FAQs />
+      </AnimatedSection>
+      <AnimatedSection>
+      <Sponsors />
       </AnimatedSection>
     </section>
   );

@@ -5,7 +5,7 @@ import { useState } from 'react';
 const FAQs = () => {
 
     return (
-        <main className="w-full h-[130vh]">
+        <main className="w-full h-[120vh] pb-0">
             <h1 className="text-white text-center font-pptelegraf pt-8">
                 Got Questions? We've Got Answers! 
             </h1>
