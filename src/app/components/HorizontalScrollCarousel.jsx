@@ -1,7 +1,6 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import Card from "./Card";
 
 const Example = () => {
   return (
@@ -33,43 +32,58 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
+const Card = ({ card }) => {
+  return (
+    <div
+      key={card.id}
+      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+    >
+      <div
+        style={{
+          backgroundImage: `url(${card.url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+      ></div>
+      <div className="absolute inset-0 z-10 grid place-content-center">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+          {card.title}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 export default Example;
 
 const cards = [
   {
     url: "/imgs/abstract/img1.jpeg",
     id: 1,
-    title: "Title 1",
   },
   {
     url: "/imgs/abstract/img2.jpeg",
     id: 2,
-    title: "Title 2",
   },
   {
     url: "/imgs/abstract/img3.jpeg",
     id: 3,
-    title: "Title 3",
   },
   {
     url: "/imgs/abstract/img4.jpeg",
     id: 4,
-    title: "Title 4",
   },
   {
     url: "/imgs/abstract/img5.jpeg",
     id: 5,
-    title: "Title 5",
   },
   {
     url: "/imgs/abstract/img6.jpeg",
     id: 6,
-    title: "Title 6",
   },
   {
     url: "/imgs/abstract/img7.jpeg",
     id: 7,
-    title: "Title 7",
   },
 ];
-
