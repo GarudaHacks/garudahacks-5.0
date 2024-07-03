@@ -24,9 +24,7 @@ export default function Home() {
       {/* <AnimatedSection>
       <HorizontalScrollCarousel />
       </AnimatedSection> */}
-      <AnimatedSection>
         <Judges />
-      </AnimatedSection>
       <AnimatedSection>
       <FAQs />
       </AnimatedSection>
