@@ -7,6 +7,7 @@ import AnimatedSection from './components/AnimatedSection';
 import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
 import Judges from './components/Judges'
 import Sponsors from './components/Sponsors'
+import React from "react";
 
 export default function Home() {
   return (
