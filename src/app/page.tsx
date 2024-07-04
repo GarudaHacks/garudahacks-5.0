@@ -11,7 +11,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <section className="bg-black">
+    <section className="bg-black m-0 p-0 overflow-x:hidden">
       <AnimatedSection>
       <LandingPage />
       </AnimatedSection>

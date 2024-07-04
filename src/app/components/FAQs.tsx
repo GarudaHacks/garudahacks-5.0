@@ -9,7 +9,7 @@ const FAQs = () => {
             <h1 className="text-white text-center font-pptelegraf pt-8">
                 Got Questions? We've Got Answers! 
             </h1>
-            <h2 className="text-white text-center text-3xl font-bold">
+            <h2 className="text-white text-center text-3xl font-bold pb-6">
                 Your Guide to Navigating 
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-300 via-purple-500 to-gray-100"> Garuda Hacks 5.0</span>
             </h2> 
