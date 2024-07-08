@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
 
       fontFamily: {
-        pptelegraf: ["var(--font-pptelegraf)"], 
+        pptelegraf: ['PP Telegraf', 'sans-serif'],
       },
 
       backgroundImage: {

@@ -3,7 +3,7 @@ import React from "react";
 
 const JudgesGrid = () => {
   return (
-    <section className="min-h-screen bg-black py-10 max-w-7xl w-full mx-auto">
+    <section className="min-h-screen bg-black py-10 max-w-7xl w-full mx-auto pt-20">
       <h2 className="text-white text-center text-3xl font-bold pb-10">Judges</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4">
         {cards.map((card) => (
@@ -157,6 +157,80 @@ const cards = [
     name: "Johan Sulaiman",
     description: "Head at Amazon Web Services Data & AI",
     bio: "Johan is currently Head for AWS Data & AI ASEAN Emerging Countries for Amazon Web Services. He is a proven business and technology executive who blends data &  technology with business savvy & organizational leadership. At Amazon, he is responsible for developing market penetration strategies and driving regional sales and adoptions of AWS' analytics services, leveraging his experiences in  envisioning and directing large scale analytics and machine learning programs, projects and teams for Fortune 500 companies. He is also a lifelong learner participating in education technology and data analytics R&D at Columbia University’s Programming Systems Lab.", 
+  },
+  {
+    url: "/imgs/abstract/img20.jpeg",
+    name: "Aman Shreshta",
+    description: "Technical Account Manager at Google",
+    bio: "Aman Shreshta is a Technical Account Manager at Google, specializing in Generative AI for Google Cloud. Born and raised in Nepal, he graduated with a degree in Computer Science from the University of Rochester. Aman describes himself as regularly sarcastic, occasionally funny, and rarely sensible. In his spare time, he watches football as a Manchester United and Germany fan (hence the rarely sensible part), plays the keyboard with 'Nuvole Bianche' as his favorite piece, and watches way too many Marvel movies.",
+    id: 11,
+  },
+  {
+    url: "/imgs/abstract/img21.jpeg",
+    name: "Agatha Felice",
+    description: "Actuarial Associate at KPMG",
+    bio: "Agatha Felice Tjandra is an Actuarial Associate at KPMG. Previously, she completed her undergraduate degree at the National University of Singapore, majoring in Statistics and Economics. Agatha is passionate about education and how she can help improve education accessibility in Indonesia. In her free time, she enjoys jamming to jazz.",
+    id: 11,
+  },
+  {
+    url: "/imgs/abstract/img22.jpeg",
+    name: "Jason  Tedjosusilo",
+    description: "Full Stack Engineer at Genesys",
+    bio: "Jason is a Full Stack Engineer at Genesys, where he is part of the Speech and Text Analytics team. He obtained his Bachelor’s degree in Computer Science from the University of Waterloo and graduated with honors in 2023. Outside of work, he enjoys cooking and can frequently be spotted at the bouldering gym. Jason loves exploring new technologies and develops apps that range from personal day-to-day tools to solutions for enterprise needs.", 
+  },
+  {
+    url: "/imgs/abstract/img23.jpeg",
+    name: "Marcellino Chris O'Vara",
+    description: "Software Engineer at Haven1",
+    bio: "Marcellino Chris O'Vara is a software engineer at Haven1. During nights and weekends, he's building his own startup called Pusaqa. Marcel has spent his entire life in Bogor and studied computer science at the University of Indonesia. He's a travel and food enthusiast, making him an excellent tour guide! In his spare time, you might find him playing League of Legends.", 
+  },
+  {
+    url: "/imgs/abstract/img25.jpeg",
+    name: "Richard Russell",
+    description: "Associate at Strategy&",
+    bio: "Jason is a Full Stack Engineer at Genesys, where he is part of the Speech and Text Analytics team. He obtained his Bachelor’s degree in Computer Science from the University of Waterloo and graduated with honors in 2023. Outside of work, he enjoys cooking and can frequently be spotted at the bouldering gym. Jason loves exploring new technologies and develops apps that range from personal day-to-day tools to solutions for enterprise needs.", 
+  },
+  {
+    url: "/imgs/abstract/img24.JPG",
+    name: "Schalke Anindya Putri",
+    description: "Indonesia’s Most Outstanding Student 2023",
+    bio: "", 
+  },
+  {
+    url: "/imgs/abstract/img26.jpeg",
+    name: "Jana Velíšková",
+    description: "Accessibility Consultant at O3",
+    bio: "Jana is a User Experience Architect / Product Manager with more than a decade of experience working on both enterprise and emerging technology products. With her experience spanning e-commerce to SaaS product development, she is passionate about maintaining a clean code-base, building design systems, creating accessible and usable web experiences, and designing data-driven experiences. With a passion for knowledge-sharing, Jana has spoken at Code for Philly, PANMA, BarCamp Philly, J.P.Morgan, and the Women in Tech Summit. Her personal passion in technology is accessibility and creating an equitable web. Jana holds a B.A. from Cornell University and lives in Brooklyn, New York City. In her spare time, Jana enjoys running ultra-marathons and has recently completed the prestigious Western States Endurance Run", 
+  },
+  {
+    url: "/imgs/abstract/img27.jpeg",
+    name: "Peter Trost",
+    description: "Systems Software Engineer at Apple",
+    bio: "Peter Trost is a systems software engineer at Apple. Peter grew up in the San Francisco Bay Area, and studied at the University of California, Berkeley, where he earned a degree in Electrical Engineering and Computer Science in 2022. In his spare time, Peter plays the Berkeley carillon, a musical instrument made of 61 bells suspended from the university's 300-foot clock tower.", 
+  },
+  {
+    url: "/imgs/abstract/img28.jpeg",
+    name: "Edward Tanoto",
+    description: "Founder of Grammable.ai",
+    bio: "", 
+  },
+  {
+    url: "",
+    name: "",
+    description: "",
+    bio: "", 
+  },
+  {
+    url: "/imgs/abstract/img29.jpeg",
+    name: "Warren Jodjana",
+    description: "Technical Advisor -- Judging Program",
+    bio: "", 
+  },
+  {
+    url: "",
+    name: "",
+    description: "",
+    bio: "", 
   },
 
 ];
