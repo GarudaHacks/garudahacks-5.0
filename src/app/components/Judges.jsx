@@ -10,6 +10,7 @@ const JudgesGrid = () => {
           <Card card={card} key={card.id} />
         ))}
       </div>
+
     </section>
   );
 };
@@ -215,7 +216,7 @@ const cards = [
     bio: "", 
   },
   {
-    url: "",
+    url: "/imgs/abstract/black.jpeg",
     name: "",
     description: "",
     bio: "", 
@@ -227,7 +228,7 @@ const cards = [
     bio: "", 
   },
   {
-    url: "",
+    url: "/imgs/abstract/black.jpeg",
     name: "",
     description: "",
     bio: "", 
