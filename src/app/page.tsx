@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import FAQs from "./components/FAQs";
 import LandingPage from "./components/LandingPage"
@@ -8,10 +9,14 @@ import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
 import Judges from './components/Judges'
 import Sponsors from './components/Sponsors'
 import React from "react";
+import Navbar from "./components/Navbar"
+import SpeakersSection from "./components/SpeakersSection"
+
 
 export default function Home() {
   return (
-    <section className="bg-black m-0 p-0 overflow-x:hidden">
+    <section className="bg-black m-0 p-0 overflow-x:hidden min-w-full">
+      <Navbar />
       <AnimatedSection>
       <LandingPage />
       </AnimatedSection>
@@ -24,6 +29,7 @@ export default function Home() {
       {/* <AnimatedSection>
       <HorizontalScrollCarousel />
       </AnimatedSection> */}
+      <SpeakersSection />
         <Judges />
       <AnimatedSection>
       <FAQs />

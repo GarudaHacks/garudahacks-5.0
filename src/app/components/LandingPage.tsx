@@ -1,13 +1,15 @@
 import React from 'react';
 import Image from "next/image";
+import '../globals.css';
+
 
 const LandingPage = () => {
   return (
-    <main className="h-[125vh] bg-black relative overflow-clip">
+    <main className="h-[125vh] bg-black relative overflow-clip pt-100">
       <div className="absolute top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex flex-col lg:flex-row items-center mb-8">
           <img src="logo.png" alt="Logo" className="h-40 lg:h-24 mb-4 lg:mb-0" />
-          <div className="flex flex-col text-left">
+          <div className="flex flex-col text-left leading-tight">
             <h1 className="text-white bg-clip-text bg-gradient-to-r from-red-300 via-purple-500 to-gray-100 mb-0 text-6xl font-extrabold font-pptelegraf">
               Garuda Hacks 5.0
             </h1>
@@ -39,7 +41,7 @@ const LandingPage = () => {
           className="z-0"
         />
       </div>
-      <div className="absolute top-0 right-0 w-[80%] translate-x-[40%] lg:h-[40%] lg:w-auto lg:translate-x-[25%] lg:-translate-y-[20%] z-0">
+      <div className="absolute top-0 right-0 w-[80%] translate-x-[40%] lg:h-[40%] lg:w-auto lg:translate-x-[25%] lg:-translate-y-[5%] z-0">
         <Image 
           src="gradient2.png"
           width={700}
