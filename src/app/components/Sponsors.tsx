@@ -228,8 +228,41 @@ const Sponsors: React.FC = () => {
             />
           </div>
         </AnimatedSection>
+        <AnimatedSection>
+          <div className="flex items-center justify-center -translate-y-[80%]">
+            <Image 
+              src="prima.png"
+              width={300}
+              height={150}
+              alt="Gradients"
+              className="z-0"
+            />
+          </div>
+        </AnimatedSection>
+        <AnimatedSection>
+          <div className="flex items-center justify-center -translate-y-[80%]">
+            <Image 
+              src="teh botol.png"
+              width={300}
+              height={150}
+              alt="Gradients"
+              className="z-0"
+            />
+          </div>
+        </AnimatedSection>
+        <AnimatedSection>
+          <div className="flex items-center justify-center -translate-y-[80%]">
+            <Image 
+              src="MSS.png"
+              width={300}
+              height={150}
+              alt="Gradients"
+              className="z-0"
+            />
+          </div>
+        </AnimatedSection>
       </div>
-      <div className="grid grid-cols-2 w-full gap-0 pt-0 px-8">
+      {/* <div className="grid grid-cols-2 w-full gap-0 pt-0 px-8">
         <AnimatedSection>
           <div className="flex items-center justify-center translate-x-[10%] translate-y-[-60%]">
             <Image 
@@ -252,7 +285,7 @@ const Sponsors: React.FC = () => {
             />
           </div>
         </AnimatedSection>
-      </div>
+      </div> */}
     </div>
   );
 };
