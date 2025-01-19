@@ -51,9 +51,6 @@ function NavBar() {
                     <div className={`flex flex-row justify-start pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'} px-4`}>
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white">
-                                <Link href="https://2023.garudahacks.com/">2023</Link>
-                            </li>
-                            <li className="text-white">
                                 <Link href="/">Home</Link>
                             </li>
                             <li className="text-white">
@@ -67,6 +64,9 @@ function NavBar() {
                             </li>
                             <li className="text-white">
                                 <Link href="/faqs">FAQs</Link>
+                            </li>
+                            <li className="text-white">
+                                <Link href="https://2023.garudahacks.com/">2023</Link>
                             </li>
                         </ul>
                     </div>
