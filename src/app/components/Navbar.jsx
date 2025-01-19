@@ -65,6 +65,9 @@ function NavBar() {
                             <li className="text-white">
                                 <Link href="/faqs">FAQs</Link>
                             </li>
+                            <li className="text-white">
+                                <Link href="https://2023.garudahacks.com/">2023</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
