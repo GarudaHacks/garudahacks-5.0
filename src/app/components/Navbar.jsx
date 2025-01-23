@@ -40,12 +40,13 @@ function NavBar() {
                                 <button className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400"
                                     onClick={() => setNavbar(!navbar)}>
                                     {navbar ? (
-                                        <Image src="/close-menu.svg" width={30} height={30} alt="close menu" />
-                                    ) : (
-                                        <Image src="/hamburger-menu.svg" width={30} height={30} alt="open menu" className="focus:border-none active:border-none" />
-                                    )}
+                                            <Image src="/Close_LG_Mobile.svg" width={30} height={30} alt="close menu" />
+                                        ) : (
+                                            <Image src="/Hamburger_MD_Mobile.svg" width={30} height={30} alt="open menu" className="focus:border-none active:border-none" />
+                                        )}
                                 </button>
                             </div>
+
                         </div>
                     </div>
                     <div className={`flex flex-row justify-start pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'} px-4`}>
